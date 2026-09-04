@@ -1,0 +1,41 @@
+services:
+  freqtrade:
+    image: freqtradeorg/freqtrade:stable
+    container_name: ai-trader-dryrun
+    restart: unless-stopped
+    volumes:
+      - ./freqtrade/user_data:/freqtrade/user_data
+      - ./config/freqtrade.example.json:/freqtrade/config.json:ro
+    command: trade --config /freqtrade/config.json --strategy BaselineStrategy --dry-run
+    # Faz 1: 7 gün kesintisiz dry-run hedefi
+    networks: [zennet]
+
+  dashboard-api:
+    build: ./dashboard/backend
+    container_name: zen-dashboard-api
+    restart: unless-stopped
+    # salt-okunur mountlar — DB asla yazılmaz, secret sızmaz (capital_state için data rw)
+    volumes:
+      - ./freqtrade/user_data:/app/freqtrade/user_data:ro
+      - ./config:/app/config:ro
+      - ./experiments:/app/experiments:ro
+      - ./data:/app/data
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+    environment:
+      - LIVE_TRADING=DISABLED
+    ports:
+      - "127.0.0.1:8001:8001"  # sadece localhost — güvenlik kuralı
+    networks: [zennet]
+
+  dashboard:
+    build: ./dashboard/frontend
+    container_name: zen-dashboard
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5173:80"  # sadece localhost
+    depends_on: [dashboard-api]
+    networks: [zennet]
+
+networks:
+  zennet:
+    name: zen-genie-net

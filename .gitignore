@@ -1,0 +1,64 @@
+# Zen-Genie .gitignore — Phase 1 lock (2026-09-04)
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Secrets / credentials — ASLA commit edilmez
+.env
+.env.*
+!.env.example
+*.key
+*secret*.json
+*credential*
+config/freqtrade.live.json
+config/*live*.json
+config/*secret*.json
+
+# DB / large data — Faz 1 SQLite dokunulmaz, commit edilmez
+*.sqlite
+*.sqlite-*
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite-journal
+*.db
+.trades.db
+freqtrade/user_data/data/
+freqtrade/user_data/logs/
+freqtrade/user_data/tradesv3.*.sqlite*
+freqtrade/user_data/*.log
+$log
+*.log
+
+# Node / frontend build
+node_modules/
+dashboard/frontend/node_modules/
+dashboard/frontend/dist/
+dashboard/frontend/.vite/
+npm-debug.log*
+
+# Playwright
+playwright/
+test-results/
+playwright-report/
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Data snapshots — canonical data/capital_state.json KORUNUR (commit edilecek),
+# ama freqtrade/user_data/capital_state.json drift için ignore değil; her ikisi de commit’e girecek (snapshot)
+# bu yüzden data/ altındaki *.tmp ignore
+*.tmp
+*.bak

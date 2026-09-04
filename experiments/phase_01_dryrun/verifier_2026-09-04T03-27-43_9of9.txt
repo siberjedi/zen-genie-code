@@ -1,0 +1,22 @@
+Timestamp: 2026-09-04T03:27:43.944412+03:00
+Started: 2026-08-27T01:32:49.3058513+03:00
+Duration: 8.0798 days
+Config wallet: 100
+Trades: 19 (16 closed, 3 open)
+Realized: 3.54595858
+Invested: 102.33176
+
+--- verifier output ---
+[OK] dry_run aktif 
+[OK] sanal bakiye wallet=100
+[OK] DB url 
+[OK] trades DB erişilebilir 19 trade (0 ise normal — yeni başladı)
+[OK] DB şema cols: fee_open/close_profit var
+[OK] P&L kolonları close_profit=0.0026835096253821794
+[OK] container RUNNING running=true
+[OK] bot heartbeat log'da heartbeat/RUNNING var
+[OK] 7-gün gözlem (8.08/7 gün) başlangıç: Thu Aug 27 01:32:49 2026
+
+--- 9/9 geçti ---
+Faz 1 çıkış kriteri sağlanıyor.
+

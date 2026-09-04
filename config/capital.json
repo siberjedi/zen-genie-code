@@ -1,0 +1,21 @@
+{
+  "core_capital": 100,
+  "core_locked_at": "2026-08-31T00:00:00Z",
+  "core_note": "CORE CAPITAL kilitli başlangıç sermayesi — strateji/signal'den bağımsız, sadece risk katmanı",
+  "protection": {
+    "lock_ratio": 0.5,
+    "trailing": true,
+    "mode": "equity_highwater",
+    "buffer_pct": 0,
+    "note": "Equity high-water üzerinden kârın belirlenen oranı kilitlenir. Threshold = CORE + locked_profit. Core asla risk altında kalmaz."
+  },
+  "harvest": {
+    "ratio": 0.5,
+    "period": "daily",
+    "threshold": 1.0,
+    "auto_enabled": false,
+    "note": "Harvest artık trailing protection ile senkron — equity threshold tabanlı. Manuel harvest hala mümkün."
+  },
+  "reserve_currency": "USDT",
+  "is_strategy_independent": true
+}

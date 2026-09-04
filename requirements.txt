@@ -1,0 +1,10 @@
+freqtrade
+pandas
+numpy
+TA-Lib
+gymnasium
+stable-baselines3
+playwright
+python-dotenv
+pyyaml
+scikit-learn
