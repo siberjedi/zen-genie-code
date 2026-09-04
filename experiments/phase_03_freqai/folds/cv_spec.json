@@ -1,0 +1,10 @@
+{
+  "method": "calendar-expanding TimeSeriesSplit spirit (n_splits=5)",
+  "n_splits": 5,
+  "train_range": "2020-01-01 -> 2022-12-31",
+  "test_window_days": 182,
+  "expanding": true,
+  "note": "Deterministik takvim pencereleri; veri okunmadan uretildi. Secim yok. Tum testler TRAIN icinde, Final Test A disi. Calisan karsiligi: sklearn TimeSeriesSplit(n_splits=5) + 5 seed.",
+  "locked_at": "2026-09-04",
+  "status": "readiness-only, experiment NOT run"
+}
