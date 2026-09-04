@@ -79,6 +79,19 @@ def cohens_d(a,b):
     pooled=np.sqrt((a.var(ddof=1)+b.var(ddof=1))/2)
     return (a.mean()-b.mean())/pooled if pooled!=0 else 0.0
 
+def compute_power(effect_size: float, n1: int, alpha: float = 0.05, ratio: float = 1.0) -> float:
+    """Power (1 - Type II) — statsmodels TTestIndPower.
+    PROTOCOL phase_05 power_target 0.80 için kullanılır, threshold değişmez.
+    Örnek: effect 0.30, n=100 → power ~0.80'mi?
+    """
+    try:
+        from statsmodels.stats.power import TTestIndPower
+        analysis = TTestIndPower()
+        # nobs1 = per-group N; total N = n1*(1+ratio)
+        return float(analysis.power(effect_size=effect_size, nobs1=n1, alpha=alpha, ratio=ratio, alternative="two-sided"))
+    except Exception:
+        return float("nan")
+
 if __name__=="__main__":
     import argparse
     p=argparse.ArgumentParser()

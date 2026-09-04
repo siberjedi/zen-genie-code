@@ -1,0 +1,91 @@
+# FAZ 0 — Kilitli Deney Protokolü
+# Bu dosya sonuçlar görülmeden doldurulur ve sonra salt-okunur kabul edilir.
+# Değişiklik = yeni Final Test gerektirir (Anayasa Madde 4, 20).
+
+protocol_version: "1.0-locked"
+locked_at: "2026-08-27"
+locked_by: "Zen-Genie — Anayasa Madde 1/20: sonuç görülmeden kilitlendi"
+
+# --- Veri Ayrımı (Fazlar arası izolasyon) ---
+splits:
+  # Her faz kendi Final Test penceresini kullanır; asla paylaşılmaz
+  # NOT: Tarihler örnek/kilitli varsayılandır — ilk gerçek deney öncesi veri aralığına göre teyit et
+  phase_02_walkforward:
+    train: "2020-01-01 → 2022-12-31"
+    validation: "2023-01-01 → 2023-06-30"
+    final_test_A: "2023-07-01 → 2023-12-31  # FreqAI/Freqtrade baseline final"
+  phase_04_rl:
+    train: "2020-01-01 → 2022-12-31"
+    validation: "2023-01-01 → 2023-06-30"
+    final_test_B: "2024-01-01 → 2024-06-30  # RL final — A ile örtüşmez"
+  phase_05_compare:
+    final_test_C: "2024-07-01 → 2024-12-31  # Nihai karşılaştırma — A/B'ye dokunulmamış"
+  phase_10_paper:
+    live_paper_window: "30 gün kesintisiz (başlatıldığında doldur)"
+
+# --- Primary Metric ---
+primary_metric: "oos_sharpe_ratio"  # out-of-sample Sharpe
+secondary_metrics: ["net_return","max_drawdown","sortino","profit_factor","win_rate","turnover","fee_impact","slippage_impact"]
+sharpe_risk_free: 0.0
+sharpe_annualization: 365  # kripto 7/24
+
+# --- Çoklu Karşılaştırma Düzeltmesi ---
+multiple_comparison_correction: "benjamini_hochberg_fdr"  # alternatif: bonferroni
+alpha: 0.05
+
+# --- Walk-Forward (Faz 2) ---
+walk_forward:
+  train_days: 365
+  validation_days: 90
+  test_days: 90
+  step_days: 90
+  expanding: false  # true ise anchored WF
+  note: "Foldlar bağımsız değil — overlap/otokorelasyon raporlanacak"
+
+# --- Rejim Sınıflandırıcısı (mekanik, hindsight yok) ---
+regime_classifier:
+  locked: true
+  description: "Sadece t'ye kadar veri kullanır, kurallar deney öncesi kilitli"
+  rules:
+    trend: "SMA50 vs SMA200 + ADX>20"
+    volatility: "ATR percentile(30d) — high/low eşiği önceden kilitli"
+    classes: ["bull","bear","sideways","high_vol","low_vol"]
+
+# --- Eşikler — FAZ 3 / FAZ 5 / FAZ 10 Çıkış Kriterleri (Anayasa Madde 1) ---
+# DEĞİŞTİRİLEMEZ: sonuç görüldükten sonra değiştirilirse yeni Final Test gerekir
+thresholds:
+  phase_03_freqai:
+    min_sharpe_delta_vs_baseline: 0.30  # X
+    min_wf_win_rate_vs_baseline: 0.60   # Y — WF pencerelerinin en az %60'ında baseline'ı geç
+    max_drawdown: 0.20
+    seed_stability: "sharpe_std_across_5_seeds < 0.25"
+  phase_05_compare:
+    min_sharpe_advantage: 0.30
+    max_drawdown: 0.20
+    min_wf_success_rate: 0.60
+    required_effect_size: "cohens_d >= 0.30"
+    power_target: 0.80
+  phase_10_paper:
+    min_sharpe: 0.80
+    max_drawdown: 0.20
+    max_backtest_live_gap: 0.35  # Sharpe farkı
+    min_observation_days: 30
+    stability_required: true
+
+# --- Slippage / Maliyet ---
+costs:
+  fee_maker: 0.001
+  fee_taker: 0.001
+  slippage_bps: 5
+  slippage_news_multiplier: 2.0  # haber anında 2x
+  slippage_model: "5bps base, haber spike'ta 10bps — backtest gerçek maliyet değildir (Madde 12)"
+  report_news_spike_gap: true
+
+# --- RL Bütçesi (Faz 4) ---
+rl_budget:
+  max_configs: 50
+  max_seeds: 5
+  max_train_hours: 12
+  algorithms: ["PPO","SAC"]
+  initial_reward: "log_portfolio_return"  # tek reward başlangıçta
+  note: "Bütçe tükenmeden RL elenmez (Madde 11)"

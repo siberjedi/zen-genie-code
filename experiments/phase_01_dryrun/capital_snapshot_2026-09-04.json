@@ -1,0 +1,46 @@
+{
+  "timestamp": "2026-09-04T03:33:43.403556+03:00",
+  "canonical_path": "data/capital_state.json",
+  "canonical": {
+    "core_capital": 100.0,
+    "high_water_mark": 106.62818338,
+    "locked_profit": 3.314091689999998,
+    "protection_threshold": 103.31409169,
+    "reserve_balance": 1.77297929,
+    "actual_reserve": 1.77297929,
+    "updated_at": "2026-09-04T00:18:38.706397Z",
+    "created_at": "2026-08-31T00:24:42.253254Z"
+  },
+  "stale_freqtrade_path": "freqtrade/user_data/capital_state.json",
+  "stale_freqtrade": {
+    "high_water_mark": 100.58,
+    "locked_profit": 0.29,
+    "protection_threshold": 100.29,
+    "reserve_balance": 0,
+    "updated_at": "2026-09-02T08:59:06.108789Z"
+  },
+  "config_path": "config/capital_state.json",
+  "config": {
+    "high_water_mark": 100.58,
+    "reserve_balance": 0.0
+  },
+  "drift": {
+    "hwm_diff": 6.0481833799999976,
+    "locked_diff": 3.024091689999998,
+    "threshold_diff": 3.0240916899999917,
+    "reserve_diff": 1.77297929
+  },
+  "db": {
+    "realized": 3.54595858,
+    "invested_open": 102.33176,
+    "total_trades": 19,
+    "view_realized": 3.54595858,
+    "view_unrealized": 0.9350099999999999,
+    "view_equity": 104.48096858000001,
+    "view_hwm": 106.62818338,
+    "view_threshold": 103.31409169,
+    "view_reserve": 1.77297929
+  },
+  "canonical_reason": "src/risk/capital.py:33 STATE_PATHS_ALL[0]=data/capital_state.json (writable) — dashboard/backend/capital.py:33 aynı",
+  "note": "Drift çözülmedi, sadece raporlandı. Hiçbir trade/sermaye değeri değiştirilmedi."
+}
