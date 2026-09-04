@@ -2,8 +2,8 @@ freqtrade
 pandas
 numpy
 TA-Lib
-gymnasium
-stable-baselines3
+gymnasium==1.3.0
+stable-baselines3==2.9.0
 playwright
 python-dotenv
 pyyaml
