@@ -1,0 +1,9 @@
+transition,detail
+"fold 0->1 train_start 2020-03-31 vs prev_test_end 2021-06-29 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 1->2 train_start 2020-06-29 vs prev_test_end 2021-09-27 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 2->3 train_start 2020-09-27 vs prev_test_end 2021-12-26 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 3->4 train_start 2020-12-26 vs prev_test_end 2022-03-26 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 4->5 train_start 2021-03-26 vs prev_test_end 2022-06-24 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 5->6 train_start 2021-06-24 vs prev_test_end 2022-09-22 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 6->7 train_start 2021-09-22 vs prev_test_end 2022-12-21 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"
+"fold 7->8 train_start 2021-12-21 vs prev_test_end 2023-03-21 gap -455 OVERLAP (trainlar rolling, bagimsiz degil)"

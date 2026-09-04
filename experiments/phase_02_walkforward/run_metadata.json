@@ -1,21 +1,49 @@
 {
-  "timestamp": "2026-09-04T03:35:22.646396+03:00",
-  "git_commit": "df73351c6f9b554efe41d9bb8466a06ad01115fc",
-  "git_tag": "phase-1-complete",
+  "timestamp": "2026-09-04T03:57:58.639778+03:00",
+  "git_commit": "69293d94b15751adc481f3f03e2dc6626934e0c9",
+  "git_tag": "phase-1-complete (df73351, HEAD 69293d9 untagged - expected, tag unchanged)",
   "git_clean": false,
   "config_hash": "eebcc1366f6e59ad",
-  "experiment_yaml": "C:\\Users\\ALPI\\Desktop\\Zen-Genie\\config\\experiment.yaml",
-  "freqtrade_config": "C:\\Users\\ALPI\\Desktop\\Zen-Genie\\config\\freqtrade.example.json",
-  "strategy": "BaselineStrategy",
-  "strategy_file": "C:\\Users\\ALPI\\Desktop\\Zen-Genie\\freqtrade\\user_data\\strategies\\BaselineStrategy.py",
   "strategy_version": "fe1a235f67f8",
-  "data_range": "2020-01-01 -> 2023-06-30",
-  "pair_universe": {
-    "method": "VolumePairList",
-    "number_assets": 30,
-    "sort_key": "quoteVolume",
-    "min_value": 5000000,
-    "refresh_period": 1800
+  "strategy": "BaselineStrategy RSI14 SMA50/200 entry RSI<30&SMA50>SMA200 exit RSI>70 SL -10% ROI 2% 5m (dondurulmus)",
+  "data_range": "2020-01-01 -> 2023-06-30 (test 2021-03-31 -> 2023-06-19)",
+  "requested_universe": 30,
+  "historical_eligible_universe": [
+    "BTC/USDT",
+    "ETH/USDT",
+    "XRP/USDT",
+    "ADA/USDT",
+    "BNB/USDT",
+    "DOGE/USDT",
+    "TRX/USDT",
+    "ZEC/USDT",
+    "LINK/USDT",
+    "SOL/USDT",
+    "AVAX/USDT",
+    "UNI/USDT",
+    "AAVE/USDT",
+    "NEAR/USDT",
+    "ARB/USDT",
+    "PROM/USDT",
+    "SUI/USDT",
+    "PEPE/USDT"
+  ],
+  "excluded_pairs": [
+    "BMT/USDT",
+    "CHIP/USDT",
+    "CRCLB/USDT",
+    "ENA/USDT",
+    "HEMI/USDT",
+    "PUMP/USDT",
+    "TAO/USDT",
+    "TRUMP/USDT",
+    "U/USDT",
+    "WLD/USDT",
+    "XPL/USDT",
+    "ZKP/USDT"
+  ],
+  "pair_universe_detail": {
+    "method": "StaticPairList"
   },
   "fee": 0.001,
   "slippage_bps": 5,
@@ -23,7 +51,8 @@
   "python": "3.12.10",
   "platform": "Windows-11-10.0.26200-SP0",
   "packages": {
-    "pandas": "3.0.5"
+    "pandas": "3.0.5",
+    "numpy": "2.4.6"
   },
   "wf_config": {
     "train_days": 365,
@@ -33,7 +62,30 @@
     "expanding": false
   },
   "final_test_A": "2023-07-01 -> 2023-12-31",
-  "final_test_A_guard": "enabled — folds final_A ile örtüşürse abort",
-  "expanding": false,
-  "note": "Phase 2 henüz KOŞULMADI — dry_run metadata"
+  "final_test_A_touched": false,
+  "final_test_A_guard": "enabled",
+  "execution": "freqtrade backtesting 9 fold, fee 0.001, StaticPairList 18 pair",
+  "aggregate": {
+    "oos_sharpe_daily_365": -1.8071564480522393,
+    "median_fold_sharpe": -1.684,
+    "mean_fold_sharpe": -1.7457777777777777,
+    "total_return_abs": -211.385,
+    "max_dd": -0.9999899169359425,
+    "sortino": -1.8489325182916407
+  },
+  "statistics": {
+    "fdr": "rej 1/9, p_corr min 0.0467",
+    "cohens_d_daily": -0.09459089167737009,
+    "power_obs": 0.26958430644862263,
+    "power_req_d03": 0.801379443549623,
+    "overlap": "trainlar OVERLAP, testler contiguous, bagimsiz degil"
+  },
+  "data_quality": {
+    "candles": 4848813,
+    "missing": 5661,
+    "duplicate": 0,
+    "invalid": 0
+  },
+  "note": "Phase 2 amaci optimize degil, dondurulmus baseline gozlem. Sonuclara gore kod/config/threshold degistirilmedi.",
+  "phase1_tag_commit": "df73351c6f9b554efe41d9bb8466a06ad01115fc"
 }
