@@ -1,0 +1,4 @@
+pair-ici overlap: 0 pair
+force_exit: 1 (pencere sonu disi: 0)
+duplicate (pair,open): 0
+open<VAL_START: 0, close>VAL_END: 0
