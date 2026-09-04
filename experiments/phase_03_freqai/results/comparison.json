@@ -1,0 +1,149 @@
+{
+  "selected_seed": 2026,
+  "selection_rule": "max validation Sharpe (SELECTION.md, pre-results locked)",
+  "validation": {
+    "7": {
+      "sharpe": -25.42,
+      "net": -99.979,
+      "trades": 15975,
+      "max_dd": -0.9998,
+      "win_rate": 0.3332,
+      "profit_factor": 0.505
+    },
+    "42": {
+      "sharpe": -25.862,
+      "net": -99.982,
+      "trades": 16061,
+      "max_dd": -0.9998,
+      "win_rate": 0.3317,
+      "profit_factor": 0.493
+    },
+    "123": {
+      "sharpe": -24.835,
+      "net": -99.978,
+      "trades": 15668,
+      "max_dd": -0.9998,
+      "win_rate": 0.3381,
+      "profit_factor": 0.5
+    },
+    "999": {
+      "sharpe": -25.14,
+      "net": -99.978,
+      "trades": 15685,
+      "max_dd": -0.9998,
+      "win_rate": 0.338,
+      "profit_factor": 0.483
+    },
+    "2026": {
+      "sharpe": -24.186,
+      "net": -99.975,
+      "trades": 15603,
+      "max_dd": -0.9997,
+      "win_rate": 0.3353,
+      "profit_factor": 0.506
+    }
+  },
+  "seed_stability": {
+    "mean": -25.089,
+    "median": -25.14,
+    "std": 0.63,
+    "threshold": 0.25
+  },
+  "baseline_validation": {
+    "sharpe": -2.179,
+    "net": -39.379,
+    "trades": 714,
+    "max_dd": -0.4608,
+    "win_rate": 0.6303,
+    "profit_factor": 0.786
+  },
+  "delta_vs_baseline": -22.007,
+  "threshold_checks": {
+    "thresholds": {
+      "min_sharpe_delta_vs_baseline": 0.3,
+      "min_wf_win_rate_vs_baseline": 0.6,
+      "max_drawdown": 0.2,
+      "seed_stability": "sharpe_std_across_5_seeds < 0.25"
+    },
+    "checks": {
+      "sharpe_delta>=0.30": false,
+      "wf_win_rate>=0.60": false,
+      "maxdd<=0.20": false,
+      "seed_std<0.25": false,
+      "ALL_PASS": false
+    }
+  },
+  "wf_win_rate": {
+    "value": 0.0,
+    "wins": [
+      false,
+      false,
+      false,
+      false,
+      false
+    ],
+    "freqai_cv": [
+      -19.36,
+      -7.429,
+      -16.476,
+      -24.354,
+      -27.262
+    ],
+    "baseline_cv": [
+      -1.328,
+      -0.461,
+      -0.76,
+      -3.173,
+      -1.489
+    ]
+  },
+  "statistics": {
+    "paired_t_p": 0.06643229438668227,
+    "cohens_dz_paired": -0.138,
+    "cohens_d_independent": -0.199,
+    "mean_diff_CI95": [
+      -0.69546,
+      0.02069
+    ],
+    "n_days": 180,
+    "fdr_rejected": 0,
+    "fdr_p_corr": [
+      0.0664,
+      0.0664,
+      0.0664,
+      0.0664,
+      0.0664
+    ],
+    "power_req_d03": 0.801,
+    "overlap_note": "ayni pencere (paired); CV foldlari rolling-overlap, bagimsiz degil"
+  },
+  "final_test_a": {
+    "freqai": {
+      "trade_count": 11147,
+      "net_abs": -99.879,
+      "daily_sharpe": -20.196,
+      "sortino": -25.502,
+      "max_dd": -0.9987,
+      "profit_factor": 0.377,
+      "win_rate": 0.3067,
+      "turnover": 11147,
+      "total_volume": 50136.3,
+      "fee_est": 100.27
+    },
+    "baseline": {
+      "trade_count": 793,
+      "net_abs": -16.267,
+      "daily_sharpe": -0.936,
+      "sortino": -1.007,
+      "max_dd": -0.342,
+      "profit_factor": 0.888,
+      "win_rate": 0.5977,
+      "turnover": 793,
+      "total_volume": 21552.0,
+      "fee_est": 43.1
+    },
+    "delta": -19.26,
+    "note": "TEK degerlendirme, tuning disi, rapor amacli"
+  },
+  "feature_definition_hash": "95e7bbf2f9383be8"
+}

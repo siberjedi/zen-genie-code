@@ -18,6 +18,25 @@ FINAL_A_END = pd.Timestamp("2023-12-31")
 N_FOLDS = 5
 SEEDS = [42, 7, 123, 2026, 999]
 
+TF_MINUTES = 5  # 5m timeframe
+
+
+def slice_frame(df: pd.DataFrame, start, end, date_col: str = "date",
+                horizon: int | None = None) -> pd.DataFrame:
+    """Pencere dilimi + label-sınır kuralı (kilitli, 2026-09-04).
+
+    Label H mum geleceğe baktığı için, kullanılabilir satırlar
+    `end - H*5m` ile sınırlıdır. Böylece train label'ları validation'a,
+    validation label'ları Final Test A'ya TAŞMAZ (son 12 mum atılır).
+    """
+    if horizon is None:
+        from .labels import LABEL_HORIZON
+        horizon = LABEL_HORIZON
+    ts = pd.to_datetime(df[date_col])
+    cutoff = pd.Timestamp(end) - pd.Timedelta(minutes=horizon * TF_MINUTES)
+    m = (ts >= pd.Timestamp(start)) & (ts <= cutoff)
+    return df.loc[m].reset_index(drop=True)
+
 
 class FinalTestLeakError(AssertionError):
     """Final Test A'ya erişim denemesi."""

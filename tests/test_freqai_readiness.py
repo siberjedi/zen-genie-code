@@ -89,6 +89,17 @@ def test_split_and_guard():
     print("PASS split (train 1096 / val 181) + guard ABORT (final_A reddedildi)")
 
 
+def test_slice_boundary():
+    from src.freqai.splits import slice_frame, VAL_END
+    dates = pd.date_range("2023-01-01", "2023-06-30", freq="5min")
+    df = pd.DataFrame({"date": dates})
+    s = slice_frame(df, "2023-01-01", "2023-06-30")
+    assert s["date"].max() <= pd.Timestamp("2023-06-30") - pd.Timedelta(hours=1)
+    assert len(s) == len(df) - LABEL_HORIZON, f"{len(s)} != {len(df) - LABEL_HORIZON}"
+    assert VAL_END == pd.Timestamp("2023-06-30")
+    print(f"PASS slice boundary (son 12 mum atildi, label tasmasi yok)")
+
+
 def test_seed_reproducibility():
     df = _synth(500)
     data = build_dataset(df)
@@ -103,26 +114,40 @@ def test_seed_reproducibility():
 
 
 def test_final_a_guard_real_data():
+    # Deney onayi sonrasi Final A verisi indirildi (son degerlendirme icin).
+    # Guard artik "veri yoklugu" degil: pipeline dilimleri + assert_no_final_leak.
+    from src.freqai.splits import slice_frame
     root = pathlib.Path(__file__).parents[1]
     ddir = root / "freqtrade" / "user_data" / "data" / "binance"
     files = sorted(ddir.glob("*-5m.feather"))
     assert len(files) == 30, f"30 feather bekleniyor, {len(files)}"
-    worst, worst_f, empty = None, "", []
+    full, empty = 0, []
     for f in files:
-        col = pd.read_feather(f, columns=["date"])["date"]
-        col = pd.to_datetime(col).dropna()
+        col = pd.to_datetime(pd.read_feather(f, columns=["date"])["date"]).dropna()
         if len(col) == 0:
-            empty.append(f.name)  # tarihsiz pair'ler (2023 öncesi yok) — beklenen 12
+            empty.append(f.name)  # tarihsiz pair'ler — beklenen 12
             continue
         mx = pd.Timestamp(col.max())
         if mx.tzinfo is not None:
             mx = mx.tz_localize(None)
-        if worst is None or mx > worst:
-            worst, worst_f = mx, f.name
-        assert mx < FINAL_A_START, f"{f.name}: {mx} FINAL_A'ya giriyor!"
-    assert len(empty) == 12, f"12 bos dosya bekleniyor, {len(empty)}: {empty}"
-    print(f"PASS final_test_A guard: 18/18 veri dosyasi < 2023-07-01 "
-          f"(en son {worst_f} {worst}); 12 bos dosya (tarihsiz, deney disi)")
+        assert mx >= pd.Timestamp("2023-12-30"), f"{f.name}: Final A kapsami eksik ({mx})"
+        full += 1
+    assert full == 18 and len(empty) == 12, f"{full}/18 dolu, {len(empty)}/12 bos"
+    # Guard: train/val dilimleri Final A'ya degemez (veri VAR ama erisim YOK)
+    dates = pd.date_range("2020-01-01", "2023-12-30", freq="5min")
+    df = pd.DataFrame({"date": dates})
+    tr = slice_frame(df, "2020-01-01", "2022-12-31")
+    va = slice_frame(df, "2023-01-01", "2023-06-30")
+    assert tr["date"].max() < FINAL_A_START and va["date"].max() < FINAL_A_START
+    assert_no_final_leak(tr["date"], "train")
+    assert_no_final_leak(va["date"], "val")
+    try:
+        assert_no_final_leak(df[(df["date"] >= "2023-07-01")]["date"], "final_A")
+        raise SystemExit("guard yakalamaliydi")
+    except FinalTestLeakError:
+        pass
+    print("PASS final_test_A guard: veri mevcut (18/18 Final A kapsami) AMA "
+          "train/val dilimleri erismiyor + ABORT calisiyor")
 
 
 def test_metric_integration():
@@ -177,6 +202,7 @@ if __name__ == "__main__":
     test_label_definition()
     test_nan_handling()
     test_split_and_guard()
+    test_slice_boundary()
     test_seed_reproducibility()
     test_final_a_guard_real_data()
     test_metric_integration()

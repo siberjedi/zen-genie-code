@@ -1,5 +1,5 @@
 {
-  "status": "readiness-only — experiment NOT run, Final Test A untouched",
+  "status": "experiment complete \u2014 results locked, no further runs",
   "timestamp": "2026-09-04",
   "git_commit": "e6d42feb1fa2a7b64fd3d1c320fd899a3b1e50fa",
   "phase1_tag": "df73351c6f9b554efe41d9bb8466a06ad01115fc (phase-1-complete, unchanged)",
@@ -8,19 +8,66 @@
     "freqtrade.example.json": "078effa4e35a2f48742aec43c2408b591e06cc917edd33f07232fec581ed518d",
     "BaselineStrategy.py": "fe1a235f67f82c60906adc9e541516d6409612c77ac9a057529f7012955aa954"
   },
-  "features": ["ret_1", "ret_12", "rsi14", "sma50_ratio", "sma200_ratio", "sma_trend", "atr14_ratio", "vol_z"],
-  "label": {"horizon_candles": 12, "threshold": 0.002, "definition": "close[t+12]/close[t]-1 > 0.002"},
+  "features": [
+    "ret_1",
+    "ret_12",
+    "rsi14",
+    "sma50_ratio",
+    "sma200_ratio",
+    "sma_trend",
+    "atr14_ratio",
+    "vol_z"
+  ],
+  "label": {
+    "horizon_candles": 12,
+    "threshold": 0.002,
+    "definition": "close[t+12]/close[t]-1 > 0.002"
+  },
   "model": "RandomForestClassifier",
-  "hyperparams": {"n_estimators": 200, "max_depth": 8, "min_samples_leaf": 50, "class_weight": "balanced", "n_jobs": 1},
-  "seeds": [42, 7, 123, 2026, 999],
+  "hyperparams": {
+    "n_estimators": 200,
+    "max_depth": 8,
+    "min_samples_leaf": 50,
+    "class_weight": "balanced",
+    "n_jobs": 1
+  },
+  "seeds": [
+    42,
+    7,
+    123,
+    2026,
+    999
+  ],
   "n_folds": 5,
-  "data_range": {"train": "2020-01-01 -> 2022-12-31", "validation": "2023-01-01 -> 2023-06-30", "final_test_A": "2023-07-01 -> 2023-12-31 (FORBIDDEN)"},
-  "universe": {"requested": 30, "eligible": 18, "excluded": 12},
+  "data_range": {
+    "train": "2020-01-01 -> 2022-12-31",
+    "validation": "2023-01-01 -> 2023-06-30",
+    "final_test_A": "2023-07-01 -> 2023-12-31 (FORBIDDEN)"
+  },
+  "universe": {
+    "requested": 30,
+    "eligible": 18,
+    "excluded": 12
+  },
   "timeframe": "5m",
-  "costs": {"fee_taker": 0.001, "slippage_bps": 5},
+  "costs": {
+    "fee_taker": 0.001,
+    "slippage_bps": 5
+  },
   "primary_metric": "oos_sharpe_ratio (daily aggregate, periods_per_year=365)",
   "thresholds_ref": "config/experiment.yaml phase_03_freqai (unchanged)",
-  "packages": {"python": "3.12.10", "pandas": "3.0.5", "numpy": "2.4.6", "sklearn": "1.9.0", "statsmodels": "0.15.0"},
-  "validation": "tests/test_freqai_readiness.py — 9 tests ALL PASS",
-  "notes": "No trained models, no results, no selection. Full experiment awaits approval."
+  "packages": {
+    "python": "3.12.10",
+    "pandas": "3.0.5",
+    "numpy": "2.4.6",
+    "sklearn": "1.9.0",
+    "statsmodels": "0.15.0"
+  },
+  "validation": "tests/test_freqai_readiness.py \u2014 9 tests ALL PASS",
+  "notes": "No trained models, no results, no selection. Full experiment awaits approval.",
+  "experiment": {
+    "executed_at": "2026-09-04T15:17:22.459093+03:00",
+    "git_commit": "06c980a71009f7612532f230604ed0fad7ebc13e"
+  },
+  "results_ref": "results/comparison.json"
 }
