@@ -1,0 +1,41 @@
+{
+  "config": "C1",
+  "seed": 2026,
+  "hyperparams": {
+    "learning_rate": 0.0001,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99
+  },
+  "timesteps": 600000,
+  "train_seconds": 1312.7,
+  "train_ep_reward": 0.0,
+  "train_final_equity": 100.0,
+  "val": {
+    "trade_count": 0,
+    "net_abs": 0.0,
+    "daily_sharpe": 0.0,
+    "sortino": 0.0,
+    "max_dd": 0.0,
+    "profit_factor": 0.0,
+    "win_rate": 0.0,
+    "turnover": 0,
+    "total_volume": 0.0,
+    "fee_est": 0.0
+  },
+  "val_term_reason": "terminated",
+  "val_actions": {
+    "0": 51794,
+    "1": 0,
+    "2": 0
+  },
+  "val_flips": 0,
+  "val_med_hold_min": 0.0,
+  "val_mean_hold_min": 0.0,
+  "val_fee_total": 0.0,
+  "val_bankruptcy": false,
+  "model_path": "freqtrade\\user_data\\rl_models\\phase4_C1_seed2026.zip",
+  "model_hash": "dc0f1a2c6c6e9a89",
+  "metadata": "meta_written"
+}

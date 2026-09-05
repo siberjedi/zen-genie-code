@@ -1,0 +1,32 @@
+{
+  "seed": 123,
+  "algorithm": "PPO",
+  "config_hash": "d078cd8c64f48a6d",
+  "hyperparams": {
+    "algo": "PPO",
+    "seed": 123,
+    "total_timesteps": 600000,
+    "learning_rate": 0.0001,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99
+  },
+  "pair": "BTC/USDT",
+  "data_range": "2020-01-01->2022-12-31",
+  "feature_list": [
+    "close",
+    "volume"
+  ],
+  "environment_version": "4.1.0",
+  "environment_hash": "0e1b8db3f3f6ff14",
+  "git_commit": "fcbb4e864e8c1f85fbe8ffa132e1fb8f08f3eca1",
+  "timestamp": "2026-09-05T03:46:56.521332+03:00",
+  "training_duration_s": 1170.31672000885,
+  "initial_capital": 100.0,
+  "fee": 0.001,
+  "slippage_bps": 5,
+  "config_id": "C1",
+  "validation": "2023-01-01->2023-06-30",
+  "termination_val": "terminated"
+}
