@@ -62,3 +62,9 @@ Thumbs.db
 # bu yüzden data/ altındaki *.tmp ignore
 *.tmp
 *.bak
+
+# Phase 4.4 artefakt dizinleri (ham cikti, commit disi)
+freqtrade/user_data/backtest_results/
+freqtrade/user_data/freqai_models/
+freqtrade/user_data/rl_models/
+freqtrade/user_data/rl_norm/

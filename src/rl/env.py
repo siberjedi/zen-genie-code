@@ -18,7 +18,7 @@ import gymnasium as gym
 import numpy as np
 import pandas as pd
 
-ENV_VERSION = "4.1.0"
+ENV_VERSION = "4.2.0"
 REQUIRED_COLS = ("date", "open", "high", "low", "close")
 
 BUY, SELL, HOLD = 1, 2, 0
@@ -34,11 +34,13 @@ class TradingEnv(gym.Env):
 
     def __init__(self, df: pd.DataFrame, fee: float = 0.001,
                  slippage_bps: float = 5, window: int = 30,
-                 initial_capital: float = 100.0):
+                 initial_capital: float = 100.0, price_col: str = "close"):
         super().__init__()
         missing = [c for c in REQUIRED_COLS if c not in df.columns]
         if missing:
             raise ValueError(f"eksik OHLC kolonları: {missing}")
+        if price_col not in df.columns:
+            raise ValueError(f"price_col yok: {price_col}")
         if not (0 <= fee < 1):
             raise ValueError(f"fee aralık dışı: {fee}")
         if slippage_bps < 0:
@@ -47,6 +49,7 @@ class TradingEnv(gym.Env):
             raise ValueError(f"window>=1 olmalı: {window}")
         if initial_capital <= 0:
             raise ValueError("initial_capital>0 olmalı")
+        self.price_col = price_col
         self.df = df.reset_index(drop=True)
         if len(self.df) <= window:
             raise ValueError(f"veri ({len(self.df)}) window'dan ({window}) uzun olmalı")
@@ -55,7 +58,7 @@ class TradingEnv(gym.Env):
         self.window = int(window)
         self.initial_capital = float(initial_capital)
         self.market_cols = [c for c in self.df.columns
-                            if c not in ("date", "open", "high", "low")]
+                            if c not in ("date", "open", "high", "low", self.price_col)]
         if not self.market_cols:
             raise ValueError("obs için numerik kolon yok (close dahil)")
         n_feat = len(self.market_cols) + 2  # + position, equity_norm
@@ -109,7 +112,7 @@ class TradingEnv(gym.Env):
         if action not in (BUY, SELL, HOLD):
             self.invalid_actions += 1
             action = HOLD
-        price = float(self.df.iloc[self.t]["close"])
+        price = float(self.df.iloc[self.t][self.price_col])
         # -- execute --
         if action == BUY:
             if self.amount > 0 or self.cash <= 0:
@@ -144,7 +147,7 @@ class TradingEnv(gym.Env):
         self.t += 1
         # -- episode sonu: zorunlu likidasyon (sessiz düşürme YASAK) --
         if self.t >= len(self.df) - 1 and self.amount > 0:
-            fpx = float(self.df.iloc[len(self.df) - 1]["close"]) * (1 - self.slip)
+            fpx = float(self.df.iloc[len(self.df) - 1][self.price_col]) * (1 - self.slip)
             proceeds = self.amount * fpx
             fee_paid = proceeds * self.fee
             self.cash = proceeds - fee_paid
@@ -168,3 +171,42 @@ class TradingEnv(gym.Env):
 
     def render(self):
         return f"equity={self._prev_pf:.2f} pos={1 if self.amount > 0 else 0}"
+
+
+CHUNK_SIZE = 5000  # Faz 4.4 kilitli seçim (4.3'teki 5-10k aralığından; max episode
+# çeşitliliği + ~17 günlük anlamlı ufuk; deterministik sıralı partition).
+
+
+class ChunkedTradingEnv(TradingEnv):
+    """Eğitim-episode'larını chunk'lara bölen sarmalayıcı (Faz 4.4).
+
+    - chunk_size mumluk ardışık dilimler; reset başına deterministik rotasyon.
+    - Chunk sonu = base forced-liquidation (ekonomik exact) + terminated=True;
+      bootstrap GEREKMEZ (getiri tamamen realize). Bedel: max hold = chunk
+      uzunluğu (belgeli trade-off). Sessiz pozisyon düşürme YOK.
+    - Validation DEĞERLENDİRMESİ chunk'lanmaz (tam-pencere, karşılaştırılabilirlik).
+    """
+
+    def __init__(self, df: pd.DataFrame, chunk_size: int = CHUNK_SIZE, **kw):
+        if chunk_size < 1000:
+            raise ValueError(f"chunk_size>=1000 olmalı: {chunk_size}")
+        self.full = df.reset_index(drop=True)
+        self.chunk_size = int(chunk_size)
+        bounds = []
+        for s in range(0, len(self.full), self.chunk_size):
+            e = min(s + self.chunk_size, len(self.full))
+            if e - s >= kw.get("window", 30) + 1:
+                bounds.append((s, e))
+        if not bounds:
+            raise ValueError("chunk üretilemedi (veri kısa)")
+        self.bounds = bounds
+        self.chunk_idx = -1
+        super().__init__(self.full.iloc[bounds[0][0]:bounds[0][1]], **kw)
+
+    def reset(self, seed=None, options=None):
+        self.chunk_idx = (self.chunk_idx + 1) % len(self.bounds)
+        s, e = self.bounds[self.chunk_idx]
+        self.df = self.full.iloc[s:e].reset_index(drop=True)
+        obs, info = super().reset(seed=seed, options=options)
+        info["chunk"] = self.chunk_idx
+        return obs, info

@@ -58,6 +58,7 @@ class HyperparamConfig:
     batch_size: int = 64
     n_epochs: int = 10
     gamma: float = 0.99
+    ent_coef: float = 0.0  # Faz 4.4: exploration parametrizasyonu (shaping değil)
 
 
 def load_experiment_config(path=DEFAULT_CONFIG) -> dict:
@@ -174,6 +175,52 @@ def write_run_metadata(path, seed: int, algo: str, cfg: HyperparamConfig,
 
 class TimeoutExceeded(TimeoutError):
     pass
+
+
+class DiagnosticsCallback:
+    """Rollout-başı PPO/sb3 metrikleri + aksiyon histogramı → JSONL.
+
+    Kaynak: SB3 logger snapshot (loss/entropy/KL/clip/EV/LR, mevcutsa) +
+    rollout/episode sayaçları. Monitor sarmalanmış env'lerde episode
+    reward/length de logger'a düşer. Training ÇALIŞTIRMAZ, sadece kaydeder.
+    """
+
+    def __new__(cls, out_path, verbose=0):
+        from stable_baselines3.common.callbacks import BaseCallback
+        import numpy as np
+
+        class _Diag(BaseCallback):
+            def __init__(self):
+                super().__init__(verbose)
+                self.out_path = pathlib.Path(out_path)
+                self.rows = []
+                self._acts = []
+
+            def _on_step(self) -> bool:
+                a = self.locals.get("actions")
+                if a is not None:
+                    self._acts.extend(np.asarray(a).ravel().tolist())
+                return True
+
+            def _on_rollout_end(self) -> None:
+                snap = {}
+                for k, v in self.logger.name_to_value.items():
+                    try:
+                        snap[f"log_{k}"] = float(v)
+                    except (TypeError, ValueError):
+                        snap[f"log_{k}"] = str(v)
+                arr = np.array(self._acts, dtype=int) if self._acts else np.array([], dtype=int)
+                snap["actions"] = {str(x): int((arr == x).sum()) for x in (0, 1, 2)}
+                snap["n_steps"] = len(arr)
+                self.rows.append(snap)
+                self._acts = []
+
+            def _on_training_end(self) -> None:
+                self.out_path.parent.mkdir(parents=True, exist_ok=True)
+                with open(self.out_path, "w", encoding="utf-8") as f:
+                    for i, r in enumerate(self.rows):
+                        f.write(json.dumps({"rollout": i, **r}) + "\n")
+        return _Diag()
 
 
 def wallclock_callback(limit_hours: float):

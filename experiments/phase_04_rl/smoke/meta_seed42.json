@@ -1,0 +1,52 @@
+{
+  "seed": 42,
+  "algorithm": "PPO",
+  "config_hash": "d5c13aa0d23f91df",
+  "hyperparams": {
+    "algo": "PPO",
+    "seed": 42,
+    "total_timesteps": 20480,
+    "learning_rate": 0.0003,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "ent_coef": 0.01
+  },
+  "pair": "BTC/USDT",
+  "data_range": "2020-01-01->2022-12-31",
+  "feature_list": [
+    "close",
+    "volume"
+  ],
+  "environment_version": "4.2.0",
+  "environment_hash": "581ded9e29a4c0d6",
+  "git_commit": "2555f6d4f92eacb6b550cd35a88767749d12a1a7",
+  "timestamp": "2026-09-05T12:04:10.012609+03:00",
+  "training_duration_s": 42.80931806564331,
+  "initial_capital": 100.0,
+  "fee": 0.001,
+  "slippage_bps": 5,
+  "smoke": true,
+  "normalizer_hash": "d30dab1f481ab3f6",
+  "diagnostics": "experiments\\phase_04_rl\\smoke\\diag_seed42.jsonl",
+  "validation": "2023-01-01->2023-06-30",
+  "val_metrics": {
+    "trade_count": 187,
+    "net_abs": -6.607,
+    "daily_sharpe": -0.046,
+    "sortino": -0.064,
+    "max_dd": -0.3577,
+    "profit_factor": 0.951,
+    "win_rate": 0.3957,
+    "turnover": 187,
+    "total_volume": 18892.9,
+    "fee_est": 37.79
+  },
+  "val_term_reason": "terminated_forced",
+  "val_actions": {
+    "0": 50469,
+    "1": 872,
+    "2": 453
+  }
+}
