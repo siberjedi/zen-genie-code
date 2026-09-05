@@ -35,7 +35,7 @@ def main():
                 continue
             seed_all(s)
             model = PPO.load(str(MODEL_DIR / f"phase4_{cid}_seed{s}.zip"))
-            raw, acts, eqs, term, info = rollout_trades(model, val_df)
+            raw, acts, eqs, _rews, term, info = rollout_trades(model, val_df)
             trades = finalize_trades(raw, val_df)
             dates = pd.to_datetime(val_df["date"]).dt.strftime("%Y-%m-%dT%H:%M:%S").tolist()
             out.write_text(json.dumps({

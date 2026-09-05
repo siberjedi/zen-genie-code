@@ -146,6 +146,65 @@ def test_7_timeout_callback():
     print("PASS 7 wallclock timeout callback")
 
 
+def test_8_thread_limits():
+    from src.rl.determinism import apply_thread_limits, runtime_snapshot
+    rep = apply_thread_limits(1)
+    import torch
+    assert torch.get_num_threads() == 1, torch.get_num_threads()
+    assert rep["torch_threads"] == 1
+    assert rep["cuda_available"] is False  # CPU-only politika
+    snap = runtime_snapshot()
+    assert snap["env_threads"]["OMP_NUM_THREADS"] == "1"
+    print("PASS 8 thread limitleri (torch=1, CUDA yok)")
+
+
+def test_9_canonical_hash():
+    import json
+    from src.rl.determinism import canonical_hash, save_artifacts
+    a = [0, 1, 1, 0, 2] * 200
+    e = [100.0 + i * 0.01 for i in range(1000)]
+    r = [0.0] * 999 + [0.001]
+    assert canonical_hash(a) == canonical_hash(list(a))
+    assert canonical_hash(a) != canonical_hash(a[:-1] + [1])
+    assert canonical_hash(e) == canonical_hash(list(e))
+    p = pathlib.Path("freqtrade/user_data/rl_norm/_test_art.json")
+    h = save_artifacts(p, a, e, r)
+    back = json.loads(p.read_text(encoding="utf-8"))
+    assert back["hashes"] == h and back["n_steps"] == 1000
+    assert h["actions"] == canonical_hash(a) and h["equities"] == canonical_hash(e)
+    assert h["rewards"] == canonical_hash(r)
+    p.unlink()
+    print("PASS 9 canonical hash + artifact roundtrip")
+
+
+def test_10_seed_all_deterministic_mode():
+    from src.rl.train import seed_all
+    assert seed_all(5) == 5
+    import torch
+    assert torch.get_num_threads() == 1  # seed_all kilidi korur
+    assert torch.are_deterministic_algorithms_enabled()
+    print("PASS 10 seed_all thread+deterministik modu korur")
+
+
+def test_11_model_hash_container_safe():
+    from src.rl.train import build_model, seed_all
+    from src.rl.determinism import hash_model_weights
+    seed_all(11)
+    m1 = build_model("PPO", TradingEnv(_synth(200), window=10), 11,
+                     n_steps=64, verbose=0)
+    seed_all(11)
+    m2 = build_model("PPO", TradingEnv(_synth(200), window=10), 11,
+                     n_steps=64, verbose=0)
+    assert hash_model_weights(m1.get_parameters()) == \
+        hash_model_weights(m2.get_parameters())
+    seed_all(12)
+    m3 = build_model("PPO", TradingEnv(_synth(200), window=10), 12,
+                     n_steps=64, verbose=0)
+    assert hash_model_weights(m1.get_parameters()) != \
+        hash_model_weights(m3.get_parameters())
+    print("PASS 11 model hash (container-safe, seed-duyarlı)")
+
+
 if __name__ == "__main__":
     test_1_chunk_bounds()
     test_2_chunk_no_silent_drop()
@@ -154,4 +213,8 @@ if __name__ == "__main__":
     test_5_ent_coef_passthrough()
     test_6_diagnostics_callback()
     test_7_timeout_callback()
-    print("ALL PASS — 7/7 (training YOK; test 6 mini-learn içerir)")
+    test_8_thread_limits()
+    test_9_canonical_hash()
+    test_10_seed_all_deterministic_mode()
+    test_11_model_hash_container_safe()
+    print("ALL PASS — 11/11 (training YOK; test 6 mini-learn içerir)")

@@ -132,6 +132,11 @@ def seed_all(seed: int) -> int:
         torch.backends.cudnn.benchmark = False
     except ImportError:
         pass
+    # Faz 4.6: thread kilidi + deterministik mod (R1). Davranışı değiştirmez,
+    # sadece çalışma-ortamı nondeterminizmini kapatır.
+    from src.rl.determinism import apply_thread_limits, deterministic_mode
+    apply_thread_limits(1)
+    deterministic_mode()
     return seed
 
 

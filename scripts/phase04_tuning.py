@@ -60,7 +60,7 @@ def rollout_trades(model, df):
     dates = pd.to_datetime(df["date"]).reset_index(drop=True)
     closes = df["close"].values
     cur = None
-    trades, actions, equities = [], [], []
+    trades, actions, equities, rewards = [], [], [], []
     prev_eq = 100.0  # giriş öncesi equity == deploy edilen stake (all-in, flat iken)
     done = False
     term_reason = "unknown"
@@ -70,6 +70,7 @@ def rollout_trades(model, df):
         actions.append(action)
         obs, rew, term, trunc, info = env.step(action)
         equities.append(info["equity"])
+        rewards.append(float(rew))
         pos = info["position"]
         ci = env.t - 1  # bu adımda işletilen mumun env-içi indeksi (window kaymalı!)
         if cur is None and pos == 1:
@@ -88,7 +89,7 @@ def rollout_trades(model, df):
         if trunc:
             term_reason = "truncated_bankruptcy"
             done = True
-    return trades, actions, equities, term_reason, info
+    return trades, actions, equities, rewards, term_reason, info
 
 
 def finalize_trades(raw, df):
@@ -133,9 +134,13 @@ def run_one(config_id, seed):
     model.save(str(mpath))
     mhash = hashlib.sha256(mpath.read_bytes()).hexdigest()[:16]
     # train rollout (episode reward/final equity)
-    tr_raw, tr_act, tr_eq, tr_term, tr_info = rollout_trades(model, train_df)
+    tr_raw, tr_act, tr_eq, tr_rew, tr_term, tr_info = rollout_trades(model, train_df)
     # validation rollout
-    va_raw, va_act, va_eq, va_term, va_info = rollout_trades(model, val_df)
+    va_raw, va_act, va_eq, va_rew, va_term, va_info = rollout_trades(model, val_df)
+    # Faz 4.6: validation artifact paketi (action/equity/reward hash'leri)
+    from src.rl.determinism import save_artifacts as _save_art, runtime_snapshot as _snap
+    art_hashes = _save_art(RES_DIR / f"artifacts_{config_id}_seed{seed}.json",
+                           va_act, va_eq, va_rew)
     va_trades = finalize_trades(va_raw, val_df)
     # bütünlük: trade P&L toplamı == final equity - 100
     assert abs(sum(t["profit_abs"] for t in va_trades) - (va_eq[-1] - 100.0)) < 0.05, \
@@ -169,7 +174,8 @@ def run_one(config_id, seed):
         "2020-01-01", "2022-12-31", list(TradingEnv(train_df).market_cols),
         100.0, 0.001, 5, dur,
         extra={"config_id": config_id, "validation": "2023-01-01->2023-06-30",
-               "termination_val": va_term})
+               "termination_val": va_term, "artifact_hashes": art_hashes,
+               "runtime": _snap()})
     res["metadata"] = str(meta) if isinstance(meta, str) else "meta_written"
     out_json.write_text(json.dumps(res, indent=2, default=str), encoding="utf-8")
     # ledger
