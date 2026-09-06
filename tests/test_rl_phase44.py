@@ -186,6 +186,20 @@ def test_10_seed_all_deterministic_mode():
     print("PASS 10 seed_all thread+deterministik modu korur")
 
 
+def test_12_grid47_caps():
+    import sys
+    sys.path.insert(0, str(pathlib.Path(__file__).parents[1]))
+    from scripts.phase47_tuning import GRID47, SEEDS, TIMESTEPS
+    from src.rl.train import build_grid, load_experiment_config
+    assert set(SEEDS) == {42, 7, 123, 2026, 999}
+    assert len(GRID47) == 8 and TIMESTEPS == 600_000
+    runs = build_grid({"algo": ["PPO"], "learning_rate": [1e-4, 3e-4],
+                       "ent_coef": [0.0, 0.01], "n_steps": [2048, 4096]},
+                      SEEDS, load_experiment_config())
+    assert len(runs) == 8 * 5  # 8 config x 5 seed, cap 50/5 altı
+    print("PASS 12 grid47 caps (8x5=40 runs, 50x5 altı)")
+
+
 def test_11_model_hash_container_safe():
     from src.rl.train import build_model, seed_all
     from src.rl.determinism import hash_model_weights
@@ -217,4 +231,5 @@ if __name__ == "__main__":
     test_9_canonical_hash()
     test_10_seed_all_deterministic_mode()
     test_11_model_hash_container_safe()
-    print("ALL PASS — 11/11 (training YOK; test 6 mini-learn içerir)")
+    test_12_grid47_caps()
+    print("ALL PASS — 12/12 (training YOK; test 6 mini-learn içerir)")

@@ -1,0 +1,48 @@
+{
+  "config": "E6",
+  "seed": 999,
+  "hyperparams": {
+    "learning_rate": 0.0001,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "ent_coef": 0.03
+  },
+  "timesteps": 600000,
+  "train_seconds": 1325.7,
+  "val": {
+    "trade_count": 100,
+    "net_abs": 31.53,
+    "daily_sharpe": 1.745,
+    "sortino": 1.61,
+    "max_dd": -0.2456,
+    "profit_factor": 1.361,
+    "win_rate": 0.42,
+    "turnover": 100,
+    "total_volume": 11654.4,
+    "fee_est": 23.31
+  },
+  "val_term_reason": "terminated_forced",
+  "val_actions": {
+    "0": 33794,
+    "1": 17881,
+    "2": 119
+  },
+  "val_flips": 10132,
+  "val_med_hold_min": 75.0,
+  "val_mean_hold_min": 2564.4,
+  "val_fee_total": 23.35,
+  "val_slip_total": 11.67,
+  "val_gross_total": 66.55,
+  "val_bankruptcy": false,
+  "model_hash": "a6625ff5d44ddef8",
+  "gates": {
+    "hard_fails": [
+      "invalid action %34.37 > %1"
+    ],
+    "warnings": [],
+    "pass": false,
+    "trades_day": 0.55
+  }
+}

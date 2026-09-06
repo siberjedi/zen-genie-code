@@ -1,0 +1,50 @@
+{
+  "config": "E0",
+  "seed": 999,
+  "hyperparams": {
+    "learning_rate": 0.0003,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "ent_coef": 0.0
+  },
+  "timesteps": 600000,
+  "train_seconds": 1006.3,
+  "val": {
+    "trade_count": 162,
+    "net_abs": -34.795,
+    "daily_sharpe": -6.766,
+    "sortino": -4.77,
+    "max_dd": -0.3479,
+    "profit_factor": 0.274,
+    "win_rate": 0.2284,
+    "turnover": 162,
+    "total_volume": 13484.0,
+    "fee_est": 26.97
+  },
+  "val_term_reason": "terminated",
+  "val_actions": {
+    "0": 7492,
+    "1": 516,
+    "2": 43786
+  },
+  "val_flips": 7696,
+  "val_med_hold_min": 20.0,
+  "val_mean_hold_min": 21.8,
+  "val_fee_total": 26.95,
+  "val_slip_total": 13.47,
+  "val_gross_total": 5.62,
+  "val_bankruptcy": false,
+  "model_hash": "823fe5aaab919bd7",
+  "gates": {
+    "hard_fails": [
+      "invalid action %84.91 > %1"
+    ],
+    "warnings": [
+      "fee > gross (fee \u00f6l\u00fcm\u00fc)"
+    ],
+    "pass": false,
+    "trades_day": 0.9
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "seed": 2026,
+  "algorithm": "PPO",
+  "config_hash": "5112d5a85ee1a9f7",
+  "hyperparams": {
+    "algo": "PPO",
+    "seed": 2026,
+    "total_timesteps": 600000,
+    "learning_rate": 0.0001,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "ent_coef": 0.0
+  },
+  "pair": "BTC/USDT",
+  "data_range": "2020-01-01->2022-12-31",
+  "feature_list": [
+    "close",
+    "volume"
+  ],
+  "environment_version": "4.2.0",
+  "environment_hash": "581ded9e29a4c0d6",
+  "git_commit": "6c5be5d22b837ea167d328db13f9bbe98e54c00d",
+  "timestamp": "2026-09-05T20:59:18.971499+03:00",
+  "training_duration_s": 1077.9617702960968,
+  "initial_capital": 100.0,
+  "fee": 0.001,
+  "slippage_bps": 5,
+  "phase": "4.7",
+  "grid": "E4",
+  "normalizer_hash": "d30dab1f481ab3f6",
+  "runtime": {
+    "determinism_lib": "1.0",
+    "torch_threads": 1,
+    "torch_interop": 1,
+    "cuda_available": false,
+    "cuda_used": false,
+    "env_threads": {
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "PYTHONHASHSEED": null
+    }
+  },
+  "diagnostics": "diag_E4_seed2026.jsonl",
+  "model_hash": "20e3476f81043d39",
+  "artifact_hashes": {
+    "actions": "09551921b0905552",
+    "equities": "f00248d718bc27b1",
+    "rewards": "13b256017209f66d"
+  },
+  "gates": {
+    "hard_fails": [
+      "invalid action %75.08 > %1"
+    ],
+    "warnings": [
+      "fee > gross (fee \u00f6l\u00fcm\u00fc)"
+    ],
+    "pass": false,
+    "trades_day": 1.27
+  },
+  "slippage_total": 21.51,
+  "gross_total": 42.69,
+  "termination_val": "terminated_forced",
+  "val_actions": {
+    "0": 12450,
+    "1": 38236,
+    "2": 1108
+  },
+  "val_flips": 10536,
+  "val_med_hold_min": 40.0,
+  "val_mean_hold_min": 1094.7
+}
