@@ -1,0 +1,1849 @@
+{
+  "E1": {
+    "42": {
+      "n_replay": 40,
+      "n_recorded": 40,
+      "replay_net": 37.503,
+      "recorded_net": 37.504,
+      "env_final_equity": 137.504,
+      "trades": [
+        {
+          "open_idx": 376,
+          "close_idx": 496,
+          "forced": false,
+          "net": -0.337,
+          "stake": 100.0
+        },
+        {
+          "open_idx": 751,
+          "close_idx": 2139,
+          "forced": false,
+          "net": 0.824,
+          "stake": 99.66
+        },
+        {
+          "open_idx": 2206,
+          "close_idx": 3183,
+          "forced": false,
+          "net": 6.615,
+          "stake": 100.49
+        },
+        {
+          "open_idx": 3191,
+          "close_idx": 3201,
+          "forced": false,
+          "net": -0.152,
+          "stake": 107.1
+        },
+        {
+          "open_idx": 3207,
+          "close_idx": 3334,
+          "forced": false,
+          "net": 0.085,
+          "stake": 106.95
+        },
+        {
+          "open_idx": 3347,
+          "close_idx": 3351,
+          "forced": false,
+          "net": 0.389,
+          "stake": 107.04
+        },
+        {
+          "open_idx": 3358,
+          "close_idx": 3766,
+          "forced": false,
+          "net": 16.216,
+          "stake": 107.42
+        },
+        {
+          "open_idx": 3768,
+          "close_idx": 4092,
+          "forced": false,
+          "net": -1.614,
+          "stake": 123.64
+        },
+        {
+          "open_idx": 4167,
+          "close_idx": 4205,
+          "forced": false,
+          "net": -0.293,
+          "stake": 122.03
+        },
+        {
+          "open_idx": 4243,
+          "close_idx": 4278,
+          "forced": false,
+          "net": -1.174,
+          "stake": 121.73
+        },
+        {
+          "open_idx": 4335,
+          "close_idx": 4352,
+          "forced": false,
+          "net": -0.07,
+          "stake": 120.56
+        },
+        {
+          "open_idx": 4364,
+          "close_idx": 4440,
+          "forced": false,
+          "net": -1.489,
+          "stake": 120.49
+        },
+        {
+          "open_idx": 4446,
+          "close_idx": 5899,
+          "forced": false,
+          "net": 11.51,
+          "stake": 119.0
+        },
+        {
+          "open_idx": 5908,
+          "close_idx": 7813,
+          "forced": false,
+          "net": 0.06,
+          "stake": 130.51
+        },
+        {
+          "open_idx": 8096,
+          "close_idx": 8601,
+          "forced": false,
+          "net": -3.028,
+          "stake": 130.57
+        },
+        {
+          "open_idx": 8625,
+          "close_idx": 10188,
+          "forced": false,
+          "net": 3.347,
+          "stake": 127.54
+        },
+        {
+          "open_idx": 10263,
+          "close_idx": 10889,
+          "forced": false,
+          "net": -1.114,
+          "stake": 130.89
+        },
+        {
+          "open_idx": 10893,
+          "close_idx": 12838,
+          "forced": false,
+          "net": -7.82,
+          "stake": 129.78
+        },
+        {
+          "open_idx": 12850,
+          "close_idx": 12855,
+          "forced": false,
+          "net": 0.802,
+          "stake": 121.96
+        },
+        {
+          "open_idx": 12864,
+          "close_idx": 13540,
+          "forced": false,
+          "net": 8.002,
+          "stake": 122.76
+        },
+        {
+          "open_idx": 13565,
+          "close_idx": 14085,
+          "forced": false,
+          "net": 3.823,
+          "stake": 130.76
+        },
+        {
+          "open_idx": 14324,
+          "close_idx": 15424,
+          "forced": false,
+          "net": -2.783,
+          "stake": 134.58
+        },
+        {
+          "open_idx": 15442,
+          "close_idx": 16192,
+          "forced": false,
+          "net": -5.155,
+          "stake": 131.8
+        },
+        {
+          "open_idx": 16354,
+          "close_idx": 17252,
+          "forced": false,
+          "net": -0.223,
+          "stake": 126.65
+        },
+        {
+          "open_idx": 17260,
+          "close_idx": 17605,
+          "forced": false,
+          "net": -6.43,
+          "stake": 126.42
+        },
+        {
+          "open_idx": 17612,
+          "close_idx": 18080,
+          "forced": false,
+          "net": -0.561,
+          "stake": 119.99
+        },
+        {
+          "open_idx": 18133,
+          "close_idx": 18179,
+          "forced": false,
+          "net": -0.146,
+          "stake": 119.43
+        },
+        {
+          "open_idx": 18204,
+          "close_idx": 18276,
+          "forced": false,
+          "net": -0.465,
+          "stake": 119.28
+        },
+        {
+          "open_idx": 18415,
+          "close_idx": 18486,
+          "forced": false,
+          "net": -0.704,
+          "stake": 118.82
+        },
+        {
+          "open_idx": 18650,
+          "close_idx": 19519,
+          "forced": false,
+          "net": -7.766,
+          "stake": 118.12
+        },
+        {
+          "open_idx": 19525,
+          "close_idx": 19601,
+          "forced": false,
+          "net": -5.244,
+          "stake": 110.35
+        },
+        {
+          "open_idx": 19615,
+          "close_idx": 20388,
+          "forced": false,
+          "net": 5.374,
+          "stake": 105.11
+        },
+        {
+          "open_idx": 20397,
+          "close_idx": 20406,
+          "forced": false,
+          "net": 1.428,
+          "stake": 110.48
+        },
+        {
+          "open_idx": 20412,
+          "close_idx": 20449,
+          "forced": false,
+          "net": 3.456,
+          "stake": 111.91
+        },
+        {
+          "open_idx": 20472,
+          "close_idx": 20890,
+          "forced": false,
+          "net": 18.74,
+          "stake": 115.36
+        },
+        {
+          "open_idx": 20896,
+          "close_idx": 22090,
+          "forced": false,
+          "net": 7.449,
+          "stake": 134.1
+        },
+        {
+          "open_idx": 22104,
+          "close_idx": 23098,
+          "forced": false,
+          "net": 4.215,
+          "stake": 141.55
+        },
+        {
+          "open_idx": 23246,
+          "close_idx": 23269,
+          "forced": false,
+          "net": -6.259,
+          "stake": 145.77
+        },
+        {
+          "open_idx": 23272,
+          "close_idx": 23338,
+          "forced": false,
+          "net": -1.449,
+          "stake": 139.51
+        },
+        {
+          "open_idx": 44845,
+          "close_idx": 44870,
+          "forced": false,
+          "net": -0.556,
+          "stake": 138.06
+        }
+      ],
+      "holds_min": [
+        20,
+        25,
+        45,
+        50,
+        85,
+        115,
+        125,
+        175,
+        185,
+        190,
+        230,
+        330,
+        355,
+        360,
+        380,
+        380,
+        600,
+        635,
+        1620,
+        1725,
+        2040,
+        2090,
+        2340,
+        2525,
+        2600,
+        3130,
+        3380,
+        3750,
+        3865,
+        4345,
+        4490,
+        4885,
+        4970,
+        5500,
+        5970,
+        6940,
+        7265,
+        7815,
+        9525,
+        9725
+      ],
+      "top3_share": 1.239
+    },
+    "7": {
+      "n_replay": 7,
+      "n_recorded": 7,
+      "replay_net": -2.722,
+      "recorded_net": -2.722,
+      "env_final_equity": 97.278,
+      "trades": [
+        {
+          "open_idx": 5089,
+          "close_idx": 5090,
+          "forced": false,
+          "net": -0.497,
+          "stake": 100.0
+        },
+        {
+          "open_idx": 17603,
+          "close_idx": 17604,
+          "forced": false,
+          "net": -0.501,
+          "stake": 99.5
+        },
+        {
+          "open_idx": 18176,
+          "close_idx": 18178,
+          "forced": false,
+          "net": -0.199,
+          "stake": 99.0
+        },
+        {
+          "open_idx": 19541,
+          "close_idx": 19543,
+          "forced": false,
+          "net": -0.367,
+          "stake": 98.8
+        },
+        {
+          "open_idx": 20990,
+          "close_idx": 20991,
+          "forced": false,
+          "net": -0.568,
+          "stake": 98.44
+        },
+        {
+          "open_idx": 21746,
+          "close_idx": 21747,
+          "forced": false,
+          "net": -0.269,
+          "stake": 97.87
+        },
+        {
+          "open_idx": 37355,
+          "close_idx": 37356,
+          "forced": false,
+          "net": -0.321,
+          "stake": 97.6
+        }
+      ],
+      "holds_min": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        10,
+        10
+      ],
+      "top3_share": 0.29
+    },
+    "123": {
+      "n_replay": 117,
+      "n_recorded": 117,
+      "replay_net": 18.749,
+      "recorded_net": 18.74,
+      "env_final_equity": 118.751,
+      "trades": [
+        {
+          "open_idx": 30,
+          "close_idx": 389,
+          "forced": false,
+          "net": 0.783,
+          "stake": 100.0
+        },
+        {
+          "open_idx": 390,
+          "close_idx": 3332,
+          "forced": false,
+          "net": 8.11,
+          "stake": 100.78
+        },
+        {
+          "open_idx": 3333,
+          "close_idx": 3345,
+          "forced": false,
+          "net": -1.742,
+          "stake": 108.89
+        },
+        {
+          "open_idx": 3346,
+          "close_idx": 3721,
+          "forced": false,
+          "net": 10.924,
+          "stake": 107.15
+        },
+        {
+          "open_idx": 3722,
+          "close_idx": 5072,
+          "forced": false,
+          "net": 8.235,
+          "stake": 118.08
+        },
+        {
+          "open_idx": 5074,
+          "close_idx": 5092,
+          "forced": false,
+          "net": -4.849,
+          "stake": 126.31
+        },
+        {
+          "open_idx": 5094,
+          "close_idx": 5104,
+          "forced": false,
+          "net": 1.117,
+          "stake": 121.46
+        },
+        {
+          "open_idx": 5105,
+          "close_idx": 5106,
+          "forced": false,
+          "net": -0.484,
+          "stake": 122.58
+        },
+        {
+          "open_idx": 5107,
+          "close_idx": 5727,
+          "forced": false,
+          "net": 7.197,
+          "stake": 122.09
+        },
+        {
+          "open_idx": 5728,
+          "close_idx": 5890,
+          "forced": false,
+          "net": 2.191,
+          "stake": 129.29
+        },
+        {
+          "open_idx": 5892,
+          "close_idx": 6518,
+          "forced": false,
+          "net": -0.222,
+          "stake": 131.48
+        },
+        {
+          "open_idx": 6519,
+          "close_idx": 6520,
+          "forced": false,
+          "net": -0.108,
+          "stake": 131.26
+        },
+        {
+          "open_idx": 6521,
+          "close_idx": 7181,
+          "forced": false,
+          "net": 2.619,
+          "stake": 131.15
+        },
+        {
+          "open_idx": 7182,
+          "close_idx": 8467,
+          "forced": false,
+          "net": -1.685,
+          "stake": 133.77
+        },
+        {
+          "open_idx": 8468,
+          "close_idx": 9168,
+          "forced": false,
+          "net": 1.057,
+          "stake": 132.09
+        },
+        {
+          "open_idx": 9170,
+          "close_idx": 10883,
+          "forced": false,
+          "net": -3.021,
+          "stake": 133.14
+        },
+        {
+          "open_idx": 10884,
+          "close_idx": 10887,
+          "forced": false,
+          "net": -0.016,
+          "stake": 130.12
+        },
+        {
+          "open_idx": 10888,
+          "close_idx": 11145,
+          "forced": false,
+          "net": -1.407,
+          "stake": 130.11
+        },
+        {
+          "open_idx": 11146,
+          "close_idx": 11470,
+          "forced": false,
+          "net": -5.403,
+          "stake": 128.7
+        },
+        {
+          "open_idx": 11471,
+          "close_idx": 11715,
+          "forced": false,
+          "net": -2.413,
+          "stake": 123.3
+        },
+        {
+          "open_idx": 11716,
+          "close_idx": 12852,
+          "forced": false,
+          "net": 2.763,
+          "stake": 120.88
+        },
+        {
+          "open_idx": 12853,
+          "close_idx": 12854,
+          "forced": false,
+          "net": -0.051,
+          "stake": 123.65
+        },
+        {
+          "open_idx": 12858,
+          "close_idx": 13112,
+          "forced": false,
+          "net": 3.485,
+          "stake": 123.6
+        },
+        {
+          "open_idx": 13113,
+          "close_idx": 13196,
+          "forced": false,
+          "net": 2.633,
+          "stake": 127.08
+        },
+        {
+          "open_idx": 13197,
+          "close_idx": 13204,
+          "forced": false,
+          "net": 2.6,
+          "stake": 129.71
+        },
+        {
+          "open_idx": 13205,
+          "close_idx": 13206,
+          "forced": false,
+          "net": 1.873,
+          "stake": 132.32
+        },
+        {
+          "open_idx": 13207,
+          "close_idx": 13208,
+          "forced": false,
+          "net": -0.559,
+          "stake": 134.19
+        },
+        {
+          "open_idx": 13210,
+          "close_idx": 13729,
+          "forced": false,
+          "net": 0.168,
+          "stake": 133.63
+        },
+        {
+          "open_idx": 13730,
+          "close_idx": 13783,
+          "forced": false,
+          "net": 2.448,
+          "stake": 133.8
+        },
+        {
+          "open_idx": 13784,
+          "close_idx": 14311,
+          "forced": false,
+          "net": 0.478,
+          "stake": 136.25
+        },
+        {
+          "open_idx": 14312,
+          "close_idx": 14586,
+          "forced": false,
+          "net": -0.401,
+          "stake": 136.72
+        },
+        {
+          "open_idx": 14587,
+          "close_idx": 15162,
+          "forced": false,
+          "net": -7.637,
+          "stake": 136.32
+        },
+        {
+          "open_idx": 15163,
+          "close_idx": 15742,
+          "forced": false,
+          "net": -2.005,
+          "stake": 128.69
+        },
+        {
+          "open_idx": 15743,
+          "close_idx": 15749,
+          "forced": false,
+          "net": -1.51,
+          "stake": 126.68
+        },
+        {
+          "open_idx": 15751,
+          "close_idx": 17590,
+          "forced": false,
+          "net": -5.087,
+          "stake": 125.17
+        },
+        {
+          "open_idx": 17592,
+          "close_idx": 17598,
+          "forced": false,
+          "net": 0.071,
+          "stake": 120.08
+        },
+        {
+          "open_idx": 17599,
+          "close_idx": 18904,
+          "forced": false,
+          "net": -0.699,
+          "stake": 120.16
+        },
+        {
+          "open_idx": 18905,
+          "close_idx": 18906,
+          "forced": false,
+          "net": 0.003,
+          "stake": 119.46
+        },
+        {
+          "open_idx": 18907,
+          "close_idx": 18908,
+          "forced": false,
+          "net": -0.653,
+          "stake": 119.46
+        },
+        {
+          "open_idx": 18909,
+          "close_idx": 19194,
+          "forced": false,
+          "net": -1.364,
+          "stake": 118.8
+        },
+        {
+          "open_idx": 19195,
+          "close_idx": 19528,
+          "forced": false,
+          "net": -6.711,
+          "stake": 117.44
+        },
+        {
+          "open_idx": 19529,
+          "close_idx": 19532,
+          "forced": false,
+          "net": -0.406,
+          "stake": 110.73
+        },
+        {
+          "open_idx": 19533,
+          "close_idx": 19550,
+          "forced": false,
+          "net": -3.406,
+          "stake": 110.32
+        },
+        {
+          "open_idx": 19553,
+          "close_idx": 19602,
+          "forced": false,
+          "net": -1.884,
+          "stake": 106.92
+        },
+        {
+          "open_idx": 19605,
+          "close_idx": 19715,
+          "forced": false,
+          "net": -2.635,
+          "stake": 105.03
+        },
+        {
+          "open_idx": 19717,
+          "close_idx": 19752,
+          "forced": false,
+          "net": 2.192,
+          "stake": 102.4
+        },
+        {
+          "open_idx": 19753,
+          "close_idx": 19896,
+          "forced": false,
+          "net": 2.87,
+          "stake": 104.59
+        },
+        {
+          "open_idx": 19899,
+          "close_idx": 19969,
+          "forced": false,
+          "net": -3.126,
+          "stake": 107.46
+        },
+        {
+          "open_idx": 19970,
+          "close_idx": 20375,
+          "forced": false,
+          "net": 4.357,
+          "stake": 104.33
+        },
+        {
+          "open_idx": 20376,
+          "close_idx": 20383,
+          "forced": false,
+          "net": 1.144,
+          "stake": 108.69
+        },
+        {
+          "open_idx": 20384,
+          "close_idx": 20385,
+          "forced": false,
+          "net": -0.215,
+          "stake": 109.83
+        },
+        {
+          "open_idx": 20386,
+          "close_idx": 20387,
+          "forced": false,
+          "net": -0.903,
+          "stake": 109.62
+        },
+        {
+          "open_idx": 20389,
+          "close_idx": 20460,
+          "forced": false,
+          "net": 5.821,
+          "stake": 108.72
+        },
+        {
+          "open_idx": 20461,
+          "close_idx": 20462,
+          "forced": false,
+          "net": -0.648,
+          "stake": 114.54
+        },
+        {
+          "open_idx": 20463,
+          "close_idx": 20567,
+          "forced": false,
+          "net": -2.148,
+          "stake": 113.89
+        },
+        {
+          "open_idx": 20570,
+          "close_idx": 20610,
+          "forced": false,
+          "net": 1.512,
+          "stake": 111.74
+        },
+        {
+          "open_idx": 20612,
+          "close_idx": 20614,
+          "forced": false,
+          "net": 0.422,
+          "stake": 113.25
+        },
+        {
+          "open_idx": 20615,
+          "close_idx": 20616,
+          "forced": false,
+          "net": -0.275,
+          "stake": 113.68
+        },
+        {
+          "open_idx": 20617,
+          "close_idx": 20618,
+          "forced": false,
+          "net": -0.274,
+          "stake": 113.4
+        },
+        {
+          "open_idx": 20619,
+          "close_idx": 20621,
+          "forced": false,
+          "net": 0.894,
+          "stake": 113.13
+        },
+        {
+          "open_idx": 20623,
+          "close_idx": 20624,
+          "forced": false,
+          "net": 0.028,
+          "stake": 114.02
+        },
+        {
+          "open_idx": 20626,
+          "close_idx": 20628,
+          "forced": false,
+          "net": 1.859,
+          "stake": 114.05
+        },
+        {
+          "open_idx": 20629,
+          "close_idx": 20631,
+          "forced": false,
+          "net": -0.714,
+          "stake": 115.91
+        },
+        {
+          "open_idx": 20636,
+          "close_idx": 20873,
+          "forced": false,
+          "net": 2.081,
+          "stake": 115.2
+        },
+        {
+          "open_idx": 20875,
+          "close_idx": 20886,
+          "forced": false,
+          "net": 1.7,
+          "stake": 117.28
+        },
+        {
+          "open_idx": 20887,
+          "close_idx": 20888,
+          "forced": false,
+          "net": 1.482,
+          "stake": 118.98
+        },
+        {
+          "open_idx": 20889,
+          "close_idx": 20891,
+          "forced": false,
+          "net": 0.107,
+          "stake": 120.46
+        },
+        {
+          "open_idx": 20893,
+          "close_idx": 20900,
+          "forced": false,
+          "net": -1.815,
+          "stake": 120.57
+        },
+        {
+          "open_idx": 20903,
+          "close_idx": 20904,
+          "forced": false,
+          "net": -0.736,
+          "stake": 118.75
+        },
+        {
+          "open_idx": 20905,
+          "close_idx": 20917,
+          "forced": false,
+          "net": -0.05,
+          "stake": 118.01
+        },
+        {
+          "open_idx": 20918,
+          "close_idx": 20958,
+          "forced": false,
+          "net": -2.107,
+          "stake": 117.96
+        },
+        {
+          "open_idx": 20959,
+          "close_idx": 20967,
+          "forced": false,
+          "net": -3.306,
+          "stake": 115.86
+        },
+        {
+          "open_idx": 20970,
+          "close_idx": 20972,
+          "forced": false,
+          "net": -0.239,
+          "stake": 112.55
+        },
+        {
+          "open_idx": 20974,
+          "close_idx": 20979,
+          "forced": false,
+          "net": -0.076,
+          "stake": 112.31
+        },
+        {
+          "open_idx": 20980,
+          "close_idx": 21164,
+          "forced": false,
+          "net": -1.622,
+          "stake": 112.24
+        },
+        {
+          "open_idx": 21165,
+          "close_idx": 21166,
+          "forced": false,
+          "net": 0.399,
+          "stake": 110.61
+        },
+        {
+          "open_idx": 21167,
+          "close_idx": 21177,
+          "forced": false,
+          "net": -1.035,
+          "stake": 111.01
+        },
+        {
+          "open_idx": 21182,
+          "close_idx": 21188,
+          "forced": false,
+          "net": -0.735,
+          "stake": 109.98
+        },
+        {
+          "open_idx": 21190,
+          "close_idx": 21477,
+          "forced": false,
+          "net": -1.22,
+          "stake": 109.24
+        },
+        {
+          "open_idx": 21478,
+          "close_idx": 21726,
+          "forced": false,
+          "net": 7.026,
+          "stake": 108.02
+        },
+        {
+          "open_idx": 21727,
+          "close_idx": 21778,
+          "forced": false,
+          "net": -2.063,
+          "stake": 115.05
+        },
+        {
+          "open_idx": 21779,
+          "close_idx": 21875,
+          "forced": false,
+          "net": 4.934,
+          "stake": 112.98
+        },
+        {
+          "open_idx": 21878,
+          "close_idx": 22088,
+          "forced": false,
+          "net": -1.437,
+          "stake": 117.92
+        },
+        {
+          "open_idx": 22089,
+          "close_idx": 22090,
+          "forced": false,
+          "net": -0.267,
+          "stake": 116.48
+        },
+        {
+          "open_idx": 22093,
+          "close_idx": 22100,
+          "forced": false,
+          "net": -0.66,
+          "stake": 116.21
+        },
+        {
+          "open_idx": 22101,
+          "close_idx": 22371,
+          "forced": false,
+          "net": 1.363,
+          "stake": 115.56
+        },
+        {
+          "open_idx": 22372,
+          "close_idx": 22381,
+          "forced": false,
+          "net": 1.015,
+          "stake": 116.92
+        },
+        {
+          "open_idx": 22383,
+          "close_idx": 22560,
+          "forced": false,
+          "net": 0.773,
+          "stake": 117.93
+        },
+        {
+          "open_idx": 22564,
+          "close_idx": 22577,
+          "forced": false,
+          "net": -0.083,
+          "stake": 118.71
+        },
+        {
+          "open_idx": 22578,
+          "close_idx": 22634,
+          "forced": false,
+          "net": -1.727,
+          "stake": 118.62
+        },
+        {
+          "open_idx": 22635,
+          "close_idx": 22840,
+          "forced": false,
+          "net": -2.294,
+          "stake": 116.9
+        },
+        {
+          "open_idx": 22841,
+          "close_idx": 22843,
+          "forced": false,
+          "net": -0.467,
+          "stake": 114.6
+        },
+        {
+          "open_idx": 22844,
+          "close_idx": 22874,
+          "forced": false,
+          "net": 1.658,
+          "stake": 114.14
+        },
+        {
+          "open_idx": 22875,
+          "close_idx": 23261,
+          "forced": false,
+          "net": 1.346,
+          "stake": 115.79
+        },
+        {
+          "open_idx": 23264,
+          "close_idx": 23270,
+          "forced": false,
+          "net": -3.639,
+          "stake": 117.14
+        },
+        {
+          "open_idx": 23274,
+          "close_idx": 23277,
+          "forced": false,
+          "net": -2.453,
+          "stake": 113.5
+        },
+        {
+          "open_idx": 23278,
+          "close_idx": 24648,
+          "forced": false,
+          "net": 0.174,
+          "stake": 111.05
+        },
+        {
+          "open_idx": 24652,
+          "close_idx": 24671,
+          "forced": false,
+          "net": 0.43,
+          "stake": 111.22
+        },
+        {
+          "open_idx": 24672,
+          "close_idx": 25132,
+          "forced": false,
+          "net": 3.824,
+          "stake": 111.65
+        },
+        {
+          "open_idx": 25136,
+          "close_idx": 25370,
+          "forced": false,
+          "net": 1.633,
+          "stake": 115.48
+        },
+        {
+          "open_idx": 25374,
+          "close_idx": 28712,
+          "forced": false,
+          "net": 2.531,
+          "stake": 117.11
+        },
+        {
+          "open_idx": 28714,
+          "close_idx": 29236,
+          "forced": false,
+          "net": 3.647,
+          "stake": 119.64
+        },
+        {
+          "open_idx": 29241,
+          "close_idx": 31201,
+          "forced": false,
+          "net": -4.206,
+          "stake": 123.29
+        },
+        {
+          "open_idx": 31205,
+          "close_idx": 31907,
+          "forced": false,
+          "net": -8.045,
+          "stake": 119.08
+        },
+        {
+          "open_idx": 31908,
+          "close_idx": 33267,
+          "forced": false,
+          "net": 9.019,
+          "stake": 111.04
+        },
+        {
+          "open_idx": 33270,
+          "close_idx": 33410,
+          "forced": false,
+          "net": -4.275,
+          "stake": 120.06
+        },
+        {
+          "open_idx": 33415,
+          "close_idx": 35020,
+          "forced": false,
+          "net": -0.642,
+          "stake": 115.78
+        },
+        {
+          "open_idx": 35024,
+          "close_idx": 36168,
+          "forced": false,
+          "net": -0.401,
+          "stake": 115.14
+        },
+        {
+          "open_idx": 36172,
+          "close_idx": 37300,
+          "forced": false,
+          "net": -2.201,
+          "stake": 114.74
+        },
+        {
+          "open_idx": 37305,
+          "close_idx": 37350,
+          "forced": false,
+          "net": -3.702,
+          "stake": 112.54
+        },
+        {
+          "open_idx": 37362,
+          "close_idx": 44823,
+          "forced": false,
+          "net": -6.817,
+          "stake": 108.83
+        },
+        {
+          "open_idx": 44824,
+          "close_idx": 44830,
+          "forced": false,
+          "net": -0.758,
+          "stake": 102.02
+        },
+        {
+          "open_idx": 44831,
+          "close_idx": 46130,
+          "forced": false,
+          "net": -0.924,
+          "stake": 101.26
+        },
+        {
+          "open_idx": 46133,
+          "close_idx": 48889,
+          "forced": false,
+          "net": 4.008,
+          "stake": 100.33
+        },
+        {
+          "open_idx": 48890,
+          "close_idx": 50006,
+          "forced": false,
+          "net": 16.547,
+          "stake": 104.34
+        },
+        {
+          "open_idx": 50007,
+          "close_idx": 50012,
+          "forced": false,
+          "net": 0.714,
+          "stake": 120.89
+        },
+        {
+          "open_idx": 50013,
+          "close_idx": 51824,
+          "forced": true,
+          "net": -2.853,
+          "stake": 121.6
+        }
+      ],
+      "holds_min": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        5,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        10,
+        15,
+        15,
+        15,
+        25,
+        25,
+        30,
+        30,
+        30,
+        30,
+        30,
+        35,
+        35,
+        35,
+        35,
+        40,
+        45,
+        50,
+        50,
+        55,
+        60,
+        60,
+        65,
+        85,
+        90,
+        95,
+        150,
+        175,
+        200,
+        200,
+        225,
+        245,
+        255,
+        265,
+        280,
+        350,
+        355,
+        415,
+        480,
+        520,
+        550,
+        700,
+        715,
+        810,
+        885,
+        920,
+        1025,
+        1050,
+        1170,
+        1185,
+        1220,
+        1240,
+        1270,
+        1285,
+        1350,
+        1370,
+        1425,
+        1435,
+        1620,
+        1665,
+        1795,
+        1875,
+        1930,
+        2025,
+        2300,
+        2595,
+        2610,
+        2635,
+        2875,
+        2895,
+        3100,
+        3130,
+        3300,
+        3500,
+        3510,
+        5580,
+        5640,
+        5680,
+        5720,
+        6425,
+        6495,
+        6525,
+        6750,
+        6795,
+        6850,
+        8025,
+        8565,
+        9055,
+        9195,
+        9800,
+        13780,
+        14710,
+        16690,
+        37305
+      ],
+      "top3_share": 1.946
+    },
+    "2026": {
+      "n_replay": 0,
+      "n_recorded": 0,
+      "replay_net": 0,
+      "recorded_net": 0.0,
+      "env_final_equity": 100.0,
+      "trades": [],
+      "holds_min": [],
+      "top3_share": 0.0
+    },
+    "999": {
+      "n_replay": 11,
+      "n_recorded": 11,
+      "replay_net": 80.8,
+      "recorded_net": 80.784,
+      "env_final_equity": 180.8,
+      "trades": [
+        {
+          "open_idx": 303,
+          "close_idx": 4432,
+          "forced": false,
+          "net": 25.267,
+          "stake": 100.0
+        },
+        {
+          "open_idx": 4445,
+          "close_idx": 5096,
+          "forced": false,
+          "net": -2.497,
+          "stake": 125.27
+        },
+        {
+          "open_idx": 5098,
+          "close_idx": 5909,
+          "forced": false,
+          "net": 13.745,
+          "stake": 122.77
+        },
+        {
+          "open_idx": 5910,
+          "close_idx": 12849,
+          "forced": false,
+          "net": -7.008,
+          "stake": 136.51
+        },
+        {
+          "open_idx": 12851,
+          "close_idx": 12860,
+          "forced": false,
+          "net": -1.893,
+          "stake": 129.51
+        },
+        {
+          "open_idx": 12861,
+          "close_idx": 17615,
+          "forced": false,
+          "net": 1.168,
+          "stake": 127.61
+        },
+        {
+          "open_idx": 17616,
+          "close_idx": 19760,
+          "forced": false,
+          "net": -15.12,
+          "stake": 128.78
+        },
+        {
+          "open_idx": 19761,
+          "close_idx": 20900,
+          "forced": false,
+          "net": 34.875,
+          "stake": 113.66
+        },
+        {
+          "open_idx": 20901,
+          "close_idx": 23266,
+          "forced": false,
+          "net": 12.642,
+          "stake": 148.54
+        },
+        {
+          "open_idx": 23269,
+          "close_idx": 23275,
+          "forced": false,
+          "net": -2.363,
+          "stake": 161.18
+        },
+        {
+          "open_idx": 23279,
+          "close_idx": 51824,
+          "forced": true,
+          "net": 21.984,
+          "stake": 158.82
+        }
+      ],
+      "holds_min": [
+        30,
+        45,
+        3255,
+        4055,
+        5695,
+        10720,
+        11825,
+        20645,
+        23770,
+        34695,
+        142725
+      ],
+      "top3_share": 1.016
+    }
+  },
+  "scatter": [
+    {
+      "config": "E0",
+      "seed": 42,
+      "n": 176,
+      "sharpe": 0.761,
+      "net": 14.309
+    },
+    {
+      "config": "E0",
+      "seed": 7,
+      "n": 342,
+      "sharpe": -3.59,
+      "net": -47.889
+    },
+    {
+      "config": "E0",
+      "seed": 123,
+      "n": 21,
+      "sharpe": -0.185,
+      "net": -3.854
+    },
+    {
+      "config": "E0",
+      "seed": 2026,
+      "n": 554,
+      "sharpe": -5.525,
+      "net": -77.13
+    },
+    {
+      "config": "E0",
+      "seed": 999,
+      "n": 162,
+      "sharpe": -6.766,
+      "net": -34.795
+    },
+    {
+      "config": "E1",
+      "seed": 42,
+      "n": 40,
+      "sharpe": 1.697,
+      "net": 37.504
+    },
+    {
+      "config": "E1",
+      "seed": 7,
+      "n": 7,
+      "sharpe": -3.641,
+      "net": -2.722
+    },
+    {
+      "config": "E1",
+      "seed": 123,
+      "n": 117,
+      "sharpe": 0.946,
+      "net": 18.74
+    },
+    {
+      "config": "E1",
+      "seed": 2026,
+      "n": 0,
+      "sharpe": 0.0,
+      "net": 0.0
+    },
+    {
+      "config": "E1",
+      "seed": 999,
+      "n": 11,
+      "sharpe": 2.123,
+      "net": 80.784
+    },
+    {
+      "config": "E2",
+      "seed": 42,
+      "n": 7,
+      "sharpe": 1.63,
+      "net": 2.833
+    },
+    {
+      "config": "E2",
+      "seed": 7,
+      "n": 423,
+      "sharpe": -2.722,
+      "net": -49.828
+    },
+    {
+      "config": "E2",
+      "seed": 123,
+      "n": 127,
+      "sharpe": 1.414,
+      "net": 28.9
+    },
+    {
+      "config": "E2",
+      "seed": 2026,
+      "n": 191,
+      "sharpe": -0.034,
+      "net": -5.92
+    },
+    {
+      "config": "E2",
+      "seed": 999,
+      "n": 453,
+      "sharpe": -6.255,
+      "net": -69.502
+    },
+    {
+      "config": "E3",
+      "seed": 42,
+      "n": 144,
+      "sharpe": -0.894,
+      "net": -12.47
+    },
+    {
+      "config": "E3",
+      "seed": 7,
+      "n": 85,
+      "sharpe": 1.568,
+      "net": 30.386
+    },
+    {
+      "config": "E3",
+      "seed": 123,
+      "n": 391,
+      "sharpe": -2.822,
+      "net": -56.848
+    },
+    {
+      "config": "E3",
+      "seed": 2026,
+      "n": 1,
+      "sharpe": -1.424,
+      "net": -0.78
+    },
+    {
+      "config": "E3",
+      "seed": 999,
+      "n": 265,
+      "sharpe": -0.991,
+      "net": -21.285
+    },
+    {
+      "config": "E4",
+      "seed": 42,
+      "n": 5,
+      "sharpe": 1.35,
+      "net": 16.537
+    },
+    {
+      "config": "E4",
+      "seed": 7,
+      "n": 212,
+      "sharpe": -1.289,
+      "net": -25.928
+    },
+    {
+      "config": "E4",
+      "seed": 123,
+      "n": 263,
+      "sharpe": -2.499,
+      "net": -40.955
+    },
+    {
+      "config": "E4",
+      "seed": 2026,
+      "n": 230,
+      "sharpe": -1.249,
+      "net": -21.847
+    },
+    {
+      "config": "E4",
+      "seed": 999,
+      "n": 109,
+      "sharpe": 1.6,
+      "net": 41.404
+    },
+    {
+      "config": "E5",
+      "seed": 42,
+      "n": 35,
+      "sharpe": -0.003,
+      "net": -3.108
+    },
+    {
+      "config": "E5",
+      "seed": 7,
+      "n": 114,
+      "sharpe": -1.23,
+      "net": -16.087
+    },
+    {
+      "config": "E5",
+      "seed": 123,
+      "n": 64,
+      "sharpe": -0.228,
+      "net": -4.742
+    },
+    {
+      "config": "E5",
+      "seed": 2026,
+      "n": 216,
+      "sharpe": -0.368,
+      "net": -10.604
+    },
+    {
+      "config": "E5",
+      "seed": 999,
+      "n": 28,
+      "sharpe": -0.913,
+      "net": -5.407
+    },
+    {
+      "config": "E6",
+      "seed": 42,
+      "n": 134,
+      "sharpe": -0.113,
+      "net": -4.748
+    },
+    {
+      "config": "E6",
+      "seed": 7,
+      "n": 83,
+      "sharpe": -4.452,
+      "net": -18.667
+    },
+    {
+      "config": "E6",
+      "seed": 123,
+      "n": 134,
+      "sharpe": -1.478,
+      "net": -21.977
+    },
+    {
+      "config": "E6",
+      "seed": 2026,
+      "n": 143,
+      "sharpe": 1.183,
+      "net": 21.466
+    },
+    {
+      "config": "E6",
+      "seed": 999,
+      "n": 100,
+      "sharpe": 1.745,
+      "net": 31.53
+    },
+    {
+      "config": "E7",
+      "seed": 42,
+      "n": 90,
+      "sharpe": 1.415,
+      "net": 39.693
+    },
+    {
+      "config": "E7",
+      "seed": 7,
+      "n": 377,
+      "sharpe": -2.782,
+      "net": -46.692
+    },
+    {
+      "config": "E7",
+      "seed": 123,
+      "n": 368,
+      "sharpe": -1.463,
+      "net": -37.247
+    },
+    {
+      "config": "E7",
+      "seed": 2026,
+      "n": 555,
+      "sharpe": -4.044,
+      "net": -67.123
+    },
+    {
+      "config": "E7",
+      "seed": 999,
+      "n": 253,
+      "sharpe": -3.31,
+      "net": -39.519
+    }
+  ],
+  "gates_invalid": {
+    "E0": {
+      "n": 5,
+      "min": 62.46,
+      "max": 93.25,
+      "mean": 76.9
+    },
+    "E1": {
+      "n": 5,
+      "min": 25.2,
+      "max": 87.62,
+      "mean": 57.0
+    },
+    "E2": {
+      "n": 5,
+      "min": 41.71,
+      "max": 93.0,
+      "mean": 69.8
+    },
+    "E3": {
+      "n": 5,
+      "min": 27.89,
+      "max": 89.88,
+      "mean": 59.9
+    },
+    "E4": {
+      "n": 5,
+      "min": 28.99,
+      "max": 97.04,
+      "mean": 73.3
+    },
+    "E5": {
+      "n": 5,
+      "min": 57.18,
+      "max": 91.99,
+      "mean": 74.5
+    },
+    "E6": {
+      "n": 5,
+      "min": 16.5,
+      "max": 77.17,
+      "mean": 44.7
+    },
+    "E7": {
+      "n": 5,
+      "min": 38.76,
+      "max": 95.83,
+      "mean": 68.9
+    }
+  },
+  "diag": {
+    "E0": {
+      "rollouts": 293,
+      "first_buy_share": 0.343,
+      "last_buy_share": 0.547,
+      "mean_entropy_loss": -0.3798
+    },
+    "E1": {
+      "rollouts": 293,
+      "first_buy_share": 0.343,
+      "last_buy_share": 0.45,
+      "mean_entropy_loss": -0.4757
+    },
+    "E4": {
+      "rollouts": 293,
+      "first_buy_share": 0.343,
+      "last_buy_share": 0.001,
+      "mean_entropy_loss": -0.3195
+    },
+    "E7": {
+      "rollouts": 147,
+      "first_buy_share": 0.336,
+      "last_buy_share": 0.852,
+      "mean_entropy_loss": -0.4833
+    }
+  },
+  "buy_hold_ref": {
+    "open": 16535.38,
+    "close": 30450.0,
+    "gross_pct": 84.15,
+    "net_pct_costly": 83.78
+  },
+  "zero_class": [],
+  "forced_check": {
+    "42": {
+      "match_env_equity": true,
+      "trades": 40
+    },
+    "7": {
+      "match_env_equity": true,
+      "trades": 7
+    },
+    "123": {
+      "match_env_equity": true,
+      "trades": 117
+    },
+    "2026": {
+      "match_env_equity": true,
+      "trades": 0
+    },
+    "999": {
+      "match_env_equity": true,
+      "trades": 11
+    }
+  }
+}
