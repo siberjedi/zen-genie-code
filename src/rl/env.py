@@ -18,7 +18,7 @@ import gymnasium as gym
 import numpy as np
 import pandas as pd
 
-ENV_VERSION = "4.2.0"
+ENV_VERSION = "4.3.0-h1"
 REQUIRED_COLS = ("date", "open", "high", "low", "close")
 
 BUY, SELL, HOLD = 1, 2, 0
@@ -34,7 +34,8 @@ class TradingEnv(gym.Env):
 
     def __init__(self, df: pd.DataFrame, fee: float = 0.001,
                  slippage_bps: float = 5, window: int = 30,
-                 initial_capital: float = 100.0, price_col: str = "close"):
+                 initial_capital: float = 100.0, price_col: str = "close",
+                 reward_mode: str = "mtm"):
         super().__init__()
         missing = [c for c in REQUIRED_COLS if c not in df.columns]
         if missing:
@@ -49,7 +50,11 @@ class TradingEnv(gym.Env):
             raise ValueError(f"window>=1 olmalı: {window}")
         if initial_capital <= 0:
             raise ValueError("initial_capital>0 olmalı")
+        if reward_mode not in ("mtm", "realized"):
+            raise ValueError(f"reward_mode mtm/realized olmalı: {reward_mode}")
         self.price_col = price_col
+        self.reward_mode = reward_mode
+        self.cost_basis = None
         self.df = df.reset_index(drop=True)
         if len(self.df) <= window:
             raise ValueError(f"veri ({len(self.df)}) window'dan ({window}) uzun olmalı")
@@ -83,6 +88,7 @@ class TradingEnv(gym.Env):
         self.roundtrips = 0
         self.fees_paid = 0.0
         self.forced_close = False
+        self.cost_basis = None
         return self._obs(), {}
 
     def _check_invariant(self):
@@ -113,11 +119,15 @@ class TradingEnv(gym.Env):
             self.invalid_actions += 1
             action = HOLD
         price = float(self.df.iloc[self.t][self.price_col])
-        # -- execute --
+        # -- execute (muhasebe her iki reward modunda BİREBİR aynı) --
+        executed_buy = False
+        executed_sell = False
         if action == BUY:
             if self.amount > 0 or self.cash <= 0:
                 self.invalid_actions += 1  # long iken buy / boş kasayla buy
             else:
+                if self.reward_mode == "realized":
+                    self.cost_basis = float(self.cash)
                 exec_p = price * (1 + self.slip)
                 fee_paid = self.cash * self.fee
                 self.amount = (self.cash - fee_paid) / exec_p
@@ -125,6 +135,7 @@ class TradingEnv(gym.Env):
                 self.cash = 0.0
                 self.entry_price = exec_p
                 self.entries += 1
+                executed_buy = True
         elif action == SELL:
             if self.amount <= 0:
                 self.invalid_actions += 1  # flat iken sell
@@ -137,9 +148,18 @@ class TradingEnv(gym.Env):
                 self.amount = 0.0
                 self.entry_price = None
                 self.roundtrips += 1
+                executed_sell = True
         self._check_invariant()
         pf = self._portfolio(price)
-        reward = float(np.log(pf / self._prev_pf)) if self._prev_pf > 0 else 0.0
+        if self.reward_mode == "mtm":
+            reward = float(np.log(pf / self._prev_pf)) if self._prev_pf > 0 else 0.0
+        else:  # realized-only: BUY/HOLD/flat -> 0; SELL -> log(proceeds/cost_basis)
+            if executed_sell:
+                basis = self.cost_basis if self.cost_basis else self._prev_pf
+                reward = float(np.log(self.cash / basis)) if basis and basis > 0 and self.cash > 0 else 0.0
+                self.cost_basis = None
+            else:
+                reward = 0.0
         self._prev_pf = pf
         self.pos_hist.append(1 if self.amount > 0 else 0)
         self.eq_hist.append(pf)
@@ -154,7 +174,12 @@ class TradingEnv(gym.Env):
             self.fees_paid += fee_paid
             self.amount = 0.0
             self.entry_price = None
-            reward += float(np.log(self.cash / pf)) if pf > 0 else 0.0
+            if self.reward_mode == "mtm":
+                reward += float(np.log(self.cash / pf)) if pf > 0 else 0.0
+            else:
+                basis = self.cost_basis if self.cost_basis else pf
+                reward += float(np.log(self.cash / basis)) if basis and basis > 0 and self.cash > 0 else 0.0
+                self.cost_basis = None
             self._prev_pf = self.cash
             self.pos_hist.append(0)
             self.eq_hist.append(self.cash)

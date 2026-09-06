@@ -24,7 +24,7 @@ def _synth(n=3000, seed=0):
 
 
 def test_1_chunk_bounds():
-    assert ENV_VERSION == "4.2.0"
+    assert ENV_VERSION == "4.3.0-h1"  # M.20 H1 dalı (reward-only farkı)
     assert CHUNK_SIZE == 5000
     env = ChunkedTradingEnv(_synth(12000), chunk_size=5000, window=30)
     assert len(env.bounds) == 3  # 5000+5000+2000
