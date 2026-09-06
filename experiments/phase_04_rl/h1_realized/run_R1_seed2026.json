@@ -1,0 +1,75 @@
+{
+  "config": "R1",
+  "seed": 2026,
+  "hyperparams": {
+    "learning_rate": 0.0003,
+    "n_steps": 2048,
+    "batch_size": 64,
+    "n_epochs": 10,
+    "gamma": 0.99,
+    "ent_coef": 0.003
+  },
+  "timesteps": 600000,
+  "reward_mode": "realized",
+  "env_version": "4.3.0-h1",
+  "train_seconds": 1161.7,
+  "val": {
+    "trade_count": 234,
+    "net_abs": -22.554,
+    "daily_sharpe": -2.084,
+    "sortino": -1.938,
+    "max_dd": -0.4322,
+    "profit_factor": 0.808,
+    "win_rate": 0.2949,
+    "turnover": 234,
+    "total_volume": 22125.0,
+    "fee_est": 44.25
+  },
+  "val_term_reason": "terminated_forced",
+  "val_actions": {
+    "0": 40870,
+    "1": 9455,
+    "2": 1469
+  },
+  "val_flips": 7010,
+  "val_med_hold_min": 40.0,
+  "val_mean_hold_min": 1064.5,
+  "hold_dist": {
+    "min": 5.0,
+    "p25": 10.0,
+    "median": 40.0,
+    "p75": 191.2,
+    "p90": 1153.5,
+    "max": 142720.0,
+    "mean": 1064.5
+  },
+  "forced": {
+    "n": 1,
+    "net": 7.894
+  },
+  "nonforced": {
+    "n": 233,
+    "net": -30.447
+  },
+  "top3_share": -1.113,
+  "val_fee_total": 44.25,
+  "val_slip_total": 22.11,
+  "val_gross_total": 43.81,
+  "val_bankruptcy": false,
+  "model_hash": "4cd6caf2baf64490",
+  "artifact_hashes": {
+    "actions": "2cca2bbdb47a5d8b",
+    "equities": "a26469abad37481c",
+    "rewards": "03208112436772f5"
+  },
+  "gates": {
+    "hard_fails": [
+      "invalid action %20.19 > %1"
+    ],
+    "warnings": [
+      "fee > gross (fee \u00f6l\u00fcm\u00fc)"
+    ],
+    "pass": false,
+    "trades_day": 1.29
+  }
+}
