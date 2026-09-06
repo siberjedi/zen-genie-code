@@ -172,6 +172,18 @@ class TradingEnv(gym.Env):
     def render(self):
         return f"equity={self._prev_pf:.2f} pos={1 if self.amount > 0 else 0}"
 
+    def action_masks(self) -> np.ndarray:
+        """Faz 4.11 — state-dependent valid-action maskesi (sb3-contrib kontratı).
+
+        FLAT → [HOLD, BUY]  = [True, True, False]
+        LONG → [HOLD, SELL] = [True, False, True]
+        HOLD her iki durumda mevcut. Saf state fonksiyonu (deterministik,
+        side-effect YOK); step() davranışı DEĞİŞMEDİ.
+        """
+        if self.amount > 0:
+            return np.array([True, False, True], dtype=bool)
+        return np.array([True, True, False], dtype=bool)
+
 
 CHUNK_SIZE = 5000  # Faz 4.4 kilitli seçim (4.3'teki 5-10k aralığından; max episode
 # çeşitliliği + ~17 günlük anlamlı ufuk; deterministik sıralı partition).
