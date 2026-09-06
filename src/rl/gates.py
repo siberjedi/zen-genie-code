@@ -45,3 +45,48 @@ def check_run(metrics: dict) -> dict:
         warn.append("undefined MaxDD")
     return {"hard_fails": hard, "warnings": warn,
             "pass": not hard, "trades_day": round(tpd, 2)}
+
+
+def action_breakdown(actions, positions) -> dict:
+    """SADECE raporlama: valid/invalid aksiyon sınıflandırması (davranış DEĞİŞMEZ).
+
+    actions[i]: o adımda seçilen aksiyon (0/1/2).
+    positions[i]: aksiyon ÖNCESİ pozisyon durumu (0 flat / 1 long).
+    Dönüş: her sınıfın sayısı + oranı. Invalid'ler ekonomik no-op'tur.
+    """
+    cats = {"valid_HOLD": 0, "valid_BUY": 0, "valid_SELL": 0,
+            "invalid_SELL_while_flat": 0, "invalid_BUY_while_long": 0,
+            "invalid_other": 0}
+    for a, p in zip(actions, positions):
+        if a == 0:
+            cats["valid_HOLD"] += 1
+        elif a == 1 and p == 0:
+            cats["valid_BUY"] += 1
+        elif a == 2 and p == 1:
+            cats["valid_SELL"] += 1
+        elif a == 2 and p == 0:
+            cats["invalid_SELL_while_flat"] += 1
+        elif a == 1 and p == 1:
+            cats["invalid_BUY_while_long"] += 1
+        else:
+            cats["invalid_other"] += 1
+    n = max(1, len(actions))
+    out = dict(cats)
+    out["rates"] = {k: round(v / n, 4) for k, v in cats.items()}
+    out["invalid_total_rate"] = round(
+        (cats["invalid_SELL_while_flat"] + cats["invalid_BUY_while_long"]
+         + cats["invalid_other"]) / n, 4)
+    return out
+
+
+def sample_flag(n_trades: int) -> str:
+    """SADECE raporlama etiketi (seçim kriteri DEĞİL):
+    <10 EXTREME SMALL-N, 10-20 VERY SMALL-N, 20-50 SMALL-N, >=50 normal."""
+    n = int(n_trades)
+    if n < 10:
+        return "EXTREME SMALL-N"
+    if n < 20:
+        return "VERY SMALL-N"
+    if n < 50:
+        return "SMALL-N"
+    return "normal"

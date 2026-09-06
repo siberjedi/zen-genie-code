@@ -99,8 +99,11 @@ def rollout_val(model, va_n, raw_close, raw_dates):
             cur = {"pair": PAIR, "open_date": raw_dates[ci],
                    "open_rate": raw_close[ci], "stake_amount": prev_eq}
         if cur is not None and info["position"] == 0:
-            cur["close_date"] = raw_dates[ci]
-            cur["close_rate"] = raw_close[ci]
+            fforced = bool(term and info.get("forced_close"))
+            fci = len(raw_dates) - 1 if fforced else ci
+            cur["close_date"] = raw_dates[fci]
+            cur["close_rate"] = raw_close[fci]
+            cur["forced"] = fforced
             trades.append(cur)
             cur = None
         prev_eq = info["equity"]
@@ -119,7 +122,8 @@ def rollout_val(model, va_n, raw_close, raw_dates):
                     "close_date": tr["close_date"], "open_rate": tr["open_rate"],
                     "close_rate": tr["close_rate"], "stake_amount": stake,
                     "profit_abs": profit_abs, "profit_ratio": profit_abs / stake,
-                    "exit_reason": "rl_exit", "fee_paid": fee, "slip_paid": slip,
+                    "exit_reason": "forced_close" if tr.get("forced") else "rl_exit",
+                    "fee_paid": fee, "slip_paid": slip,
                     "gross": gross})
     return fin, actions, eqs, rews, info, {"finite": obs_finite,
                                                "market_var": mvar_den / mvar_n - mean ** 2,

@@ -70,8 +70,10 @@ def one_run(tag: str) -> dict:
             cur = {"open_date": str(raw_dates[ci]), "open_rate": float(raw_close[ci]),
                    "stake_amount": prev_eq}
         if cur is not None and info["position"] == 0:
-            cur.update({"close_date": str(raw_dates[ci]),
-                        "close_rate": float(raw_close[ci])})
+            fforced = bool(term and info.get("forced_close"))
+            fci = len(raw_dates) - 1 if fforced else ci
+            cur.update({"close_date": str(raw_dates[fci]),
+                        "close_rate": float(raw_close[fci])})
             trades.append(cur)
             cur = None
         prev_eq = info["equity"]

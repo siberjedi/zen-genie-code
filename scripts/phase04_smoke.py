@@ -55,8 +55,11 @@ def rollout_smoke(model, norm_df, raw_df):
             cur = {"pair": "BTC/USDT", "open_date": raw_dates[ci],
                    "open_rate": raw_close[ci], "stake_amount": prev_eq}
         if cur is not None and info["position"] == 0:
-            cur["close_date"] = raw_dates[ci]
-            cur["close_rate"] = raw_close[ci]
+            fforced = bool(term and info.get("forced_close"))
+            fci = len(raw_dates) - 1 if fforced else ci
+            cur["close_date"] = raw_dates[fci]
+            cur["close_rate"] = raw_close[fci]
+            cur["forced"] = fforced
             trades.append(cur)
             cur = None
         prev_eq = info["equity"]

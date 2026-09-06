@@ -78,9 +78,13 @@ def rollout_trades(model, df):
                    "stake_amount": prev_eq}
         prev_eq = info["equity"]
         if cur is not None and pos == 0:
-            # stake = giriş anındaki equity (all-in): giriş adımının equity'si
-            cur["close_date"] = dates[ci]
-            cur["close_rate"] = closes[ci]
+            # Faz 4.9: forced kapanış SON mumu kullanır (likidasyon fiyatı);
+            # sinyal çıkışı bu adımın mumunu kullanır.
+            fforced = bool(term and info.get("forced_close"))
+            fci = len(dates) - 1 if fforced else ci
+            cur["close_date"] = dates[fci]
+            cur["close_rate"] = closes[fci]
+            cur["forced"] = fforced
             trades.append(cur)
             cur = None
         if term:
@@ -106,7 +110,8 @@ def finalize_trades(raw, df):
                     "close_date": tr["close_date"], "open_rate": tr["open_rate"],
                     "close_rate": tr["close_rate"], "stake_amount": stake,
                     "profit_abs": profit_abs, "profit_ratio": profit_abs / stake,
-                    "exit_reason": "rl_exit", "fee_paid": fee_paid})
+                    "exit_reason": "forced_close" if tr.get("forced") else "rl_exit",
+                    "fee_paid": fee_paid})
     return out
 
 
