@@ -1,0 +1,1566 @@
+{
+  "regime_days": {
+    "bull": 83,
+    "bull_high_vol": 49,
+    "bear_high_vol": 22,
+    "sideways": 19,
+    "bear": 4,
+    "sideways_high_vol": 4
+  },
+  "regime_candles": {
+    "bull": 23904,
+    "bull_high_vol": 13809,
+    "bear_high_vol": 6336,
+    "sideways": 5472,
+    "bear": 1152,
+    "sideways_high_vol": 1152
+  },
+  "E1": {
+    "42": {
+      "by_bucket": {
+        "bear": {
+          "n": 14,
+          "gross": 27.74,
+          "fee": 3.38,
+          "slip": 1.69,
+          "net": 22.67,
+          "wr": 0.4286,
+          "avg_ret": 0.01483,
+          "med_hold": 1127.5,
+          "forced_n": 0,
+          "trades_idx": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "bull": {
+          "n": 22,
+          "gross": 16.5,
+          "fee": 5.48,
+          "slip": 2.74,
+          "net": 8.28,
+          "wr": 0.4091,
+          "avg_ret": 0.00403,
+          "med_hold": 2215.0,
+          "forced_n": 0,
+          "trades_idx": [
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38
+          ]
+        },
+        "sideways": {
+          "n": 4,
+          "gross": 7.87,
+          "fee": 0.88,
+          "slip": 0.44,
+          "net": 6.55,
+          "wr": 0.5,
+          "avg_ret": 0.01667,
+          "med_hold": 2742.5,
+          "forced_n": 0,
+          "trades_idx": [
+            0,
+            1,
+            2,
+            39
+          ]
+        }
+      },
+      "actions": {
+        "bear": {
+          "n": 7488,
+          "buy": 2117,
+          "sell": 440,
+          "hold": 4931,
+          "pos_held_frac": 0.9179
+        },
+        "bull": {
+          "n": 37712,
+          "buy": 2189,
+          "sell": 25143,
+          "hold": 10380,
+          "pos_held_frac": 0.3073
+        },
+        "sideways": {
+          "n": 5442,
+          "buy": 1740,
+          "sell": 2922,
+          "hold": 780,
+          "pos_held_frac": 0.4583
+        },
+        "sideways_high_vol": {
+          "n": 1152,
+          "buy": 0,
+          "sell": 1110,
+          "hold": 42,
+          "pos_held_frac": 0.0
+        }
+      },
+      "n_trades": 40,
+      "forced_n": 0
+    },
+    "7": {
+      "by_bucket": {
+        "bear": {
+          "n": 1,
+          "gross": -0.2,
+          "fee": 0.2,
+          "slip": 0.1,
+          "net": -0.5,
+          "wr": 0.0,
+          "avg_ret": -0.00497,
+          "med_hold": 5.0,
+          "forced_n": 0,
+          "trades_idx": [
+            0
+          ]
+        },
+        "bull": {
+          "n": 5,
+          "gross": -0.43,
+          "fee": 0.99,
+          "slip": 0.49,
+          "net": -1.9,
+          "wr": 0.0,
+          "avg_ret": -0.00386,
+          "med_hold": 5.0,
+          "forced_n": 0,
+          "trades_idx": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "sideways_high_vol": {
+          "n": 1,
+          "gross": -0.03,
+          "fee": 0.19,
+          "slip": 0.1,
+          "net": -0.32,
+          "wr": 0.0,
+          "avg_ret": -0.00329,
+          "med_hold": 5.0,
+          "forced_n": 0,
+          "trades_idx": [
+            6
+          ]
+        }
+      },
+      "actions": {
+        "bear": {
+          "n": 7488,
+          "buy": 1,
+          "sell": 7122,
+          "hold": 365,
+          "pos_held_frac": 0.0001
+        },
+        "bull": {
+          "n": 37712,
+          "buy": 6,
+          "sell": 14047,
+          "hold": 23659,
+          "pos_held_frac": 0.0002
+        },
+        "sideways": {
+          "n": 5442,
+          "buy": 0,
+          "sell": 3081,
+          "hold": 2361,
+          "pos_held_frac": 0.0
+        },
+        "sideways_high_vol": {
+          "n": 1152,
+          "buy": 1,
+          "sell": 171,
+          "hold": 980,
+          "pos_held_frac": 0.0009
+        }
+      },
+      "n_trades": 7,
+      "forced_n": 0
+    },
+    "123": {
+      "by_bucket": {
+        "bear": {
+          "n": 14,
+          "gross": 26.51,
+          "fee": 3.52,
+          "slip": 1.76,
+          "net": 21.23,
+          "wr": 0.5,
+          "avg_ret": 0.01347,
+          "med_hold": 2487.5,
+          "forced_n": 0,
+          "trades_idx": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        },
+        "bull": {
+          "n": 96,
+          "gross": 36.79,
+          "fee": 22.51,
+          "slip": 11.25,
+          "net": 3.03,
+          "wr": 0.4375,
+          "avg_ret": 0.00084,
+          "med_hold": 250.0,
+          "forced_n": 1,
+          "trades_idx": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61,
+            62,
+            63,
+            64,
+            65,
+            66,
+            67,
+            68,
+            69,
+            70,
+            71,
+            72,
+            73,
+            74,
+            75,
+            76,
+            77,
+            78,
+            79,
+            80,
+            81,
+            82,
+            83,
+            84,
+            85,
+            86,
+            87,
+            88,
+            89,
+            90,
+            91,
+            92,
+            93,
+            94,
+            95,
+            96,
+            97,
+            98,
+            99,
+            100,
+            101,
+            102,
+            103,
+            104,
+            105,
+            106,
+            107,
+            113,
+            114,
+            115,
+            116
+          ]
+        },
+        "sideways": {
+          "n": 4,
+          "gross": 8.43,
+          "fee": 0.82,
+          "slip": 0.41,
+          "net": 7.21,
+          "wr": 0.5,
+          "avg_ret": 0.01793,
+          "med_hold": 4145.0,
+          "forced_n": 0,
+          "trades_idx": [
+            0,
+            1,
+            111,
+            112
+          ]
+        },
+        "sideways_high_vol": {
+          "n": 3,
+          "gross": -11.73,
+          "fee": 0.66,
+          "slip": 0.33,
+          "net": -12.72,
+          "wr": 0.0,
+          "avg_ret": -0.03824,
+          "med_hold": 5640.0,
+          "forced_n": 0,
+          "trades_idx": [
+            108,
+            109,
+            110
+          ]
+        }
+      },
+      "actions": {
+        "bear": {
+          "n": 7488,
+          "buy": 6783,
+          "sell": 18,
+          "hold": 687,
+          "pos_held_frac": 0.9976
+        },
+        "bull": {
+          "n": 37712,
+          "buy": 32573,
+          "sell": 166,
+          "hold": 4973,
+          "pos_held_frac": 0.9954
+        },
+        "sideways": {
+          "n": 5442,
+          "buy": 5169,
+          "sell": 3,
+          "hold": 270,
+          "pos_held_frac": 0.9993
+        },
+        "sideways_high_vol": {
+          "n": 1152,
+          "buy": 895,
+          "sell": 8,
+          "hold": 249,
+          "pos_held_frac": 0.9818
+        }
+      },
+      "n_trades": 117,
+      "forced_n": 1
+    },
+    "2026": {
+      "by_bucket": {},
+      "actions": {
+        "bear": {
+          "n": 7488,
+          "buy": 0,
+          "sell": 7462,
+          "hold": 26,
+          "pos_held_frac": 0.0
+        },
+        "bull": {
+          "n": 37712,
+          "buy": 0,
+          "sell": 18942,
+          "hold": 18770,
+          "pos_held_frac": 0.0
+        },
+        "sideways": {
+          "n": 5442,
+          "buy": 0,
+          "sell": 2410,
+          "hold": 3032,
+          "pos_held_frac": 0.0
+        },
+        "sideways_high_vol": {
+          "n": 1152,
+          "buy": 0,
+          "sell": 453,
+          "hold": 699,
+          "pos_held_frac": 0.0
+        }
+      },
+      "n_trades": 0,
+      "forced_n": 0
+    },
+    "999": {
+      "by_bucket": {
+        "bear": {
+          "n": 3,
+          "gross": 5.4,
+          "fee": 0.77,
+          "slip": 0.39,
+          "net": 4.24,
+          "wr": 0.3333,
+          "avg_ret": 0.01356,
+          "med_hold": 4055.0,
+          "forced_n": 0,
+          "trades_idx": [
+            1,
+            2,
+            3
+          ]
+        },
+        "bull": {
+          "n": 7,
+          "gross": 54.28,
+          "fee": 1.99,
+          "slip": 0.99,
+          "net": 51.29,
+          "wr": 0.5714,
+          "avg_ret": 0.05612,
+          "med_hold": 10720.0,
+          "forced_n": 1,
+          "trades_idx": [
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        },
+        "sideways": {
+          "n": 1,
+          "gross": 25.6,
+          "fee": 0.23,
+          "slip": 0.11,
+          "net": 25.27,
+          "wr": 1.0,
+          "avg_ret": 0.25267,
+          "med_hold": 20645.0,
+          "forced_n": 0,
+          "trades_idx": [
+            0
+          ]
+        }
+      },
+      "actions": {
+        "bear": {
+          "n": 7488,
+          "buy": 3085,
+          "sell": 3,
+          "hold": 4400,
+          "pos_held_frac": 0.9979
+        },
+        "bull": {
+          "n": 37712,
+          "buy": 7159,
+          "sell": 8,
+          "hold": 30545,
+          "pos_held_frac": 0.9997
+        },
+        "sideways": {
+          "n": 5442,
+          "buy": 2397,
+          "sell": 273,
+          "hold": 2772,
+          "pos_held_frac": 0.9497
+        },
+        "sideways_high_vol": {
+          "n": 1152,
+          "buy": 148,
+          "sell": 0,
+          "hold": 1004,
+          "pos_held_frac": 1.0
+        }
+      },
+      "n_trades": 11,
+      "forced_n": 1
+    }
+  },
+  "B": {
+    "B1": {
+      "42": {
+        "by_bucket": {
+          "bear": {
+            "n": 47,
+            "gross": 2.15,
+            "fee": 8.5,
+            "slip": 4.25,
+            "net": -10.59,
+            "wr": 0.0638,
+            "avg_ret": -0.00249,
+            "med_hold": 5.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 83,
+            "gross": 9.32,
+            "fee": 12.79,
+            "slip": 6.39,
+            "net": -9.86,
+            "wr": 0.2169,
+            "avg_ret": -0.0012,
+            "med_hold": 25.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 27,
+            "gross": 5.27,
+            "fee": 5.15,
+            "slip": 2.58,
+            "net": -2.46,
+            "wr": 0.2222,
+            "avg_ret": -0.00051,
+            "med_hold": 20.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 6,
+            "gross": -6.0,
+            "fee": 0.8,
+            "slip": 0.4,
+            "net": -7.21,
+            "wr": 0.5,
+            "avg_ret": -0.01723,
+            "med_hold": 2752.5,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 163
+      },
+      "7": {
+        "by_bucket": {
+          "bear": {
+            "n": 201,
+            "gross": 22.07,
+            "fee": 35.95,
+            "slip": 17.96,
+            "net": -31.84,
+            "wr": 0.1244,
+            "avg_ret": -0.00193,
+            "med_hold": 45.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 165,
+            "gross": 19.26,
+            "fee": 19.34,
+            "slip": 9.67,
+            "net": -9.75,
+            "wr": 0.2485,
+            "avg_ret": -0.00067,
+            "med_hold": 45.0,
+            "forced_n": 0
+          },
+          "sideways": {
+            "n": 30,
+            "gross": 5.71,
+            "fee": 5.62,
+            "slip": 2.81,
+            "net": -2.72,
+            "wr": 0.3333,
+            "avg_ret": -0.00091,
+            "med_hold": 232.5,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 11,
+            "gross": -1.03,
+            "fee": 1.15,
+            "slip": 0.57,
+            "net": -2.75,
+            "wr": 0.1818,
+            "avg_ret": -0.00473,
+            "med_hold": 30.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 407
+      },
+      "123": {
+        "by_bucket": {
+          "bear": {
+            "n": 257,
+            "gross": 15.77,
+            "fee": 41.41,
+            "slip": 20.7,
+            "net": -46.34,
+            "wr": 0.249,
+            "avg_ret": -0.00237,
+            "med_hold": 40.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 584,
+            "gross": 3.6,
+            "fee": 30.36,
+            "slip": 15.17,
+            "net": -41.93,
+            "wr": 0.238,
+            "avg_ret": -0.00247,
+            "med_hold": 25.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 28,
+            "gross": 5.19,
+            "fee": 3.47,
+            "slip": 1.73,
+            "net": -0.01,
+            "wr": 0.2857,
+            "avg_ret": -0.00188,
+            "med_hold": 80.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 19,
+            "gross": -1.25,
+            "fee": 0.43,
+            "slip": 0.21,
+            "net": -1.89,
+            "wr": 0.2105,
+            "avg_ret": -0.00865,
+            "med_hold": 10.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 888
+      },
+      "2026": {
+        "by_bucket": {
+          "bear": {
+            "n": 58,
+            "gross": 25.29,
+            "fee": 12.71,
+            "slip": 6.35,
+            "net": 6.23,
+            "wr": 0.3448,
+            "avg_ret": 0.00115,
+            "med_hold": 125.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 67,
+            "gross": 17.38,
+            "fee": 13.1,
+            "slip": 6.55,
+            "net": -2.27,
+            "wr": 0.209,
+            "avg_ret": 7e-05,
+            "med_hold": 140.0,
+            "forced_n": 0
+          },
+          "sideways": {
+            "n": 9,
+            "gross": 1.39,
+            "fee": 1.8,
+            "slip": 0.9,
+            "net": -1.31,
+            "wr": 0.2222,
+            "avg_ret": -0.00144,
+            "med_hold": 55.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 1,
+            "gross": 0.63,
+            "fee": 0.21,
+            "slip": 0.1,
+            "net": 0.32,
+            "wr": 1.0,
+            "avg_ret": 0.00309,
+            "med_hold": 5.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 135
+      },
+      "999": {
+        "by_bucket": {
+          "bear": {
+            "n": 120,
+            "gross": 1.19,
+            "fee": 19.32,
+            "slip": 9.66,
+            "net": -27.8,
+            "wr": 0.15,
+            "avg_ret": -0.00286,
+            "med_hold": 20.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 303,
+            "gross": 4.09,
+            "fee": 28.46,
+            "slip": 14.22,
+            "net": -38.59,
+            "wr": 0.2178,
+            "avg_ret": -0.00277,
+            "med_hold": 40.0,
+            "forced_n": 0
+          },
+          "sideways": {
+            "n": 18,
+            "gross": -0.62,
+            "fee": 2.98,
+            "slip": 1.49,
+            "net": -5.09,
+            "wr": 0.1111,
+            "avg_ret": -0.00318,
+            "med_hold": 50.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 8,
+            "gross": 1.27,
+            "fee": 0.52,
+            "slip": 0.26,
+            "net": 0.5,
+            "wr": 0.375,
+            "avg_ret": 0.00194,
+            "med_hold": 87.5,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 449
+      }
+    },
+    "B2": {
+      "42": {
+        "by_bucket": {
+          "bear": {
+            "n": 159,
+            "gross": 23.24,
+            "fee": 32.17,
+            "slip": 16.08,
+            "net": -25.01,
+            "wr": 0.2579,
+            "avg_ret": -0.00164,
+            "med_hold": 20.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 683,
+            "gross": 0.55,
+            "fee": 45.59,
+            "slip": 22.78,
+            "net": -67.82,
+            "wr": 0.2299,
+            "avg_ret": -0.0026,
+            "med_hold": 15.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 12,
+            "gross": 7.47,
+            "fee": 1.36,
+            "slip": 0.68,
+            "net": 5.43,
+            "wr": 0.4167,
+            "avg_ret": 0.00133,
+            "med_hold": 572.5,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 11,
+            "gross": -1.15,
+            "fee": 0.26,
+            "slip": 0.13,
+            "net": -1.54,
+            "wr": 0.1818,
+            "avg_ret": -0.0117,
+            "med_hold": 45.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 865
+      },
+      "7": {
+        "by_bucket": {
+          "bear": {
+            "n": 252,
+            "gross": 9.4,
+            "fee": 36.75,
+            "slip": 18.37,
+            "net": -45.71,
+            "wr": 0.1032,
+            "avg_ret": -0.00258,
+            "med_hold": 10.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 752,
+            "gross": 1.71,
+            "fee": 29.99,
+            "slip": 14.99,
+            "net": -43.26,
+            "wr": 0.1556,
+            "avg_ret": -0.00267,
+            "med_hold": 10.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 31,
+            "gross": 2.92,
+            "fee": 5.12,
+            "slip": 2.56,
+            "net": -4.76,
+            "wr": 0.1613,
+            "avg_ret": -0.00262,
+            "med_hold": 40.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 5,
+            "gross": -0.45,
+            "fee": 0.06,
+            "slip": 0.03,
+            "net": -0.54,
+            "wr": 0.2,
+            "avg_ret": -0.01691,
+            "med_hold": 280.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 1040
+      },
+      "123": {
+        "by_bucket": {
+          "bear": {
+            "n": 120,
+            "gross": 12.27,
+            "fee": 21.92,
+            "slip": 10.95,
+            "net": -20.6,
+            "wr": 0.2583,
+            "avg_ret": -0.00189,
+            "med_hold": 25.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 772,
+            "gross": 4.55,
+            "fee": 48.83,
+            "slip": 24.4,
+            "net": -68.68,
+            "wr": 0.2319,
+            "avg_ret": -0.00263,
+            "med_hold": 20.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 11,
+            "gross": 0.97,
+            "fee": 0.94,
+            "slip": 0.47,
+            "net": -0.44,
+            "wr": 0.1818,
+            "avg_ret": -0.00266,
+            "med_hold": 40.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 26,
+            "gross": -1.05,
+            "fee": 0.6,
+            "slip": 0.3,
+            "net": -1.95,
+            "wr": 0.1923,
+            "avg_ret": -0.0064,
+            "med_hold": 15.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 929
+      },
+      "2026": {
+        "by_bucket": {
+          "bear": {
+            "n": 201,
+            "gross": 19.91,
+            "fee": 37.71,
+            "slip": 18.84,
+            "net": -36.64,
+            "wr": 0.2637,
+            "avg_ret": -0.00204,
+            "med_hold": 25.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 1234,
+            "gross": 0.96,
+            "fee": 46.52,
+            "slip": 23.25,
+            "net": -68.81,
+            "wr": 0.1345,
+            "avg_ret": -0.00289,
+            "med_hold": 5.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 5,
+            "gross": 8.15,
+            "fee": 0.43,
+            "slip": 0.21,
+            "net": 7.5,
+            "wr": 0.6,
+            "avg_ret": 0.02683,
+            "med_hold": 225.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 2,
+            "gross": -0.1,
+            "fee": 0.01,
+            "slip": 0.0,
+            "net": -0.11,
+            "wr": 0.5,
+            "avg_ret": -0.02982,
+            "med_hold": 18672.5,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 1442
+      },
+      "999": {
+        "by_bucket": {
+          "bear": {
+            "n": 126,
+            "gross": 20.89,
+            "fee": 25.64,
+            "slip": 12.81,
+            "net": -17.55,
+            "wr": 0.3571,
+            "avg_ret": -0.0014,
+            "med_hold": 65.0,
+            "forced_n": 0
+          },
+          "bull": {
+            "n": 700,
+            "gross": 4.87,
+            "fee": 52.75,
+            "slip": 26.36,
+            "net": -74.25,
+            "wr": 0.2357,
+            "avg_ret": -0.0027,
+            "med_hold": 10.0,
+            "forced_n": 1
+          },
+          "sideways": {
+            "n": 17,
+            "gross": 8.53,
+            "fee": 2.89,
+            "slip": 1.44,
+            "net": 4.2,
+            "wr": 0.5882,
+            "avg_ret": 0.00168,
+            "med_hold": 715.0,
+            "forced_n": 0
+          },
+          "sideways_high_vol": {
+            "n": 6,
+            "gross": -0.4,
+            "fee": 0.14,
+            "slip": 0.07,
+            "net": -0.61,
+            "wr": 0.5,
+            "avg_ret": -0.00863,
+            "med_hold": 140.0,
+            "forced_n": 0
+          }
+        },
+        "n_trades": 849
+      }
+    }
+  },
+  "R1": {
+    "42": {
+      "by_bucket": {
+        "bear": {
+          "n": 3,
+          "gross": 0.13,
+          "fee": 0.6,
+          "slip": 0.3,
+          "net": -0.76,
+          "wr": 0.0,
+          "avg_ret": -0.00257,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 6,
+          "gross": 0.81,
+          "fee": 1.18,
+          "slip": 0.59,
+          "net": -0.96,
+          "wr": 0.1667,
+          "avg_ret": -0.00162,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 2,
+          "gross": -0.25,
+          "fee": 0.39,
+          "slip": 0.2,
+          "net": -0.84,
+          "wr": 0.0,
+          "avg_ret": -0.00424,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 11
+    },
+    "7": {
+      "by_bucket": {
+        "bear": {
+          "n": 146,
+          "gross": 4.04,
+          "fee": 23.48,
+          "slip": 11.73,
+          "net": -31.17,
+          "wr": 0.2192,
+          "avg_ret": -0.00269,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 307,
+          "gross": 5.17,
+          "fee": 25.76,
+          "slip": 12.87,
+          "net": -33.47,
+          "wr": 0.2443,
+          "avg_ret": -0.00232,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 25,
+          "gross": 0.78,
+          "fee": 4.36,
+          "slip": 2.18,
+          "net": -5.75,
+          "wr": 0.24,
+          "avg_ret": -0.00338,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 8,
+          "gross": 1.52,
+          "fee": 0.52,
+          "slip": 0.26,
+          "net": 0.75,
+          "wr": 0.5,
+          "avg_ret": 0.0029,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 486
+    },
+    "123": {
+      "by_bucket": {
+        "bear": {
+          "n": 13,
+          "gross": 4.83,
+          "fee": 2.63,
+          "slip": 1.31,
+          "net": 0.89,
+          "wr": 0.4615,
+          "avg_ret": 0.00073,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 44,
+          "gross": 25.29,
+          "fee": 8.79,
+          "slip": 4.39,
+          "net": 12.11,
+          "wr": 0.5455,
+          "avg_ret": 0.00332,
+          "med_hold": 0.0,
+          "forced_n": 1
+        },
+        "sideways": {
+          "n": 8,
+          "gross": -0.53,
+          "fee": 1.57,
+          "slip": 0.79,
+          "net": -2.89,
+          "wr": 0.5,
+          "avg_ret": -0.00345,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 5,
+          "gross": -12.46,
+          "fee": 0.95,
+          "slip": 0.47,
+          "net": -13.88,
+          "wr": 0.2,
+          "avg_ret": -0.0285,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 70
+    },
+    "2026": {
+      "by_bucket": {
+        "bear": {
+          "n": 55,
+          "gross": 21.82,
+          "fee": 12.76,
+          "slip": 6.38,
+          "net": 2.68,
+          "wr": 0.3455,
+          "avg_ret": 0.00055,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 178,
+          "gross": 12.23,
+          "fee": 31.28,
+          "slip": 15.63,
+          "net": -34.68,
+          "wr": 0.2753,
+          "avg_ret": -0.00195,
+          "med_hold": 0.0,
+          "forced_n": 1
+        },
+        "sideways": {
+          "n": 1,
+          "gross": 9.76,
+          "fee": 0.21,
+          "slip": 0.1,
+          "net": 9.45,
+          "wr": 1.0,
+          "avg_ret": 0.09447,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 234
+    },
+    "999": {
+      "by_bucket": {
+        "bear": {
+          "n": 231,
+          "gross": 7.11,
+          "fee": 33.65,
+          "slip": 16.82,
+          "net": -43.36,
+          "wr": 0.2078,
+          "avg_ret": -0.00266,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 717,
+          "gross": -1.1,
+          "fee": 28.82,
+          "slip": 14.4,
+          "net": -44.31,
+          "wr": 0.2036,
+          "avg_ret": -0.00286,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 31,
+          "gross": 0.89,
+          "fee": 4.73,
+          "slip": 2.36,
+          "net": -6.2,
+          "wr": 0.129,
+          "avg_ret": -0.00319,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 9,
+          "gross": 0.32,
+          "fee": 0.12,
+          "slip": 0.06,
+          "net": 0.13,
+          "wr": 0.4444,
+          "avg_ret": 0.00213,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 988
+    }
+  },
+  "baseline": {
+    "by_bucket": {
+      "bear": {
+        "n": 103,
+        "gross": 2.81,
+        "fee": 0.0,
+        "slip": 0.0,
+        "net": 2.81,
+        "wr": 0.6893,
+        "avg_ret": 0.00091,
+        "med_hold": 0.0,
+        "forced_n": 0
+      },
+      "bull": {
+        "n": 515,
+        "gross": -34.56,
+        "fee": 0.0,
+        "slip": 0.0,
+        "net": -34.56,
+        "wr": 0.6252,
+        "avg_ret": -0.00237,
+        "med_hold": 0.0,
+        "forced_n": 0
+      },
+      "sideways": {
+        "n": 83,
+        "gross": -2.92,
+        "fee": 0.0,
+        "slip": 0.0,
+        "net": -2.92,
+        "wr": 0.6024,
+        "avg_ret": -0.00142,
+        "med_hold": 0.0,
+        "forced_n": 0
+      },
+      "sideways_high_vol": {
+        "n": 13,
+        "gross": -4.7,
+        "fee": 0.0,
+        "slip": 0.0,
+        "net": -4.7,
+        "wr": 0.5385,
+        "avg_ret": -0.01143,
+        "med_hold": 0.0,
+        "forced_n": 0
+      }
+    },
+    "n_trades": 714,
+    "n_out_of_window": 0
+  },
+  "freqai": {
+    "2026": {
+      "by_bucket": {
+        "bear": {
+          "n": 2550,
+          "gross": -51.03,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -51.03,
+          "wr": 0.3588,
+          "avg_ret": -0.00146,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 11231,
+          "gross": -20.15,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -20.15,
+          "wr": 0.331,
+          "avg_ret": -0.00157,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 1443,
+          "gross": -28.73,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -28.73,
+          "wr": 0.3167,
+          "avg_ret": -0.00163,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 379,
+          "gross": -0.07,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -0.07,
+          "wr": 0.372,
+          "avg_ret": -0.00239,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 15603,
+      "n_out_of_window": 0
+    },
+    "42": {
+      "by_bucket": {
+        "bear": {
+          "n": 2658,
+          "gross": -53.41,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -53.41,
+          "wr": 0.3529,
+          "avg_ret": -0.0015,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 11588,
+          "gross": -18.7,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -18.7,
+          "wr": 0.3271,
+          "avg_ret": -0.00158,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 1455,
+          "gross": -27.82,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -27.82,
+          "wr": 0.3182,
+          "avg_ret": -0.00161,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 360,
+          "gross": -0.05,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -0.05,
+          "wr": 0.3778,
+          "avg_ret": -0.00259,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 16061,
+      "n_out_of_window": 0
+    },
+    "7": {
+      "by_bucket": {
+        "bear": {
+          "n": 2615,
+          "gross": -53.22,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -53.22,
+          "wr": 0.3583,
+          "avg_ret": -0.00148,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 11509,
+          "gross": -19.82,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -19.82,
+          "wr": 0.3285,
+          "avg_ret": -0.00157,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 1475,
+          "gross": -26.88,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -26.88,
+          "wr": 0.3173,
+          "avg_ret": -0.00155,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 376,
+          "gross": -0.06,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -0.06,
+          "wr": 0.3644,
+          "avg_ret": -0.0024,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 15975,
+      "n_out_of_window": 0
+    },
+    "123": {
+      "by_bucket": {
+        "bear": {
+          "n": 2585,
+          "gross": -54.63,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -54.63,
+          "wr": 0.3613,
+          "avg_ret": -0.00154,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 11277,
+          "gross": -19.28,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -19.28,
+          "wr": 0.3332,
+          "avg_ret": -0.00158,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 1440,
+          "gross": -26.0,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -26.0,
+          "wr": 0.3187,
+          "avg_ret": -0.00149,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 366,
+          "gross": -0.07,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -0.07,
+          "wr": 0.3989,
+          "avg_ret": -0.00277,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 15668,
+      "n_out_of_window": 0
+    },
+    "999": {
+      "by_bucket": {
+        "bear": {
+          "n": 2571,
+          "gross": -50.92,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -50.92,
+          "wr": 0.3617,
+          "avg_ret": -0.00152,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "bull": {
+          "n": 11287,
+          "gross": -18.59,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -18.59,
+          "wr": 0.333,
+          "avg_ret": -0.00158,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways": {
+          "n": 1464,
+          "gross": -30.41,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -30.41,
+          "wr": 0.3204,
+          "avg_ret": -0.00165,
+          "med_hold": 0.0,
+          "forced_n": 0
+        },
+        "sideways_high_vol": {
+          "n": 363,
+          "gross": -0.06,
+          "fee": 0.0,
+          "slip": 0.0,
+          "net": -0.06,
+          "wr": 0.3939,
+          "avg_ret": -0.00237,
+          "med_hold": 0.0,
+          "forced_n": 0
+        }
+      },
+      "n_trades": 15685,
+      "n_out_of_window": 0
+    }
+  }
+}
