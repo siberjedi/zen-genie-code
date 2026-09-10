@@ -68,3 +68,6 @@ freqtrade/user_data/backtest_results/
 freqtrade/user_data/freqai_models/
 freqtrade/user_data/rl_models/
 freqtrade/user_data/rl_norm/
+
+# Research cold storage
+experiments/archive/coldstorage/
