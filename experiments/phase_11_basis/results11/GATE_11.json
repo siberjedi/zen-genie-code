@@ -1,0 +1,12 @@
+{
+  "gates": {
+    "net_pos": true,
+    "edge": true,
+    "sharpe_ci": false,
+    "maxdd": true,
+    "d_power": false,
+    "fdr": false,
+    "chain": false
+  },
+  "decision": "FAIL"
+}

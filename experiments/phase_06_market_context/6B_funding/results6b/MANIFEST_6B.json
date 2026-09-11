@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "cost_C": 0.003,
+  "alpha": 0.05,
+  "n_boot": 10000,
+  "cpu_hours": 0.4426,
+  "decision": "FAIL",
+  "verdict": "FAIL \u2014 FUNDING INCREMENTAL EDGE YOK",
+  "holdout": "UNTOUCHED (P5/B/C/A)"
+}

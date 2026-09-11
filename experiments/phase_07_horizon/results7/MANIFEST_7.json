@@ -1,0 +1,11 @@
+{
+  "H": 48,
+  "seed": 42,
+  "cost_C": 0.003,
+  "n_boot": 10000,
+  "boot_K_events": 500,
+  "cpu_hours": 0.1819,
+  "decision": "FAIL",
+  "verdict": "FAIL \u2014 H48 ECONOMIC EDGE YOK",
+  "holdout": "UNTOUCHED (P5/B/C/A)"
+}

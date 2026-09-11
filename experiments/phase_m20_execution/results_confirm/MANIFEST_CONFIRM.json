@@ -1,0 +1,9 @@
+{
+  "window": "2025H1",
+  "seed": 42,
+  "decision": "FAIL",
+  "verdict": "NOT-CONFIRMED",
+  "cpu_hours": 0.0709,
+  "wf": "N/A (yapisal)",
+  "replication_py": "KULLANILMADI (existence-notu)"
+}

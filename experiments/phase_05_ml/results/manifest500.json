@@ -1,0 +1,21 @@
+{
+  "started_utc": "2026-09-08 00:05:04 UTC",
+  "finished_utc": "2026-09-08 00:56:22 UTC",
+  "seed_core": 42,
+  "seeds_robustness": [
+    42,
+    7,
+    123
+  ],
+  "cost_C": 0.003,
+  "alpha": 0.05,
+  "edge_min": 1.2,
+  "matrix_primary": 36,
+  "matrix_baseline": 3,
+  "matrix_secondary": 8,
+  "total_formal_cells": 44,
+  "n_cells_run": 47,
+  "missing": [],
+  "holdout_sha256": "2441bf175f86b3f6d52246d482bb9263a49684831387bfed504b91a9fab5389c",
+  "holdout_lock_status": "UNTOUCHED"
+}

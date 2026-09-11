@@ -1,0 +1,1852 @@
+{
+  "expiries": {
+    "2020-03-27": {
+      "CM": {
+        "symbol": "BTCUSD_200327",
+        "months": [
+          {
+            "month": "2019-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_200327",
+        "months": [
+          {
+            "month": "2019-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      }
+    },
+    "2020-06-26": {
+      "CM": {
+        "symbol": "BTCUSD_200626",
+        "months": [
+          {
+            "month": "2019-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_200626",
+        "months": [
+          {
+            "month": "2019-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      }
+    },
+    "2020-09-25": {
+      "CM": {
+        "symbol": "BTCUSD_200925",
+        "months": [
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": true,
+            "bytes": "20281"
+          },
+          {
+            "month": "2020-07",
+            "exists": true,
+            "bytes": "31382"
+          },
+          {
+            "month": "2020-08",
+            "exists": true,
+            "bytes": "31999"
+          },
+          {
+            "month": "2020-09",
+            "exists": true,
+            "bytes": "26115"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_200925",
+        "months": [
+          {
+            "month": "2019-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2019-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      }
+    },
+    "2020-12-25": {
+      "CM": {
+        "symbol": "BTCUSD_201225",
+        "months": [
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-07",
+            "exists": true,
+            "bytes": "29446"
+          },
+          {
+            "month": "2020-08",
+            "exists": true,
+            "bytes": "31051"
+          },
+          {
+            "month": "2020-09",
+            "exists": true,
+            "bytes": "29673"
+          },
+          {
+            "month": "2020-10",
+            "exists": true,
+            "bytes": "31616"
+          },
+          {
+            "month": "2020-11",
+            "exists": true,
+            "bytes": "32449"
+          },
+          {
+            "month": "2020-12",
+            "exists": true,
+            "bytes": "27892"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_201225",
+        "months": [
+          {
+            "month": "2020-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": false,
+            "bytes": null
+          }
+        ]
+      }
+    },
+    "2021-03-26": {
+      "CM": {
+        "symbol": "BTCUSD_210326",
+        "months": [
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": true,
+            "bytes": "5556"
+          },
+          {
+            "month": "2020-10",
+            "exists": true,
+            "bytes": "30353"
+          },
+          {
+            "month": "2020-11",
+            "exists": true,
+            "bytes": "31128"
+          },
+          {
+            "month": "2020-12",
+            "exists": true,
+            "bytes": "33153"
+          },
+          {
+            "month": "2021-01",
+            "exists": true,
+            "bytes": "34775"
+          },
+          {
+            "month": "2021-02",
+            "exists": true,
+            "bytes": "31463"
+          },
+          {
+            "month": "2021-03",
+            "exists": true,
+            "bytes": "28402"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_210326",
+        "months": [
+          {
+            "month": "2020-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": true,
+            "bytes": "27521"
+          },
+          {
+            "month": "2021-03",
+            "exists": true,
+            "bytes": "27350"
+          }
+        ]
+      }
+    },
+    "2021-06-25": {
+      "CM": {
+        "symbol": "BTCUSD_210625",
+        "months": [
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": true,
+            "bytes": "7396"
+          },
+          {
+            "month": "2021-01",
+            "exists": true,
+            "bytes": "33681"
+          },
+          {
+            "month": "2021-02",
+            "exists": true,
+            "bytes": "30391"
+          },
+          {
+            "month": "2021-03",
+            "exists": true,
+            "bytes": "34116"
+          },
+          {
+            "month": "2021-04",
+            "exists": true,
+            "bytes": "33424"
+          },
+          {
+            "month": "2021-05",
+            "exists": true,
+            "bytes": "35047"
+          },
+          {
+            "month": "2021-06",
+            "exists": true,
+            "bytes": "27308"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_210625",
+        "months": [
+          {
+            "month": "2020-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-03",
+            "exists": true,
+            "bytes": "17011"
+          },
+          {
+            "month": "2021-04",
+            "exists": true,
+            "bytes": "32379"
+          },
+          {
+            "month": "2021-05",
+            "exists": true,
+            "bytes": "33996"
+          },
+          {
+            "month": "2021-06",
+            "exists": true,
+            "bytes": "26927"
+          }
+        ]
+      }
+    },
+    "2021-09-24": {
+      "CM": {
+        "symbol": "BTCUSD_210924",
+        "months": [
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-03",
+            "exists": true,
+            "bytes": "6310"
+          },
+          {
+            "month": "2021-04",
+            "exists": true,
+            "bytes": "32316"
+          },
+          {
+            "month": "2021-05",
+            "exists": true,
+            "bytes": "33925"
+          },
+          {
+            "month": "2021-06",
+            "exists": true,
+            "bytes": "32804"
+          },
+          {
+            "month": "2021-07",
+            "exists": true,
+            "bytes": "33753"
+          },
+          {
+            "month": "2021-08",
+            "exists": true,
+            "bytes": "33928"
+          },
+          {
+            "month": "2021-09",
+            "exists": true,
+            "bytes": "25800"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_210924",
+        "months": [
+          {
+            "month": "2020-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2020-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-06",
+            "exists": true,
+            "bytes": "14090"
+          },
+          {
+            "month": "2021-07",
+            "exists": true,
+            "bytes": "33569"
+          },
+          {
+            "month": "2021-08",
+            "exists": true,
+            "bytes": "34225"
+          },
+          {
+            "month": "2021-09",
+            "exists": true,
+            "bytes": "25925"
+          }
+        ]
+      }
+    },
+    "2021-12-31": {
+      "CM": {
+        "symbol": "BTCUSD_211231",
+        "months": [
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-06",
+            "exists": true,
+            "bytes": "6219"
+          },
+          {
+            "month": "2021-07",
+            "exists": true,
+            "bytes": "32374"
+          },
+          {
+            "month": "2021-08",
+            "exists": true,
+            "bytes": "32683"
+          },
+          {
+            "month": "2021-09",
+            "exists": true,
+            "bytes": "32182"
+          },
+          {
+            "month": "2021-10",
+            "exists": true,
+            "bytes": "34313"
+          },
+          {
+            "month": "2021-11",
+            "exists": true,
+            "bytes": "33241"
+          },
+          {
+            "month": "2021-12",
+            "exists": true,
+            "bytes": "33322"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_211231",
+        "months": [
+          {
+            "month": "2021-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-09",
+            "exists": true,
+            "bytes": "9947"
+          },
+          {
+            "month": "2021-10",
+            "exists": true,
+            "bytes": "34132"
+          },
+          {
+            "month": "2021-11",
+            "exists": true,
+            "bytes": "33059"
+          },
+          {
+            "month": "2021-12",
+            "exists": true,
+            "bytes": "33175"
+          }
+        ]
+      }
+    },
+    "2022-03-25": {
+      "CM": {
+        "symbol": "BTCUSD_220325",
+        "months": [
+          {
+            "month": "2021-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-09",
+            "exists": true,
+            "bytes": "7270"
+          },
+          {
+            "month": "2021-10",
+            "exists": true,
+            "bytes": "32875"
+          },
+          {
+            "month": "2021-11",
+            "exists": true,
+            "bytes": "31980"
+          },
+          {
+            "month": "2021-12",
+            "exists": true,
+            "bytes": "33195"
+          },
+          {
+            "month": "2022-01",
+            "exists": true,
+            "bytes": "33875"
+          },
+          {
+            "month": "2022-02",
+            "exists": true,
+            "bytes": "30708"
+          },
+          {
+            "month": "2022-03",
+            "exists": true,
+            "bytes": "26558"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_220325",
+        "months": [
+          {
+            "month": "2021-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-12",
+            "exists": true,
+            "bytes": "8616"
+          },
+          {
+            "month": "2022-01",
+            "exists": true,
+            "bytes": "33821"
+          },
+          {
+            "month": "2022-02",
+            "exists": true,
+            "bytes": "31051"
+          },
+          {
+            "month": "2022-03",
+            "exists": true,
+            "bytes": "27015"
+          }
+        ]
+      }
+    },
+    "2022-06-24": {
+      "CM": {
+        "symbol": "BTCUSD_220624",
+        "months": [
+          {
+            "month": "2021-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-12",
+            "exists": true,
+            "bytes": "932"
+          },
+          {
+            "month": "2022-01",
+            "exists": true,
+            "bytes": "32715"
+          },
+          {
+            "month": "2022-02",
+            "exists": true,
+            "bytes": "29782"
+          },
+          {
+            "month": "2022-03",
+            "exists": true,
+            "bytes": "32980"
+          },
+          {
+            "month": "2022-04",
+            "exists": true,
+            "bytes": "32121"
+          },
+          {
+            "month": "2022-05",
+            "exists": true,
+            "bytes": "33342"
+          },
+          {
+            "month": "2022-06",
+            "exists": true,
+            "bytes": "25434"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_220624",
+        "months": [
+          {
+            "month": "2021-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-03",
+            "exists": true,
+            "bytes": "10933"
+          },
+          {
+            "month": "2022-04",
+            "exists": true,
+            "bytes": "32324"
+          },
+          {
+            "month": "2022-05",
+            "exists": true,
+            "bytes": "33710"
+          },
+          {
+            "month": "2022-06",
+            "exists": true,
+            "bytes": "25948"
+          }
+        ]
+      }
+    },
+    "2022-09-30": {
+      "CM": {
+        "symbol": "BTCUSD_220930",
+        "months": [
+          {
+            "month": "2021-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-03",
+            "exists": true,
+            "bytes": "7166"
+          },
+          {
+            "month": "2022-04",
+            "exists": true,
+            "bytes": "31029"
+          },
+          {
+            "month": "2022-05",
+            "exists": true,
+            "bytes": "32303"
+          },
+          {
+            "month": "2022-06",
+            "exists": true,
+            "bytes": "31739"
+          },
+          {
+            "month": "2022-07",
+            "exists": true,
+            "bytes": "33135"
+          },
+          {
+            "month": "2022-08",
+            "exists": true,
+            "bytes": "32623"
+          },
+          {
+            "month": "2022-09",
+            "exists": true,
+            "bytes": "30938"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_220930",
+        "months": [
+          {
+            "month": "2021-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2021-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-06",
+            "exists": true,
+            "bytes": "11978"
+          },
+          {
+            "month": "2022-07",
+            "exists": true,
+            "bytes": "33542"
+          },
+          {
+            "month": "2022-08",
+            "exists": true,
+            "bytes": "33214"
+          },
+          {
+            "month": "2022-09",
+            "exists": true,
+            "bytes": "31758"
+          }
+        ]
+      }
+    },
+    "2022-12-30": {
+      "CM": {
+        "symbol": "BTCUSD_221230",
+        "months": [
+          {
+            "month": "2022-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-06",
+            "exists": true,
+            "bytes": "7020"
+          },
+          {
+            "month": "2022-07",
+            "exists": true,
+            "bytes": "31985"
+          },
+          {
+            "month": "2022-08",
+            "exists": true,
+            "bytes": "31617"
+          },
+          {
+            "month": "2022-09",
+            "exists": true,
+            "bytes": "31023"
+          },
+          {
+            "month": "2022-10",
+            "exists": true,
+            "bytes": "31573"
+          },
+          {
+            "month": "2022-11",
+            "exists": true,
+            "bytes": "31022"
+          },
+          {
+            "month": "2022-12",
+            "exists": true,
+            "bytes": "29038"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_221230",
+        "months": [
+          {
+            "month": "2022-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-03",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-09",
+            "exists": true,
+            "bytes": "8628"
+          },
+          {
+            "month": "2022-10",
+            "exists": true,
+            "bytes": "32787"
+          },
+          {
+            "month": "2022-11",
+            "exists": true,
+            "bytes": "32284"
+          },
+          {
+            "month": "2022-12",
+            "exists": true,
+            "bytes": "30527"
+          }
+        ]
+      }
+    },
+    "2023-03-31": {
+      "CM": {
+        "symbol": "BTCUSD_230331",
+        "months": [
+          {
+            "month": "2022-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-09",
+            "exists": true,
+            "bytes": "988"
+          },
+          {
+            "month": "2022-10",
+            "exists": true,
+            "bytes": "30465"
+          },
+          {
+            "month": "2022-11",
+            "exists": true,
+            "bytes": "29954"
+          },
+          {
+            "month": "2022-12",
+            "exists": true,
+            "bytes": "29994"
+          },
+          {
+            "month": "2023-01",
+            "exists": true,
+            "bytes": "31409"
+          },
+          {
+            "month": "2023-02",
+            "exists": true,
+            "bytes": "29141"
+          },
+          {
+            "month": "2023-03",
+            "exists": true,
+            "bytes": "32195"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_230331",
+        "months": [
+          {
+            "month": "2022-04",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-05",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-06",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-12",
+            "exists": true,
+            "bytes": "8861"
+          },
+          {
+            "month": "2023-01",
+            "exists": true,
+            "bytes": "32848"
+          },
+          {
+            "month": "2023-02",
+            "exists": true,
+            "bytes": "30176"
+          },
+          {
+            "month": "2023-03",
+            "exists": true,
+            "bytes": "33179"
+          }
+        ]
+      }
+    },
+    "2023-06-30": {
+      "CM": {
+        "symbol": "BTCUSD_230630",
+        "months": [
+          {
+            "month": "2022-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-12",
+            "exists": true,
+            "bytes": "1839"
+          },
+          {
+            "month": "2023-01",
+            "exists": true,
+            "bytes": "30138"
+          },
+          {
+            "month": "2023-02",
+            "exists": true,
+            "bytes": "28219"
+          },
+          {
+            "month": "2023-03",
+            "exists": true,
+            "bytes": "32094"
+          },
+          {
+            "month": "2023-04",
+            "exists": true,
+            "bytes": "30764"
+          },
+          {
+            "month": "2023-05",
+            "exists": true,
+            "bytes": "31860"
+          },
+          {
+            "month": "2023-06",
+            "exists": true,
+            "bytes": "30074"
+          }
+        ]
+      },
+      "UM": {
+        "symbol": "BTCUSDT_230630",
+        "months": [
+          {
+            "month": "2022-07",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-08",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-09",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-10",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-11",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2022-12",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2023-01",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2023-02",
+            "exists": false,
+            "bytes": null
+          },
+          {
+            "month": "2023-03",
+            "exists": true,
+            "bytes": "5357"
+          },
+          {
+            "month": "2023-04",
+            "exists": true,
+            "bytes": "32054"
+          },
+          {
+            "month": "2023-05",
+            "exists": true,
+            "bytes": "33097"
+          },
+          {
+            "month": "2023-06",
+            "exists": true,
+            "bytes": "31434"
+          }
+        ]
+      }
+    }
+  }
+}

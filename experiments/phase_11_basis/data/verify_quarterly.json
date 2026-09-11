@@ -1,0 +1,93 @@
+{
+  "BTCUSD_200925/2020-06": {
+    "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_200925/1h/BTCUSD_200925-1h-2020-06.zip",
+    "sha256": "acc6284e9c82296cc98c2d2a2e48a294cb711e5c3f81faf36d58bb94afa40513",
+    "n_bars": 478,
+    "first": "2020-06-11 02:00:00+00:00",
+    "last": "2020-06-30 23:00:00+00:00",
+    "expected_bars": 478,
+    "missing_bars": 0,
+    "align_n": 475,
+    "align_corr_diff": 0.96602,
+    "last_basis": 66.25,
+    "last_basis_bps": 72.5
+  },
+  "BTCUSD_210326/2021-03": {
+    "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_210326/1h/BTCUSD_210326-1h-2021-03.zip",
+    "sha256": "b869588fd2741134f49de75e9027dc5109d81c61299e0a7157fef2007fbd60c0",
+    "n_bars": 609,
+    "first": "2021-03-01 00:00:00+00:00",
+    "last": "2021-03-26 08:00:00+00:00",
+    "expected_bars": 609,
+    "missing_bars": 0,
+    "align_n": 608,
+    "align_corr_diff": 0.99369,
+    "last_basis": -366.17,
+    "last_basis_bps": -68.62
+  },
+  "BTCUSD_221230/2022-12": {
+    "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_221230/1h/BTCUSD_221230-1h-2022-12.zip",
+    "sha256": "6523b9aecb723ea20ca12aad18d4f773ca5a676a903cce3787533c23d5d6397e",
+    "n_bars": 705,
+    "first": "2022-12-01 00:00:00+00:00",
+    "last": "2022-12-30 08:00:00+00:00",
+    "expected_bars": 705,
+    "missing_bars": 0,
+    "align_n": 705,
+    "align_corr_diff": 0.99423,
+    "last_basis": -7.24,
+    "last_basis_bps": -4.39
+  },
+  "BTCUSD_230630/2023-06": {
+    "url": "https://data.binance.vision/data/futures/cm/monthly/klines/BTCUSD_230630/1h/BTCUSD_230630-1h-2023-06.zip",
+    "sha256": "115b3efef48437a9b8b872bcd567d970ed85b8a82429af6cc30754f6955b90c4",
+    "n_bars": 705,
+    "first": "2023-06-01 00:00:00+00:00",
+    "last": "2023-06-30 08:00:00+00:00",
+    "expected_bars": 705,
+    "missing_bars": 0,
+    "align_n": 696,
+    "align_corr_diff": 0.99708,
+    "last_basis": -4.91,
+    "last_basis_bps": -1.61
+  },
+  "BTCUSDT_210625/2021-03": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_210625/1h/BTCUSDT_210625-1h-2021-03.zip",
+    "sha256": "2343561a5b9d227af6043be5c0d662d06be0596dd02bf6db352ad53f52ea0860",
+    "n_bars": 377,
+    "first": "2021-03-16 07:00:00+00:00",
+    "last": "2021-03-31 23:00:00+00:00",
+    "expected_bars": 377,
+    "missing_bars": 0,
+    "align_n": 377,
+    "align_corr_diff": 0.98069,
+    "last_basis": 4864.65,
+    "last_basis_bps": 828.16
+  },
+  "BTCUSDT_221230/2022-12": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_221230/1h/BTCUSDT_221230-1h-2022-12.zip",
+    "sha256": "eadb64ffeb9a74a6f46686be3a6471dc39004a51086a5368722626b0c5be2d38",
+    "n_bars": 705,
+    "first": "2022-12-01 00:00:00+00:00",
+    "last": "2022-12-30 08:00:00+00:00",
+    "expected_bars": 705,
+    "missing_bars": 0,
+    "align_n": 705,
+    "align_corr_diff": 0.99515,
+    "last_basis": 8.76,
+    "last_basis_bps": 5.31
+  },
+  "BTCUSDT_230630/2023-06": {
+    "url": "https://data.binance.vision/data/futures/um/monthly/klines/BTCUSDT_230630/1h/BTCUSDT_230630-1h-2023-06.zip",
+    "sha256": "d7256fabe7311cbf14ad558d32153686d6af448f3bc7d1cead056cb6d9b0d1e0",
+    "n_bars": 705,
+    "first": "2023-06-01 00:00:00+00:00",
+    "last": "2023-06-30 08:00:00+00:00",
+    "expected_bars": 705,
+    "missing_bars": 0,
+    "align_n": 696,
+    "align_corr_diff": 0.99827,
+    "last_basis": -7.11,
+    "last_basis_bps": -2.34
+  }
+}

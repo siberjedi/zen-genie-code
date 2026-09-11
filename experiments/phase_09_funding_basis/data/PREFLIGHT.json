@@ -1,0 +1,75 @@
+{
+  "checks": {
+    "delta_beta_vs_spot": 0.001725,
+    "delta_hedge_ok": true,
+    "funding_interval_8h": true,
+    "n_settlements": 3829,
+    "max_excursion_x": 9.582
+  },
+  "scenarios": {
+    "k100": {
+      "survives": false,
+      "liq_date": "2020-11-06 00:00:00+00:00",
+      "liq_bar": 7426,
+      "liq_price": 15873.9,
+      "funding_to_liq_usd": 1383.0
+    },
+    "k200": {
+      "survives": false,
+      "liq_date": "2020-12-17 15:00:00+00:00",
+      "liq_bar": 8424,
+      "liq_price": 23348.4,
+      "funding_to_liq_usd": 1853.6
+    },
+    "k500": {
+      "survives": false,
+      "liq_date": "2021-02-09 06:00:00+00:00",
+      "liq_bar": 9705,
+      "liq_price": 48210.0,
+      "funding_to_liq_usd": 5113.5
+    }
+  },
+  "regimes": {
+    "2020": {
+      "funding_usd": 2236.7,
+      "basis_chg_usd": 33.5,
+      "n_hours": 8763
+    },
+    "2021": {
+      "funding_usd": 15345.9,
+      "basis_chg_usd": -34.4,
+      "n_hours": 8745
+    },
+    "2022": {
+      "funding_usd": 1282.8,
+      "basis_chg_usd": 1.6,
+      "n_hours": 8760
+    },
+    "2023H1": {
+      "funding_usd": 897.2,
+      "basis_chg_usd": -2.6,
+      "n_hours": 4318
+    }
+  },
+  "spike10x": {
+    "k100": false,
+    "k200": false,
+    "k500": false
+  },
+  "ledger": {
+    "spot_in": 7.18,
+    "perp_in": 2.87,
+    "spot_out": 30.45,
+    "perp_out": 12.18,
+    "slip": 15.05,
+    "funding_cash_usd": 19762.57,
+    "basis_pnl_usd": -1.94,
+    "total_pnl_usd": 19692.91
+  },
+  "daily": {
+    "n_days": 1276,
+    "maxdd_usd": 149.7,
+    "vol_daily_usd": 34.14
+  },
+  "elapsed_min": 0.0
+}

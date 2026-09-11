@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-08 16:25:10 UTC",
+  "seed": 42,
+  "cost_C": 0.003,
+  "alpha": 0.05,
+  "n_boot": 10000,
+  "cpu_hours": 0.7622,
+  "decision": "FAIL",
+  "verdict": "FAIL \u2014 CROSS-ASSET INCREMENTAL EDGE YOK",
+  "holdout": "UNTOUCHED (P5/B/C/A)"
+}

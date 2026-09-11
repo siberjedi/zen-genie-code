@@ -1,0 +1,26 @@
+{
+  "symbol": "BTC/USDT",
+  "timeframe": "5m",
+  "reservation": "FINAL_TEST_P5",
+  "window": "2025-01-01 00:00 UTC -> 2025-06-30 23:55 UTC",
+  "expected_rows": 52128,
+  "rows": 52128,
+  "duplicates": 0,
+  "nulls": 0,
+  "missing_intervals": 0,
+  "missing_sample": [],
+  "ohlc_positivity_violations": 0,
+  "ohlc_relationship_violations": 0,
+  "date_first": "2025-01-01 00:00:00+00:00",
+  "date_last": "2025-06-30 23:55:00+00:00",
+  "sha256": "2441bf175f86b3f6d52246d482bb9263a49684831387bfed504b91a9fab5389c",
+  "schema": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "integrity_pass": true
+}

@@ -1,0 +1,41 @@
+{
+  "experiment_id": "PHASE_17_LONG_ONLY_TREND_VOL_TARGET",
+  "holdout_id": "FINAL_B",
+  "source_url": "https://api.binance.com/api/v3/klines?symbol=BTCUSDT&interval=5m&startTime=1704067200000&endTime=1719791999999&limit=1000",
+  "local_path": "experiments/phase_17/holdout/BTC_USDT-5m_2024H1.feather",
+  "date_start": "2024-01-01 00:00 UTC",
+  "date_end": "2024-06-30 23:55 UTC",
+  "timeframe": "5m",
+  "symbol": "BTC/USDT",
+  "window_ms": [
+    1704067200000,
+    1719792000000
+  ],
+  "row_count": 52416,
+  "expected_rows": 52416,
+  "file_size_bytes": 1709898,
+  "sha256": "28f88258b976ee88382b3e176f8ce8db9f4827bc703c71f93c7d18235d0b9387",
+  "sha256_recheck": "28f88258b976ee88382b3e176f8ce8db9f4827bc703c71f93c7d18235d0b9387",
+  "downloaded_at": "2026-09-10T20:23:31.237208+00:00",
+  "file_mtime": "2026-09-10T20:24:13.970119+00:00",
+  "validation_status": "PASS",
+  "duplicates": 0,
+  "nulls": 0,
+  "monotonic": true,
+  "out_of_window_rows": 0,
+  "missing_intervals": 0,
+  "missing_sample": [],
+  "ohlc_relationship_violations": 0,
+  "ohlc_nonpositive": 0,
+  "date_first": "2024-01-01 00:00:00+00:00",
+  "date_last": "2024-06-30 23:55:00+00:00",
+  "schema": [
+    "date",
+    "open",
+    "high",
+    "low",
+    "close",
+    "volume"
+  ],
+  "integrity_pass": true
+}

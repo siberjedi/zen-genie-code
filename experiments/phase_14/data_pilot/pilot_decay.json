@@ -1,0 +1,177 @@
+{
+  "month": "2023-02",
+  "n_seconds": 2419200,
+  "ffill_frac": 0.00092,
+  "n_trades": 187399566,
+  "issues": [],
+  "horizons": {
+    "1": {
+      "n": 2419140,
+      "quantiles": {
+        "Q1": {
+          "n": 483828,
+          "mean_bp": -0.0003,
+          "median_bp": 0.0,
+          "std_bp": 0.815,
+          "hit_rate": 0.4931
+        },
+        "Q2": {
+          "n": 483828,
+          "mean_bp": -0.0019,
+          "median_bp": 0.0,
+          "std_bp": 0.8504,
+          "hit_rate": 0.4931
+        },
+        "Q3": {
+          "n": 483828,
+          "mean_bp": -0.002,
+          "median_bp": 0.0,
+          "std_bp": 0.8287,
+          "hit_rate": 0.4912
+        },
+        "Q4": {
+          "n": 483828,
+          "mean_bp": -0.0006,
+          "median_bp": 0.0,
+          "std_bp": 0.8104,
+          "hit_rate": 0.4907
+        },
+        "Q5": {
+          "n": 483828,
+          "mean_bp": 0.005,
+          "median_bp": 0.0,
+          "std_bp": 0.7681,
+          "hit_rate": 0.4925
+        }
+      },
+      "gross_effect_bp": 0.0053,
+      "spearman_rho": 0.3
+    },
+    "10": {
+      "n": 2419131,
+      "quantiles": {
+        "Q1": {
+          "n": 483827,
+          "mean_bp": 0.0082,
+          "median_bp": -0.0082,
+          "std_bp": 2.5519,
+          "hit_rate": 0.4962
+        },
+        "Q2": {
+          "n": 483826,
+          "mean_bp": -0.0074,
+          "median_bp": -0.0169,
+          "std_bp": 2.6855,
+          "hit_rate": 0.4934
+        },
+        "Q3": {
+          "n": 483826,
+          "mean_bp": -0.0233,
+          "median_bp": -0.035,
+          "std_bp": 2.6138,
+          "hit_rate": 0.4871
+        },
+        "Q4": {
+          "n": 483826,
+          "mean_bp": -0.0121,
+          "median_bp": -0.0411,
+          "std_bp": 2.4992,
+          "hit_rate": 0.4852
+        },
+        "Q5": {
+          "n": 483826,
+          "mean_bp": 0.0363,
+          "median_bp": -0.0175,
+          "std_bp": 2.3481,
+          "hit_rate": 0.4919
+        }
+      },
+      "gross_effect_bp": 0.0281,
+      "spearman_rho": 0.1
+    },
+    "60": {
+      "n": 2419081,
+      "quantiles": {
+        "Q1": {
+          "n": 483817,
+          "mean_bp": 0.0856,
+          "median_bp": 0.0733,
+          "std_bp": 5.7614,
+          "hit_rate": 0.5094
+        },
+        "Q2": {
+          "n": 483816,
+          "mean_bp": -0.0071,
+          "median_bp": -0.0092,
+          "std_bp": 6.3741,
+          "hit_rate": 0.4982
+        },
+        "Q3": {
+          "n": 483816,
+          "mean_bp": -0.0592,
+          "median_bp": -0.0992,
+          "std_bp": 6.7816,
+          "hit_rate": 0.4876
+        },
+        "Q4": {
+          "n": 483816,
+          "mean_bp": -0.0588,
+          "median_bp": -0.1601,
+          "std_bp": 6.2891,
+          "hit_rate": 0.4799
+        },
+        "Q5": {
+          "n": 483816,
+          "mean_bp": 0.0491,
+          "median_bp": -0.182,
+          "std_bp": 5.8243,
+          "hit_rate": 0.4754
+        }
+      },
+      "gross_effect_bp": -0.0365,
+      "spearman_rho": -0.3
+    },
+    "300": {
+      "n": 2418841,
+      "quantiles": {
+        "Q1": {
+          "n": 483769,
+          "mean_bp": 0.0402,
+          "median_bp": 0.1208,
+          "std_bp": 12.1928,
+          "hit_rate": 0.5063
+        },
+        "Q2": {
+          "n": 483768,
+          "mean_bp": -0.1433,
+          "median_bp": -0.025,
+          "std_bp": 14.2473,
+          "hit_rate": 0.4986
+        },
+        "Q3": {
+          "n": 483768,
+          "mean_bp": 0.0234,
+          "median_bp": -0.145,
+          "std_bp": 14.7565,
+          "hit_rate": 0.4929
+        },
+        "Q4": {
+          "n": 483768,
+          "mean_bp": -0.0247,
+          "median_bp": -0.2799,
+          "std_bp": 14.3211,
+          "hit_rate": 0.4859
+        },
+        "Q5": {
+          "n": 483768,
+          "mean_bp": 0.1482,
+          "median_bp": -0.2777,
+          "std_bp": 13.1074,
+          "hit_rate": 0.4852
+        }
+      },
+      "gross_effect_bp": 0.108,
+      "spearman_rho": 0.3
+    }
+  }
+}

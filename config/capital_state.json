@@ -12,186 +12,455 @@
   "protection_threshold": 100.29,
   "protection_history": [
     {
-      "timestamp": "2026-08-31T00:27:11.391501Z",
-      "equity": 100.1911384,
-      "high_water_mark": 100.1911384,
-      "locked_profit": 0.09556919999999991,
-      "protection_threshold": 100.0955692,
-      "incremental_locked": 0.09556919999999991
+      "timestamp": "2026-09-03T15:38:12.627567Z",
+      "equity": 105.77328338,
+      "high_water_mark": 105.77328338,
+      "locked_profit": 2.8866416899999976,
+      "protection_threshold": 102.88664169,
+      "incremental_locked": 0.007179999999998188,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:32:46.161822Z",
-      "equity": 100.1955424,
-      "high_water_mark": 100.1955424,
-      "locked_profit": 0.09777119999999684,
-      "protection_threshold": 100.0977712,
-      "incremental_locked": 0.0022019999999969286
+      "timestamp": "2026-09-03T15:38:17.621773Z",
+      "equity": 105.78906338,
+      "high_water_mark": 105.78906338,
+      "locked_profit": 2.894531690000001,
+      "protection_threshold": 102.89453169000001,
+      "incremental_locked": 0.007890000000003283,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:34:11.956127Z",
-      "equity": 100.23119559999999,
-      "high_water_mark": 100.23119559999999,
-      "locked_profit": 0.1155977999999962,
-      "protection_threshold": 100.11559779999999,
-      "incremental_locked": 0.01782659999999936
+      "timestamp": "2026-09-03T15:38:27.771109Z",
+      "equity": 105.82204338,
+      "high_water_mark": 105.82204338,
+      "locked_profit": 2.9110216899999983,
+      "protection_threshold": 102.91102169,
+      "incremental_locked": 0.01648999999999745,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:34:46.936695Z",
-      "equity": 100.2343874,
-      "high_water_mark": 100.2343874,
-      "locked_profit": 0.1171937000000014,
-      "protection_threshold": 100.1171937,
-      "incremental_locked": 0.0015959000000052015
+      "timestamp": "2026-09-03T15:52:18.087674Z",
+      "equity": 105.84229338,
+      "high_water_mark": 105.84229338,
+      "locked_profit": 2.9211466900000005,
+      "protection_threshold": 102.92114669,
+      "incremental_locked": 0.01012500000000216,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:34:48.165419Z",
-      "equity": 100.2345234,
-      "high_water_mark": 100.2345234,
-      "locked_profit": 0.11726170000000025,
-      "protection_threshold": 100.1172617,
-      "incremental_locked": 6.799999999884676e-05
+      "timestamp": "2026-09-03T15:53:32.922702Z",
+      "equity": 105.88963337999999,
+      "high_water_mark": 105.88963337999999,
+      "locked_profit": 2.944816689999996,
+      "protection_threshold": 102.94481669,
+      "incremental_locked": 0.02366999999999564,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:35:08.107790Z",
-      "equity": 100.2717036,
-      "high_water_mark": 100.2717036,
-      "locked_profit": 0.13585179999999752,
-      "protection_threshold": 100.1358518,
-      "incremental_locked": 0.018590099999997278
+      "timestamp": "2026-09-03T15:55:29.122839Z",
+      "equity": 105.89368338,
+      "high_water_mark": 105.89368338,
+      "locked_profit": 2.9468416899999994,
+      "protection_threshold": 102.94684169,
+      "incremental_locked": 0.002025000000003274,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:35:12.640406Z",
-      "equity": 100.3026374,
-      "high_water_mark": 100.3026374,
-      "locked_profit": 0.15131869999999736,
-      "protection_threshold": 100.15131869999999,
-      "incremental_locked": 0.015466899999999839
+      "timestamp": "2026-09-03T15:56:14.001512Z",
+      "equity": 105.90683338,
+      "high_water_mark": 105.90683338,
+      "locked_profit": 2.9534166899999974,
+      "protection_threshold": 102.95341669,
+      "incremental_locked": 0.006574999999997999,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:35:17.017153Z",
-      "equity": 100.3374596,
-      "high_water_mark": 100.3374596,
-      "locked_profit": 0.16872980000000126,
-      "protection_threshold": 100.1687298,
-      "incremental_locked": 0.0174111000000039
+      "timestamp": "2026-09-03T15:56:22.421416Z",
+      "equity": 105.92403338,
+      "high_water_mark": 105.92403338,
+      "locked_profit": 2.9620166899999987,
+      "protection_threshold": 102.96201669,
+      "incremental_locked": 0.008600000000001273,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:35:33.031859Z",
-      "equity": 100.4207214,
-      "high_water_mark": 100.4207214,
-      "locked_profit": 0.2103607000000025,
-      "protection_threshold": 100.2103607,
-      "incremental_locked": 0.04163090000000125
+      "timestamp": "2026-09-03T15:56:28.854143Z",
+      "equity": 105.94770338,
+      "high_water_mark": 105.94770338,
+      "locked_profit": 2.9738516899999965,
+      "protection_threshold": 102.97385169,
+      "incremental_locked": 0.01183499999999782,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:35:33.707494Z",
-      "equity": 100.4325328,
-      "high_water_mark": 100.4325328,
-      "locked_profit": 0.21626640000000208,
-      "protection_threshold": 100.2162664,
-      "incremental_locked": 0.00590569999999957
+      "timestamp": "2026-09-03T15:56:57.657442Z",
+      "equity": 105.97258338,
+      "high_water_mark": 105.97258338,
+      "locked_profit": 2.9862916900000016,
+      "protection_threshold": 102.98629169,
+      "incremental_locked": 0.012440000000005114,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:11.126940Z",
-      "equity": 100.43818759999999,
-      "high_water_mark": 100.43818759999999,
-      "locked_profit": 0.219093799999996,
-      "protection_threshold": 100.2190938,
-      "incremental_locked": 0.002827399999993929
+      "timestamp": "2026-09-03T15:57:02.624928Z",
+      "equity": 105.97663338,
+      "high_water_mark": 105.97663338,
+      "locked_profit": 2.9883166899999978,
+      "protection_threshold": 102.98831669,
+      "incremental_locked": 0.0020249999999961688,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:22.105992Z",
-      "equity": 100.459283,
-      "high_water_mark": 100.459283,
-      "locked_profit": 0.2296414999999996,
-      "protection_threshold": 100.2296415,
-      "incremental_locked": 0.010547700000003601
+      "timestamp": "2026-09-03T15:57:12.900724Z",
+      "equity": 105.99646338,
+      "high_water_mark": 105.99646338,
+      "locked_profit": 2.9982316899999972,
+      "protection_threshold": 102.99823169,
+      "incremental_locked": 0.009914999999999452,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:26.079141Z",
-      "equity": 100.46272359999999,
-      "high_water_mark": 100.46272359999999,
-      "locked_profit": 0.23136179999999484,
-      "protection_threshold": 100.2313618,
-      "incremental_locked": 0.001720299999995234
+      "timestamp": "2026-09-03T15:57:13.769967Z",
+      "equity": 105.99909338,
+      "high_water_mark": 105.99909338,
+      "locked_profit": 2.9995466900000025,
+      "protection_threshold": 102.99954669,
+      "incremental_locked": 0.0013150000000052842,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:31.623359Z",
-      "equity": 100.48579559999999,
-      "high_water_mark": 100.48579559999999,
-      "locked_profit": 0.2428977999999944,
-      "protection_threshold": 100.2428978,
-      "incremental_locked": 0.011535999999999547
+      "timestamp": "2026-09-03T15:58:33.347042Z",
+      "equity": 106.00698338,
+      "high_water_mark": 106.00698338,
+      "locked_profit": 3.003491689999997,
+      "protection_threshold": 103.00349169,
+      "incremental_locked": 0.003944999999994536,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:46.216823Z",
-      "equity": 100.5236202,
-      "high_water_mark": 100.5236202,
-      "locked_profit": 0.26181009999999816,
-      "protection_threshold": 100.26181009999999,
-      "incremental_locked": 0.018912300000003768
+      "timestamp": "2026-09-03T15:58:34.036662Z",
+      "equity": 106.01224338,
+      "high_water_mark": 106.01224338,
+      "locked_profit": 3.0061216900000005,
+      "protection_threshold": 103.00612169,
+      "incremental_locked": 0.002630000000003463,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:51.127928Z",
-      "equity": 100.5613326,
-      "high_water_mark": 100.5613326,
-      "locked_profit": 0.28066630000000004,
-      "protection_threshold": 100.28066630000001,
-      "incremental_locked": 0.018856200000001877
+      "timestamp": "2026-09-03T15:58:52.340751Z",
+      "equity": 106.05311338,
+      "high_water_mark": 106.05311338,
+      "locked_profit": 3.0265566899999996,
+      "protection_threshold": 103.02655669,
+      "incremental_locked": 0.020434999999999093,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-08-31T00:36:56.832748Z",
-      "equity": 100.5791916,
-      "high_water_mark": 100.5791916,
-      "locked_profit": 0.28959580000000074,
-      "protection_threshold": 100.2895958,
-      "incremental_locked": 0.0089295000000007
+      "timestamp": "2026-09-03T15:58:52.870535Z",
+      "equity": 106.07557338,
+      "high_water_mark": 106.07557338,
+      "locked_profit": 3.0377866899999972,
+      "protection_threshold": 103.03778668999999,
+      "incremental_locked": 0.01122999999999763,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-09-01T10:08:36.283724Z",
-      "equity": 102.30919571,
-      "high_water_mark": 102.30919571,
-      "locked_profit": 1.1545978549999987,
-      "protection_threshold": 101.15459785499999,
-      "incremental_locked": 0.8645978549999986,
-      "realized_profit": 2.30919571
+      "timestamp": "2026-09-03T17:08:37.656215Z",
+      "equity": 106.08751338,
+      "high_water_mark": 106.08751338,
+      "locked_profit": 3.043756690000002,
+      "protection_threshold": 103.04375669000001,
+      "incremental_locked": 0.005970000000004916,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-09-02T02:46:12.654881Z",
-      "equity": 102.76215847,
-      "high_water_mark": 102.76215847,
-      "locked_profit": 1.3810792350000014,
-      "protection_threshold": 101.381079235,
-      "incremental_locked": 0.22648138000000273,
-      "realized_profit": 2.76215847
+      "timestamp": "2026-09-03T17:08:47.639508Z",
+      "equity": 106.10471338,
+      "high_water_mark": 106.10471338,
+      "locked_profit": 3.0523566900000034,
+      "protection_threshold": 103.05235669000001,
+      "incremental_locked": 0.008600000000001273,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-09-02T03:30:43.004563Z",
-      "equity": 103.50544417,
-      "high_water_mark": 103.50544417,
-      "locked_profit": 1.752722085000002,
-      "protection_threshold": 101.752722085,
-      "incremental_locked": 0.37164285000000064,
-      "realized_profit": 3.50544417
+      "timestamp": "2026-09-03T17:10:42.580790Z",
+      "equity": 106.12070338,
+      "high_water_mark": 106.12070338,
+      "locked_profit": 3.0603516899999974,
+      "protection_threshold": 103.06035169,
+      "incremental_locked": 0.00799499999999398,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-09-02T03:37:07.573016Z",
-      "equity": 104.20424341,
-      "high_water_mark": 104.20424341,
-      "locked_profit": 2.102121705000002,
-      "protection_threshold": 102.102121705,
-      "incremental_locked": 0.3493996199999998,
-      "realized_profit": 4.20424341
+      "timestamp": "2026-09-03T17:10:52.553120Z",
+      "equity": 106.14579338,
+      "high_water_mark": 106.14579338,
+      "locked_profit": 3.0728966900000003,
+      "protection_threshold": 103.07289669,
+      "incremental_locked": 0.012545000000002915,
+      "realized_profit": 4.59273338
     },
     {
-      "timestamp": "2026-09-02T04:00:08.711291Z",
-      "equity": 105.83189143,
-      "high_water_mark": 105.83189143,
-      "locked_profit": 2.9159457149999994,
-      "protection_threshold": 102.91594571499999,
-      "incremental_locked": 0.8138240099999976,
-      "realized_profit": 5.83189143
+      "timestamp": "2026-09-03T17:10:57.116166Z",
+      "equity": 106.15105338,
+      "high_water_mark": 106.15105338,
+      "locked_profit": 3.0755266899999967,
+      "protection_threshold": 103.07552669,
+      "incremental_locked": 0.0026299999999963575,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:11:02.555715Z",
+      "equity": 106.15631338,
+      "high_water_mark": 106.15631338,
+      "locked_profit": 3.07815669,
+      "protection_threshold": 103.07815669,
+      "incremental_locked": 0.002630000000003463,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:11:07.564498Z",
+      "equity": 106.16036338,
+      "high_water_mark": 106.16036338,
+      "locked_profit": 3.0801816900000034,
+      "protection_threshold": 103.08018169,
+      "incremental_locked": 0.002025000000003274,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:11:12.114378Z",
+      "equity": 106.17593338,
+      "high_water_mark": 106.17593338,
+      "locked_profit": 3.087966690000002,
+      "protection_threshold": 103.08796669,
+      "incremental_locked": 0.0077849999999983766,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:11:21.047289Z",
+      "equity": 106.23521337999999,
+      "high_water_mark": 106.23521337999999,
+      "locked_profit": 3.1176066899999952,
+      "protection_threshold": 103.11760669,
+      "incremental_locked": 0.02963999999999345,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:13:13.062883Z",
+      "equity": 106.24331338,
+      "high_water_mark": 106.24331338,
+      "locked_profit": 3.121656690000002,
+      "protection_threshold": 103.12165669000001,
+      "incremental_locked": 0.004050000000006548,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:13:17.323524Z",
+      "equity": 106.25120337999999,
+      "high_water_mark": 106.25120337999999,
+      "locked_profit": 3.1256016899999963,
+      "protection_threshold": 103.12560169,
+      "incremental_locked": 0.003944999999994536,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:14:12.370439Z",
+      "equity": 106.25909338,
+      "high_water_mark": 106.25909338,
+      "locked_profit": 3.129546689999998,
+      "protection_threshold": 103.12954669,
+      "incremental_locked": 0.003945000000001642,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:14:34.085883Z",
+      "equity": 106.26051338,
+      "high_water_mark": 106.26051338,
+      "locked_profit": 3.130256690000003,
+      "protection_threshold": 103.13025669000001,
+      "incremental_locked": 0.0007100000000050954,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:14:52.862287Z",
+      "equity": 106.26719338,
+      "high_water_mark": 106.26719338,
+      "locked_profit": 3.1335966899999974,
+      "protection_threshold": 103.13359668999999,
+      "incremental_locked": 0.0033399999999943475,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:14:57.655886Z",
+      "equity": 106.27508338,
+      "high_water_mark": 106.27508338,
+      "locked_profit": 3.137541689999999,
+      "protection_threshold": 103.13754169,
+      "incremental_locked": 0.003945000000001642,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:15:12.904007Z",
+      "equity": 106.28560338,
+      "high_water_mark": 106.28560338,
+      "locked_profit": 3.142801689999999,
+      "protection_threshold": 103.14280169,
+      "incremental_locked": 0.00525999999999982,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:15:23.959200Z",
+      "equity": 106.32000337999999,
+      "high_water_mark": 106.32000337999999,
+      "locked_profit": 3.1600016899999943,
+      "protection_threshold": 103.16000169,
+      "incremental_locked": 0.01719999999999544,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:37:37.906189Z",
+      "equity": 106.34125338,
+      "high_water_mark": 106.34125338,
+      "locked_profit": 3.170626689999999,
+      "protection_threshold": 103.17062669,
+      "incremental_locked": 0.010625000000004547,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:37:38.368989Z",
+      "equity": 106.34388338,
+      "high_water_mark": 106.34388338,
+      "locked_profit": 3.171941689999997,
+      "protection_threshold": 103.17194169,
+      "incremental_locked": 0.0013149999999981787,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:37:42.109749Z",
+      "equity": 106.35845338,
+      "high_water_mark": 106.35845338,
+      "locked_profit": 3.17922669,
+      "protection_threshold": 103.17922669000001,
+      "incremental_locked": 0.0072850000000030946,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T17:37:47.138969Z",
+      "equity": 106.36371338,
+      "high_water_mark": 106.36371338,
+      "locked_profit": 3.1818566899999965,
+      "protection_threshold": 103.18185668999999,
+      "incremental_locked": 0.0026299999999963575,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:04:12.415553Z",
+      "equity": 106.37970338,
+      "high_water_mark": 106.37970338,
+      "locked_profit": 3.1898516899999976,
+      "protection_threshold": 103.18985169,
+      "incremental_locked": 0.007995000000001085,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:06:18.719568Z",
+      "equity": 106.38901338,
+      "high_water_mark": 106.38901338,
+      "locked_profit": 3.194506689999997,
+      "protection_threshold": 103.19450669,
+      "incremental_locked": 0.004654999999999632,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:06:37.607918Z",
+      "equity": 106.39164337999999,
+      "high_water_mark": 106.39164337999999,
+      "locked_profit": 3.1958216899999954,
+      "protection_threshold": 103.19582169,
+      "incremental_locked": 0.0013149999999981787,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:06:43.529885Z",
+      "equity": 106.41005338,
+      "high_water_mark": 106.41005338,
+      "locked_profit": 3.205026689999997,
+      "protection_threshold": 103.20502669,
+      "incremental_locked": 0.009205000000001462,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:06:47.724881Z",
+      "equity": 106.42725338,
+      "high_water_mark": 106.42725338,
+      "locked_profit": 3.213626689999998,
+      "protection_threshold": 103.21362669,
+      "incremental_locked": 0.008600000000001273,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:06:53.488472Z",
+      "equity": 106.42988337999999,
+      "high_water_mark": 106.42988337999999,
+      "locked_profit": 3.2149416899999963,
+      "protection_threshold": 103.21494168999999,
+      "incremental_locked": 0.0013149999999981787,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:07:02.839366Z",
+      "equity": 106.44182337999999,
+      "high_water_mark": 106.44182337999999,
+      "locked_profit": 3.220911689999994,
+      "protection_threshold": 103.22091169,
+      "incremental_locked": 0.00596999999999781,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:07:07.745917Z",
+      "equity": 106.48148338,
+      "high_water_mark": 106.48148338,
+      "locked_profit": 3.24074169,
+      "protection_threshold": 103.24074169,
+      "incremental_locked": 0.01983000000000601,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:07:18.513492Z",
+      "equity": 106.50131338,
+      "high_water_mark": 106.50131338,
+      "locked_profit": 3.2506566899999996,
+      "protection_threshold": 103.25065669,
+      "incremental_locked": 0.009914999999999452,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:09:28.064149Z",
+      "equity": 106.54502338,
+      "high_water_mark": 106.54502338,
+      "locked_profit": 3.2725116900000017,
+      "protection_threshold": 103.27251169,
+      "incremental_locked": 0.021855000000002178,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:09:32.564183Z",
+      "equity": 106.55291337999999,
+      "high_water_mark": 106.55291337999999,
+      "locked_profit": 3.2764566899999963,
+      "protection_threshold": 103.27645669,
+      "incremental_locked": 0.003944999999994536,
+      "realized_profit": 4.59273338
+    },
+    {
+      "timestamp": "2026-09-03T18:09:42.856272Z",
+      "equity": 106.62818338,
+      "high_water_mark": 106.62818338,
+      "locked_profit": 3.314091689999998,
+      "protection_threshold": 103.31409169,
+      "incremental_locked": 0.03763500000000164,
+      "realized_profit": 4.59273338
     }
   ],
-  "updated_at": "2026-09-02T08:59:06.108789Z"
+  "updated_at": "2026-09-10T20:34:28.649503Z"
 }

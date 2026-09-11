@@ -1,0 +1,66 @@
+[
+  {
+    "family": "primary_L0",
+    "gate_pass": false,
+    "a_ge2block_ge2model": false,
+    "b_support": false,
+    "b_detail": {
+      "cells": [],
+      "n_support": 0
+    },
+    "c_pss_edge": false,
+    "d_d_power": false,
+    "candidate_cells": [],
+    "blocks_fdr": [],
+    "models_fdr": [],
+    "n_fdr_sig": 0
+  },
+  {
+    "family": "primary_L1",
+    "gate_pass": false,
+    "a_ge2block_ge2model": false,
+    "b_support": false,
+    "b_detail": {
+      "cells": [],
+      "n_support": 0
+    },
+    "c_pss_edge": false,
+    "d_d_power": false,
+    "candidate_cells": [],
+    "blocks_fdr": [],
+    "models_fdr": [],
+    "n_fdr_sig": 0
+  },
+  {
+    "family": "primary_L2",
+    "gate_pass": false,
+    "a_ge2block_ge2model": false,
+    "b_support": false,
+    "b_detail": {
+      "cells": [],
+      "n_support": 0
+    },
+    "c_pss_edge": false,
+    "d_d_power": false,
+    "candidate_cells": [],
+    "blocks_fdr": [],
+    "models_fdr": [],
+    "n_fdr_sig": 0
+  },
+  {
+    "family": "secondary",
+    "gate_pass": false,
+    "a_ge2block_ge2model": false,
+    "b_support": false,
+    "b_detail": {
+      "cells": [],
+      "n_support": 0
+    },
+    "c_pss_edge": false,
+    "d_d_power": false,
+    "candidate_cells": [],
+    "blocks_fdr": [],
+    "models_fdr": [],
+    "n_fdr_sig": 0
+  }
+]

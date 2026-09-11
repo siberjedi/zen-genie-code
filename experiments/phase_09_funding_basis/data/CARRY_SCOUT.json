@@ -1,0 +1,21 @@
+{
+  "coverage": 0.99798,
+  "n_hours": 30586,
+  "window": [
+    "2020-01-01 00:00:00+00:00",
+    "2023-06-29 23:00:00+00:00"
+  ],
+  "avg_funding_bp8h": 1.4514,
+  "frac_funding_pos": 0.8645,
+  "basis_start": -5.47,
+  "basis_end": -7.41,
+  "basis_mean": 3.02,
+  "funding_cash_usd": 19736.33,
+  "basis_pnl_usd": -1.94,
+  "fees_usd": 52.67,
+  "slip_usd": 15.05,
+  "total_pnl_usd_per_btc_pair": 19666.67,
+  "annualized_pct_on_avg_notional": 78.48,
+  "maxdd_usd_daily": 154.24,
+  "elapsed_min": 0.9
+}

@@ -1,0 +1,13 @@
+{
+  "gates": {
+    "a_pss_edge": false,
+    "b_support": false,
+    "c_theta": false,
+    "d_effect": false,
+    "e_fdr": false,
+    "f_maxdd": false,
+    "wf": "N/A (181-gun pencere 365-gun train barindiramaz; protected 2024 kullanilamaz)"
+  },
+  "decision": "FAIL",
+  "verdict": "NOT-CONFIRMED"
+}

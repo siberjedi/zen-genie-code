@@ -1,0 +1,107 @@
+{
+  "rules": {
+    "E1": {
+      "n": 182,
+      "gross": 0.000918,
+      "cost": 0.003,
+      "net": -0.002082,
+      "edge": -0.694,
+      "theta": -0.4428,
+      "ci95": [
+        -1.4783,
+        0.5955
+      ],
+      "maxdd": 0.5196,
+      "win_rate": 0.4505,
+      "turnover_per_year": 52.0,
+      "d": -0.0614,
+      "power": 0.206,
+      "t": -0.828,
+      "p": 0.7956911708910328,
+      "mean_hold_bars": 576,
+      "q": 1.0,
+      "gates": {
+        "net_pos": false,
+        "edge": false,
+        "theta_ci": false,
+        "maxdd": false,
+        "d_power": false,
+        "fdr": false,
+        "chain": false
+      }
+    },
+    "E2": {
+      "n": 1274,
+      "gross": 0.000239,
+      "cost": 0.003,
+      "net": -0.002761,
+      "edge": -0.92,
+      "theta": -2.782,
+      "ci95": [
+        -3.6787,
+        -1.8839
+      ],
+      "maxdd": 3.5854,
+      "win_rate": 0.3815,
+      "turnover_per_year": 364.1,
+      "d": -0.1458,
+      "power": 1.0,
+      "t": -5.204,
+      "p": 0.9999998862230574,
+      "mean_hold_bars": 96,
+      "q": 1.0,
+      "gates": {
+        "net_pos": false,
+        "edge": false,
+        "theta_ci": false,
+        "maxdd": false,
+        "d_power": false,
+        "fdr": false,
+        "chain": false
+      }
+    },
+    "E3": {
+      "n": 3818,
+      "gross": -9e-06,
+      "cost": 0.003,
+      "net": -0.003009,
+      "edge": -1.003,
+      "theta": -7.9235,
+      "ci95": [
+        -9.327,
+        -6.6806
+      ],
+      "maxdd": 11.4833,
+      "win_rate": 0.3292,
+      "turnover_per_year": 1091.3,
+      "d": -0.2399,
+      "power": 1.0,
+      "t": -14.821,
+      "p": 1.0,
+      "mean_hold_bars": 36,
+      "q": 1.0,
+      "gates": {
+        "net_pos": false,
+        "edge": false,
+        "theta_ci": false,
+        "maxdd": false,
+        "d_power": false,
+        "fdr": false,
+        "chain": false
+      }
+    }
+  },
+  "overlap_E1nE2": {
+    "E2_inside_E1": {
+      "n": 363,
+      "mean_net": -0.002747
+    },
+    "E2_outside_E1": {
+      "n": 911,
+      "mean_net": -0.002767
+    },
+    "note": "betimsel; test YOK (FDR-disi); kollar bagimsiz (netting yok)"
+  },
+  "candidates": [],
+  "decision": "CLOSE"
+}

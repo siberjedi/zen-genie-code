@@ -1,15 +1,15 @@
 {
   "core_capital": 100.0,
-  "reserve_balance": 1.77297929,
+  "reserve_balance": 0.17073366500000048,
   "total_harvested": 0.0,
   "last_harvest_realized": 0.0,
   "last_harvest_at": null,
   "last_harvest_amount": 0.0,
   "harvest_history": [],
   "created_at": "2026-08-31T00:24:42.253254Z",
-  "high_water_mark": 106.62818338,
-  "locked_profit": 3.314091689999998,
-  "protection_threshold": 103.31409169,
+  "high_water_mark": 100.58,
+  "locked_profit": 0.29,
+  "protection_threshold": 100.29,
   "protection_history": [
     {
       "timestamp": "2026-09-03T15:38:12.627567Z",
@@ -462,5 +462,5 @@
       "realized_profit": 4.59273338
     }
   ],
-  "updated_at": "2026-09-04T00:18:38.706397Z"
+  "updated_at": "2026-09-10T21:33:18.010131Z"
 }

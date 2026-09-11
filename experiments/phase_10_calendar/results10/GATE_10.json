@@ -1,0 +1,29 @@
+{
+  "E1": {
+    "net_pos": false,
+    "edge": false,
+    "theta_ci": false,
+    "maxdd": false,
+    "d_power": false,
+    "fdr": false,
+    "chain": false
+  },
+  "E2": {
+    "net_pos": false,
+    "edge": false,
+    "theta_ci": false,
+    "maxdd": false,
+    "d_power": false,
+    "fdr": false,
+    "chain": false
+  },
+  "E3": {
+    "net_pos": false,
+    "edge": false,
+    "theta_ci": false,
+    "maxdd": false,
+    "d_power": false,
+    "fdr": false,
+    "chain": false
+  }
+}

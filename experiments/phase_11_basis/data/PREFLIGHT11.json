@@ -1,0 +1,152 @@
+{
+  "contracts": {
+    "BTCUSD_200925": {
+      "expiry": "2020-09-25",
+      "first_month": "2020-06",
+      "n_bars": 2686,
+      "max_gap_h": 1.0,
+      "align_n": 2683,
+      "align_corr_diff": 0.97749,
+      "last_bar": "2020-09-30 23:00:00+00:00",
+      "termination_clean": false
+    },
+    "BTCUSD_201225": {
+      "expiry": "2020-12-25",
+      "first_month": "2020-07",
+      "n_bars": 4407,
+      "max_gap_h": 1.0,
+      "align_n": 4400,
+      "align_corr_diff": 0.88818,
+      "last_bar": "2020-12-31 23:00:00+00:00",
+      "termination_clean": false
+    },
+    "BTCUSD_210326": {
+      "expiry": "2021-03-26",
+      "first_month": "2020-09",
+      "n_bars": 4369,
+      "max_gap_h": 1.0,
+      "align_n": 4359,
+      "align_corr_diff": 0.99076,
+      "last_bar": "2021-03-26 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_210625": {
+      "expiry": "2021-06-25",
+      "first_month": "2020-12",
+      "n_bars": 4372,
+      "max_gap_h": 1.0,
+      "align_n": 4363,
+      "align_corr_diff": 0.98227,
+      "last_bar": "2021-06-25 11:00:00+00:00",
+      "termination_clean": false
+    },
+    "BTCUSD_210924": {
+      "expiry": "2021-09-24",
+      "first_month": "2021-03",
+      "n_bars": 4369,
+      "max_gap_h": 1.0,
+      "align_n": 4359,
+      "align_corr_diff": 0.92845,
+      "last_bar": "2021-09-24 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_211231": {
+      "expiry": "2021-12-31",
+      "first_month": "2021-06",
+      "n_bars": 4537,
+      "max_gap_h": 1.0,
+      "align_n": 4531,
+      "align_corr_diff": 0.99282,
+      "last_bar": "2021-12-31 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_220325": {
+      "expiry": "2022-03-25",
+      "first_month": "2021-09",
+      "n_bars": 4369,
+      "max_gap_h": 1.0,
+      "align_n": 4367,
+      "align_corr_diff": 0.99367,
+      "last_bar": "2022-03-25 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_220624": {
+      "expiry": "2022-06-24",
+      "first_month": "2021-12",
+      "n_bars": 4201,
+      "max_gap_h": 1.0,
+      "align_n": 4201,
+      "align_corr_diff": 0.99749,
+      "last_bar": "2022-06-24 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_220930": {
+      "expiry": "2022-09-30",
+      "first_month": "2022-03",
+      "n_bars": 4537,
+      "max_gap_h": 1.0,
+      "align_n": 4537,
+      "align_corr_diff": 0.9971,
+      "last_bar": "2022-09-30 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_221230": {
+      "expiry": "2022-12-30",
+      "first_month": "2022-06",
+      "n_bars": 4537,
+      "max_gap_h": 1.0,
+      "align_n": 4537,
+      "align_corr_diff": 0.99646,
+      "last_bar": "2022-12-30 08:00:00+00:00",
+      "termination_clean": true
+    },
+    "BTCUSD_230331": {
+      "expiry": "2023-03-31",
+      "first_month": "2022-09",
+      "n_bars": 4370,
+      "max_gap_h": 1.0,
+      "align_n": 4368,
+      "align_corr_diff": 0.99216,
+      "last_bar": "2023-03-31 09:00:00+00:00",
+      "termination_clean": false
+    },
+    "BTCUSD_230630": {
+      "expiry": "2023-06-30",
+      "first_month": "2022-12",
+      "n_bars": 4369,
+      "max_gap_h": 1.0,
+      "align_n": 4358,
+      "align_corr_diff": 0.99287,
+      "last_bar": "2023-06-30 08:00:00+00:00",
+      "termination_clean": true
+    }
+  },
+  "margin_model": {
+    "spec": "izole, W0=k BTC, MMR %0.5, breach->likidasyon, kurtarma YOK; k=1000% muhendislik marji (10x tampon)",
+    "spike_2.0x": {
+      "balance_btc": 9.0,
+      "ratio": 4.5,
+      "survives": true
+    },
+    "spike_5.0x": {
+      "balance_btc": 6.0,
+      "ratio": 1.2,
+      "survives": true
+    },
+    "spike_9.58x": {
+      "balance_btc": 1.42,
+      "ratio": 0.1482,
+      "survives": true
+    },
+    "spike_10.0x": {
+      "balance_btc": 1.0,
+      "ratio": 0.1,
+      "survives": true
+    }
+  },
+  "gate_applicability": {
+    "d030": 0.2517,
+    "d080": 0.829
+  },
+  "n_files": 80
+}

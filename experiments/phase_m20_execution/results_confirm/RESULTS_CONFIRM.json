@@ -1,0 +1,52 @@
+{
+  "decision": "FAIL",
+  "verdict": "NOT-CONFIRMED",
+  "theta": -10.2168,
+  "ci95": [
+    -23.6424,
+    2.9865
+  ],
+  "net": -0.0009333,
+  "gross": 0.0003895,
+  "edge_event": -0.7056,
+  "edge_decile": -1.1827,
+  "c_conf_avg": 0.0013228,
+  "auc": 0.5482,
+  "rank_ic": 0.026,
+  "tau": 0.3333,
+  "d": 0.004,
+  "power": 0.055,
+  "q": 1.0,
+  "maxdd": 16.4377,
+  "n_events": 12947,
+  "n_conf": 51770,
+  "event_rate": 0.2501,
+  "top1_share": NaN,
+  "breakeven_event": 0.0003895,
+  "gates": {
+    "a_pss_edge": false,
+    "b_support": false,
+    "c_theta": false,
+    "d_effect": false,
+    "e_fdr": false,
+    "f_maxdd": false,
+    "wf": "N/A (181-gun pencere 365-gun train barindiramaz; protected 2024 kullanilamaz)"
+  },
+  "extra": {},
+  "budget": {
+    "cpu_hours": 0.0709,
+    "ledger": [
+      {
+        "arm": "H48-train-refit",
+        "cpu_sec": 254.9
+      },
+      {
+        "arm": "H48-confirm-infer",
+        "cpu_sec": 0.4
+      }
+    ]
+  },
+  "q90_frozen": 0.5927749364886543,
+  "lock": "M20-CONFIRM",
+  "window": "2025H1"
+}

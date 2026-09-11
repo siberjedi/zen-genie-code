@@ -1,0 +1,37 @@
+{
+  "populations": {
+    "event_set": "frozen TRAIN-q90, n=647, traded rule (primary)",
+    "pooled_decile": "VAL top-decile, n_top=5177, signal-quality continuity"
+  },
+  "C_M20_avg": 0.0013356,
+  "C_FIX": 0.0013000000000000002,
+  "fee_rt": 0.0008,
+  "spread_rt": 0.0001,
+  "slip_rt": 0.0004,
+  "funding_mean": 3.56e-05,
+  "funding_cross_rate": 0.3663,
+  "gross_event": 0.005771,
+  "net_event": 0.0044354,
+  "gross_decile": 0.0023415,
+  "net_decile": 0.0010059,
+  "theta": 8.7524,
+  "ci95": [
+    6.9114,
+    11.6551
+  ],
+  "pss_m20": 0.0010059,
+  "edge_cost_m20_decile": 0.7531,
+  "edge_cost_m20_event": 3.3209,
+  "auc": 0.6018950518402912,
+  "rank_ic": 0.05442301628492652,
+  "maxdd": 0.901,
+  "n_events": 647,
+  "breakeven_event": 0.005771,
+  "breakeven_decile": 0.0023415,
+  "margin_event": 0.0044354,
+  "margin_decile": 0.0010059,
+  "phase7_net_C0003_event": 0.002771,
+  "phase7_net_C0003_decile": -0.000659,
+  "decision": "B",
+  "verdict": "Pozitif ama zayif/kirilgan -> bagimsiz dogrulama gerekli"
+}

@@ -1,0 +1,13 @@
+{
+  "gates": {
+    "a_pss_edge": false,
+    "b_support": true,
+    "c_theta": true,
+    "d_effect": false,
+    "e_fdr": false,
+    "f_maxdd": false,
+    "chain_no_wf_seed": false
+  },
+  "decision": "FAIL",
+  "verdict": "FAIL \u2014 H48 ECONOMIC EDGE YOK"
+}

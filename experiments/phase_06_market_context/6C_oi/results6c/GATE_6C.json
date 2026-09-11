@@ -1,0 +1,27 @@
+{
+  "gates": {
+    "a_fdr": false,
+    "b_support": true,
+    "c_econ": false,
+    "d_effect": false,
+    "chain": false,
+    "incremental_ci": false
+  },
+  "decision": "FAIL",
+  "verdict": "FAIL \u2014 OI INCREMENTAL EDGE YOK",
+  "delta": {
+    "n_boot": 10000,
+    "seed": 42,
+    "k": 5151,
+    "delta_pss_mean": -1.55087593970158e-05,
+    "delta_pss_ci95": [
+      -0.0001032346836735759,
+      6.90906596572114e-05
+    ],
+    "delta_edge_ci95": [
+      -0.0344115612245253,
+      0.023030219885737134
+    ],
+    "ci_excludes_zero": false
+  }
+}

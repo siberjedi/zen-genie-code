@@ -20,6 +20,12 @@ splits:
     final_test_B: "2024-01-01 → 2024-06-30  # RL final — A ile örtüşmez"
   phase_05_compare:
     final_test_C: "2024-07-01 → 2024-12-31  # Nihai karşılaştırma — A/B'ye dokunulmamış"
+  phase_05_ml:
+    # Phase 5 — ML sinyal araştırması (M.20 formalization 2026-09-07)
+    train: "2020-01-01 → 2022-12-31"            # mevcut dataset (dokunulmaz)
+    validation: "2023-01-01 → 2023-06-30"        # mevcut dataset (dokunulmaz)
+    final_test_P5: "2025-01-01 → 2025-06-30"    # PHASE 5 HOLDOUT (2025H1 — RESERVED, M.20)
+    note: "2025H1 DOCUNULMAZ penceredir; Final B (2024H1) ve C (2024H2) korunur. 2025H1 yalnizca FINAL degerlendirme icin, tek kez."
   phase_10_paper:
     live_paper_window: "30 gün kesintisiz (başlatıldığında doldur)"
 

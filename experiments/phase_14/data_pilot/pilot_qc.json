@@ -1,0 +1,13 @@
+{
+  "n_rows": 187399566,
+  "ts_nonmono": 0,
+  "gap_over_60s": 0,
+  "price_le0": 0,
+  "qty_le0": 0,
+  "nan": 0,
+  "ibm_vals": [
+    "False",
+    "True"
+  ],
+  "last_le_first_viol": 0
+}

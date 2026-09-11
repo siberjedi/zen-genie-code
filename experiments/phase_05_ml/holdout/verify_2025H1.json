@@ -1,0 +1,104 @@
+{
+  "holdout": {
+    "holdout_dosya_var": [
+      true,
+      ""
+    ],
+    "sha256_pin": [
+      true,
+      "2441bf175f86b3f6d52246d482bb9263a49684831387bfed504b91a9fab5389c"
+    ],
+    "manifest_var": [
+      true,
+      ""
+    ],
+    "schema_kolonlar": [
+      true,
+      ""
+    ],
+    "row_count": [
+      true,
+      "52128"
+    ],
+    "duplicate_yok": [
+      true,
+      ""
+    ],
+    "null_yok": [
+      true,
+      ""
+    ],
+    "date_utc": [
+      true,
+      ""
+    ],
+    "date_first": [
+      true,
+      "2025-01-01 00:00:00+00:00"
+    ],
+    "date_last": [
+      true,
+      "2025-06-30 23:55:00+00:00"
+    ],
+    "ordering_monotonik": [
+      true,
+      ""
+    ],
+    "missing_interval_yok": [
+      true,
+      "eksik_mum=0"
+    ],
+    "fiyat_pozitif": [
+      true,
+      ""
+    ],
+    "ohlc_ilişki": [
+      true,
+      ""
+    ],
+    "guard_train_val_ok": [
+      true,
+      ""
+    ],
+    "guard_final_b_rej": [
+      true,
+      "[final-B-deneme] FINAL_B penceresine sızıntı: 5 satır (2024-"
+    ],
+    "guard_final_p5_rej": [
+      true,
+      "[final-P5-deneme] FINAL_P5 penceresine sızıntı: 5 satır (202"
+    ],
+    "guard_hash_pin": [
+      true,
+      ""
+    ],
+    "guard_final_c_rej": [
+      true,
+      ""
+    ],
+    "finalB_C_veri_yok": [
+      true,
+      "4m-files=[]"
+    ],
+    "mevcut_dataset_var": [
+      true,
+      ""
+    ],
+    "mevcut_dataset_max_tarih": [
+      true,
+      "2023-12-30 23:55:00+00:00"
+    ],
+    "mevcut_dataset_boyut": [
+      true,
+      "420014"
+    ]
+  },
+  "guards": {
+    "guard_train_val_serisi_ok": true,
+    "guard_final_b_rej": true,
+    "guard_final_p5_rej": true,
+    "guard_hash_pin": true,
+    "guard_final_c_rej": true
+  },
+  "all_pass": true
+}
